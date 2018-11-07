@@ -16,6 +16,8 @@
 </head>
 
 <body>
+  
+<!--  NAVBAR -->
   <nav id="navbar">
     <button class="navbar-toggler col-3" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <ion-icon name="menu"></ion-icon>
@@ -41,13 +43,14 @@
     <h1 class=" col-6">FooDog</h1>
 
     <form class="form-inline col-3" action="/action_page.php">
-      <!--    <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+  <!--    <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
       <button class="btn btn-default" type="submit">
         <ion-icon class="loupe" name="search"></ion-icon>
       </button>
     </form>
 
   </nav>
+<!--  MAIN CONTENT-->
   <main>
     <section class="container" id="onglets">
       <div class="onglet col-3" id="nutrition">Nutrition</div>
@@ -56,19 +59,23 @@
       <div class="onglet col-3" id="community">Community</div>
 
     </section>
-    <section class="carrousel">
 
-      <figure class="carrousel" alt="Dog photo">
-     
-      </figure>
+    <figure class="carrousel">
+      <div class="banniere">
+        <h2>wellness</h2>
+        <p id="title-ban">5 reasons your dog is vomiting</p>
+      </div>
 
-    </section>
+    </figure>
+<!--  FEATURED  -->
     <section class="featured">
       <div class="title-section">
         <h3>Featured Posts</h3>
       </div>
-      <article class="article container-fluid">
-        <div class="f1 article-img col-5"></div>
+
+
+      <article class="row article container-fluid">
+        <div class="f1 article-img col-5 col-sm-4"></div>
 
         <div class="text-article col-7">
           <div class="title-article">
@@ -80,8 +87,9 @@
         </div>
 
       </article>
-      <article class="article container-fluid">
-        <div class="f2 article-img col-5"></div>
+
+      <article class="row article container-fluid">
+        <div class="f2 article-img col-5 col-sm-4"></div>
         <div class="text-article col-7">
           <div class="title-article">
             <p>why you should be feeding your dog with sardines</p>
@@ -92,8 +100,8 @@
         </div>
 
       </article>
-      <article class="article container-fluid">
-        <div class="f3 article-img col-5"></div>
+      <article class="row article container-fluid">
+        <div class="f3 article-img col-5 col-sm-4"></div>
         <div class="text-article col-7">
           <div class="title-article">
             <p>why skinny dogs live longer</p>
@@ -107,12 +115,14 @@
 
     </section>
 
+<!--   LASTEST -->
     <section class="lastest">
       <div class="title-section">
         <h3>Lastest Posts</h3>
       </div>
-      <article class="article container-fluid">
-        <div class=" l1 article-img col-5"></div>
+
+      <article class="row article container-fluid">
+        <div class=" l1 article-img col-5 col-sm-4"></div>
         <div class="text-article col-7">
           <div class="title-article">
             <p>the 11 dog food label tricks every owner needs to know</p>
@@ -123,8 +133,8 @@
         </div>
 
       </article>
-      <article class="article container-fluid">
-        <div class="l2 article-img col-5"></div>
+      <article class="row article container-fluid">
+        <div class="l2 article-img col-5 col-sm-4"></div>
         <div class="text-article col-7">
           <div class="title-article">
             <p>superfoods in your kitchen: pumpkins for dogs</p>
@@ -136,8 +146,8 @@
 
       </article>
 
-      <article class="article container-fluid">
-        <div class="l3 article-img col-5"></div>
+      <article class="row article container-fluid">
+        <div class="l3 article-img col-5 col-sm-4"></div>
         <div class="text-article col-7">
           <div class="title-article">
             <p>the truth about table scraps for dogs</p>
@@ -161,6 +171,8 @@
 
 
   </main>
+  
+<!--  FOOTER  -->
   <footer>
   </footer>
 

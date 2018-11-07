@@ -7,6 +7,7 @@
 body {
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
+    color: #414040;
 }
 
 /*  ORANGE color: #f46700;   */
@@ -29,7 +30,6 @@ XS  min-width = 0
   (min-width: 1200px) 
 */
 
-@media only screen and (min-width : 320px) and (max-width : 500px) {
 
     .navbar-toggler-icon {
         color: black;
@@ -56,19 +56,19 @@ XS  min-width = 0
         font-family: "Crimson text";
         font-size: 13vw;
         padding: 0;
+        margin:0;
+        margin-top: 2vw;
+        text-align: center;
     }
 
-    .onglet {
-        font-size: 0.9em;
+    h2 {
+        color: #e56100;
         text-transform: uppercase;
-        padding: 0;
+        font-size: 4vw;
+        padding-bottom: 0.1vw;
         margin: 0;
     }
 
-    .title-section{
-        border-bottom: 1px solid rgba(128, 128, 128, 0.4);
-        margin: 1vh 0 2vh 0;
-    }
     h3 {
         color: #777777;
         font-size: 1em;
@@ -76,6 +76,20 @@ XS  min-width = 0
         margin: 2px;
         padding: 3px;
         letter-spacing: 1px;
+        font-weight: 300;
+    }
+
+    .onglet {
+        font-size: 3.5vw;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
+
+    .title-section {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+        margin: 1vh 0 2vh 0;
+        font-size: 3.5vw;
     }
 
     .carrousel {
@@ -83,11 +97,30 @@ XS  min-width = 0
         height: 40vh;
         background-image: url(../assets/maindog.jpg);
         background-size: cover;
+        position: relative;
+        padding: 0;
     }
 
+    .banniere {
+        margin: 0;
+        padding: 2vw;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        height: 15vw;
+        text-align: right;
+    }
+
+    #title-ban {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 5vw;
+        margin: 0;
+    }
 
     .article {
-        display: flex;
         border-bottom: 1px solid rgba(128, 128, 128, 0.1);
         padding: 0;
         margin-bottom: 1vh;
@@ -103,10 +136,11 @@ XS  min-width = 0
 
     .title-article p {
         text-transform: uppercase;
-        font-size: 1.2em;
+        font-size: 4vw;
         margin-top: 3vw;
         margin-bottom: 3vw;
         font-weight: 600;
+        line-height: 5vw;
     }
 
     .readmore {
@@ -120,7 +154,7 @@ XS  min-width = 0
     .readmore a {
         text-transform: uppercase;
         color: #f46700;
-        font-size: 0.8em;
+        font-size: 3.2vw;
     }
 
     .f1 {
@@ -130,6 +164,7 @@ XS  min-width = 0
     .f2 {
         background-image: url(../assets/dogEat.jpg);
     }
+
     .f3 {
         background-image: url(../assets/skinnydog.jpeg);
     }
@@ -141,7 +176,91 @@ XS  min-width = 0
     .l2 {
         background-image: url(../assets/chihuahua.jpeg);
     }
+
     .l3 {
         background-image: url(../assets/threedogs.jpeg);
     }
+
+@media only screen and (min-width : 415px) and (max-width : 900px) {
+        
+    #navbar {
+        height: 10vh;
+        display: flex;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    }
+    
+    #onglets {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-size: 0.8em;
+        margin: 5px;
+        letter-spacing: 1.5px;
+    }
+
+    .onglet {
+        font-size: 2.5vw;
+    }
+
+    .title-section {
+        font-size: 3.5vw;
+    }
+
+    .banniere {
+        padding: 1.5vw;
+        padding-right: 4vw;
+        height: 10vw;
+    }
+
+    #title-ban {
+        font-weight: 400;
+        font-size: 3.5vw;
+    }
+
+    .article {
+        margin-bottom: 2vh;
+        margin-left: 4.5vw;
+    }
+
+    .article-img {
+        height: 15vh;
+    }
+
+    .title-article p {
+        font-size: 2.6vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        font-weight: 400;
+        line-height: 4vw;
+    }
+
+    .readmore {
+        text-align: right;
+        align-content: space-between;
+        position: absolute;
+        right: 10px;
+        bottom: 2px;
+    }
+
+    .readmore a {
+        text-transform: uppercase;
+        color: #f46700;
+        font-size: 2vw;
+    }
+    
 }
+
+
+
