@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*  ORANGE color: #f46700;   */
+/* FONT pour les titre : CRIMSON TEXT   */
+
+@media only screen and (min-width : 320px) and (max-width : 500px) {
+/*  ECRIRE TOUT LE PROJET ICI  */
+[class*="col"] {
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.row {
+    background-color: #404040;
+    font-size: 11px
+}
+
+#titleCategories {
+    padding-top: 2vh;
+}
+
+#titleCategories p, #instagram p {
+    margin: auto;
+    text-align: left;
+    color: #9C9C9C; 
+    margin-bottom: 3px;
+}
+
+#instagram {
+    width: 100vw;  /* <-- need fixing */
+}
+
+a img {
+    width: 9vh;
+    height: 9vh;
+}
+
+#social {
+    background-color: #323232
+}
+
+#social {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+#social p {
+    background-color: #9C9C9C;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    border: 2 solid #131313;
+    padding-top: 3px;
+}
+
+}
