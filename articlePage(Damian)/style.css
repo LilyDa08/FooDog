@@ -14,270 +14,273 @@ body {
 /* FONT pour les titre : CRIMSON TEXT   */
 
 @media only screen and (min-width : 320px) and (max-width : 500px) {
-    
-/* Header */
-header {
-    border-bottom:2px solid black;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    height:5vh;
-}
 
-header > * {
-    display: inline-block;
-}
+    /* Header */
 
-#headerTitle{
-    position:relative;
-    top:1vh;
-}
+    h1 {
+        font-weight: bold;
+        font-size: 1em;
+        color: grey;
+    }
 
-#mailDigest1{
-    position:relative;
-    top:1vh;
-    font-size:8px;
-    left:25%;
-}
+    header {
+        border-bottom: 2px solid black;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 5vh;
+    }
 
-#mail1{
-    position:relative;
-    right:10%;
-    width:25%;
-    font-size:8px;
-    float:right;
-    top:1vh;
-}
+    header > * {
+        display: inline-block;
+    }
 
-#mailInput1{
-    width:75%;
-    height:20px;
-    border: 2px solid black;
-}
+    #headerTitle {
+        position: relative;
+        top: 1vh;
+    }
 
-#mailButton1{
-    background-color: black;
-    border:5px solid black;
-    color:white;
-    width:50px;
-    height:20px;
-}
-   
-/* Title */
-#articleTitle{
-    height:10vh;
-    text-align:center;
-}
+    #mailDigest1 {
+        position: relative;
+        top: 1vh;
+        font-size: 8px;
+        left: 25%;
+    }
 
-#titleCategory{
-    position:relative;
-    color:#f46700;
-    font-size:8px;
-    top:1vh;
-}
+    #mail1 {
+        position: relative;
+        right: 10%;
+        width: 25%;
+        font-size: 8px;
+        float: right;
+        top: 1vh;
+    }
 
-#titleText{
-    font-weight: bold;
-    color:grey;
-}
+    #mailInput1 {
+        width: 75%;
+        height: 20px;
+        border: 2px solid black;
+    }
 
-/* Article Image*/
-figure{
-    height:30vh;
-}
+    #mailButton1 {
+        background-color: black;
+        border: 5px solid black;
+        color: white;
+        width: 50px;
+        height: 20px;
+    }
 
-#articleImage{
-    height:30vh;
-    width:100%;
-}
+    /* Title */
+    #articleTitle {
+        height: 10vh;
+        text-align: center;
+    }
 
-/* Table (author & share) */
-#tableBefore{
-    height:5vh;
-    width:100%;
-    text-align:center;
-}
+    #titleCategory {
+        position: relative;
+        color: #f46700;
+        font-size: 8px;
+        top: 1vh;
+    }
 
-#articleAuthor{
-    border-top:1px solid lightgray;
-    border-right:1px solid lightgray;
-    border-bottom:1px solid lightgray;
-    width:50%;
-}
 
-#authorImage1{
-    position: relative;
-    left:5px;
-    float:left;
-    height:5vh;
-    border-radius:50%;
-}
+    /* Article Image*/
+    figure {
+        height: 30vh;
+    }
 
-#authorName1{
-    position:relative;
-    top:1vh;
-}
+    #articleImage {
+        height: 30vh;
+        width: 100%;
+    }
 
-#articleShare1{
-    border-top:1px solid lightgray;
-    border-bottom:1px solid lightgray;
-    width:50%;
-}
+    /* Table (author & share) */
+    #tableBefore {
+        height: 5vh;
+        width: 100%;
+        text-align: center;
+    }
 
-#comment1{
-    display: inline-block;
-    position: relative;
-    background-color: lightgrey;
-    border-radius:5px;
-    bottom:10px;
-}
+    #articleAuthor {
+        border-top: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        width: 50%;
+    }
 
-/* 50 VH used until now*/
+    #authorImage1 {
+        position: relative;
+        left: 5px;
+        float: left;
+        height: 5vh;
+        border-radius: 50%;
+    }
 
-/* Article */
+    #authorName1 {
+        position: relative;
+        top: 1vh;
+    }
 
-#article{
-    position: relative;
-    top:1vh;
-    height:45vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
+    #articleShare1 {
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        width: 50%;
+    }
 
-.articleTexts{
-    font-size:12px;
-}
+    #comment1 {
+        display: inline-block;
+        position: relative;
+        background-color: lightgrey;
+        border-radius: 5px;
+        bottom: 10px;
+    }
 
-.articleTitles{
-    font-weight:600;
-}
+    /* 50 VH used until now*/
 
-/* Table after */
-#share2{
-    position:relative;
-    height:1vh;
-    text-align:center;
-}
+    /* Article */
 
-#tableAfter{
-    position: relative;
-    height:8vh;
-    margin-left: 30vw;
-    margin-right: auto;
-}
+    #article {
+        position: relative;
+        top: 1vh;
+        height: 45vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
 
-.shareButtons{
-    position:relative;
-    width:20vw;
-}
+    .articleTexts {
+        font-size: 12px;
+    }
 
-#secondMail{
-    position:relative;
-    top:1vh;
-    width:70vw;
-    text-align:center;
-    margin-left: 15vw;
-    margin-right: auto;
-}
+    .articleTitles {
+        font-weight: 600;
+    }
 
-#mail2{
-    position:relative;
-    top:1vh;
-    text-align:center;
-    width:50vw;
-}
+    /* Table after */
+    #share2 {
+        position: relative;
+        height: 1vh;
+        text-align: center;
+    }
 
-#mail2 p {
-    font-size:8px;
-}
+    #tableAfter {
+        position: relative;
+        height: 8vh;
+        margin-left: 30vw;
+        margin-right: auto;
+    }
 
-#mailInput2{
-    position:relative;
-    width:50%;
-    height:5vh;
-    border: 2px solid black;
-}
+    .shareButtons {
+        position: relative;
+        width: 20vw;
+    }
 
-#mailButton2{
-    position:relative;
-    background-color: black;
-    border:5px solid black;
-    color:white;
-    width:20vw;
-    height:5vh;
-}
+    #secondMail {
+        position: relative;
+        top: 1vh;
+        width: 70vw;
+        text-align: center;
+        margin-left: 15vw;
+        margin-right: auto;
+    }
 
-/* Author bio */
+    #mail2 {
+        position: relative;
+        top: 1vh;
+        text-align: center;
+        width: 50vw;
+    }
 
-#authorBio{
-    position: relative;
-    top:5vh;
-    height:10vh;
-}
+    #mail2 p {
+        font-size: 8px;
+    }
 
-#firstTD{
-    position: relative;
-    width:25%;
-}
+    #mailInput2 {
+        position: relative;
+        width: 50%;
+        height: 5vh;
+        border: 2px solid black;
+    }
 
-#authorImage2{
-    position: relative;
-    left:15vw;
-    float:left;
-    height:10vh;
-    border-radius:50%;
-}
+    #mailButton2 {
+        position: relative;
+        background-color: black;
+        border: 5px solid black;
+        color: white;
+        width: 20vw;
+        height: 5vh;
+    }
 
-#secondTD{
-    position: relative;
-    width:40%;
-}
+    /* Author bio */
 
-#authorName2{
-    position:relative;
-    top:2vh;
-    text-align:left;
-    font-weight:800;
-}
+    #authorBio {
+        position: relative;
+        top: 5vh;
+        height: 10vh;
+    }
 
-#authorText{
-    word-wrap: break-word;
-    position:relative;
-}
+    #firstTD {
+        position: relative;
+        width: 25%;
+    }
 
-/* Recommended */ 
-#recommended{
-    height:10vh;
-}
+    #authorImage2 {
+        position: relative;
+        left: 15vw;
+        float: left;
+        height: 10vh;
+        border-radius: 50%;
+    }
 
-#recommended{
-    position:relative;
-    top:10vh;
-    height:20vh;
-    border-top:1px solid lightgray;
-    border-bottom:1px solid lightgray;
-}
+    #secondTD {
+        position: relative;
+        width: 40%;
+    }
 
-#recomTitle{
-    position:absolute;
-    top:-1vh;
-    left:3vh;
-    background-color:white;
-    font-size:10px;
-    font-weight:800;
-}
+    #authorName2 {
+        position: relative;
+        top: 2vh;
+        text-align: left;
+        font-weight: 800;
+    }
 
-#recomTable{
-    position:relative;
-    height:80%;
-}
+    #authorText {
+        word-wrap: break-word;
+        position: relative;
+    }
 
-/* Form */
+    /* Recommended */
+    #recommended {
+        height: 10vh;
+    }
 
-#response{
-    position:relative;
-    top:10vh;
-    height:30vh;
-}
+    #recommended {
+        position: relative;
+        top: 10vh;
+        height: 20vh;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+
+    #recomTitle {
+        position: absolute;
+        top: -1vh;
+        left: 3vh;
+        background-color: white;
+        font-size: 10px;
+        font-weight: 800;
+    }
+
+    #recomTable {
+        position: relative;
+        height: 80%;
+    }
+
+    /* Form */
+
+    #response {
+        position: relative;
+        top: 10vh;
+        height: 30vh;
+    }
 
 }
