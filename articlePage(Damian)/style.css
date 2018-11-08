@@ -235,13 +235,49 @@ figure{
 
 #authorName2{
     position:relative;
-    top:1vh;
+    top:2vh;
     text-align:left;
     font-weight:800;
 }
 
 #authorText{
     word-wrap: break-word;
+    position:relative;
+}
+
+/* Recommended */ 
+#recommended{
+    height:10vh;
+}
+
+#recommended{
+    position:relative;
+    top:10vh;
+    height:20vh;
+    border-top:1px solid lightgray;
+    border-bottom:1px solid lightgray;
+}
+
+#recomTitle{
+    position:absolute;
+    top:-1vh;
+    left:3vh;
+    background-color:white;
+    font-size:10px;
+    font-weight:800;
+}
+
+#recomTable{
+    position:relative;
+    height:80%;
+}
+
+/* Form */
+
+#response{
+    position:relative;
+    top:10vh;
+    height:30vh;
 }
 
 }
