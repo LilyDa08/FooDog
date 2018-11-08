@@ -20,6 +20,15 @@ body {
     color: #FFFFFF;
 }
 
+.container-fluid {
+    padding: 0 !important;
+    background-color: #9C9C9C;
+}
+
+footer {
+    background-color: #9C9C9C;
+}
+
 .row {
     background-color: #404040;
     font-size: 11px
@@ -27,6 +36,13 @@ body {
 
 #titleCategories {
     padding-top: 2vh;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#allCategories {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #titleCategories p, #instagram p {
@@ -37,7 +53,16 @@ body {
 }
 
 #instagram {
-    width: 100vw;  /* <-- need fixing */
+    margin: 0;
+}
+
+#instaPictures {
+    padding-bottom: 7px;
+}
+
+a {
+    text-decoration: none !important;
+    color: #FEFEFE !important;
 }
 
 a img {
@@ -55,7 +80,7 @@ a img {
 }
 
 #social p {
-    background-color: #9C9C9C;
+    background-color: #555555;
     border-radius: 50%;
     height: 36px;
     width: 36px;
