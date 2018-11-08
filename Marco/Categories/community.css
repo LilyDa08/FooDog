@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    color: #414040;
+}
+
+.navbar-toggler-icon {
+    color: black;
+}
+
+.loupe {
+    color: black;
+}
+
+#navbar {
+    height: 10vh;
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+h1 {
+    font-family: "Crimson text";
+    font-size: 13vw;
+    padding: 0;
+    margin: 0;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+h2 {
+    color: #e56100;
+    text-transform: uppercase;
+    font-size: 4vw;
+    padding-bottom: 0.1vw;
+    margin: 0;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 500px) {
+/* HEADER CSS BELOW */
+
+    #navbar {
+        height: 10vh;
+        display: flex;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #8080801a;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .category {
+        padding-top: 5px;
+        text-align: center;
+        background-color: #F6F6F6;
+        color: #e56100;
+        margin-bottom: 1vh;
+    }
+
+/* MAIN CSS BELOW */
+
+    main {
+        padding: 0 !important;
+    }
+
+    article {
+        border-bottom: solid 2px #8080801a;
+        margin-bottom: 1vh;
+    }
+
+    .article-img p {
+        text-align: center;
+        height: 70vw;
+        width: 80vw;
+        margin: 0;
+    }
+
+    .article-img p img {
+        height: 70vw;
+        width: 80vw;
+    }
+
+    figure {
+        margin-bottom: 3px;
+    }
+
+    .title-article {
+        font-size: 6.6vw;
+        font-weight: 400;
+    }
+
+    .title-article p {
+        margin-bottom: 0;
+    }
+
+    .readmore {     
+        text-align: right;
+        right: 10px;
+        bottom: 2px;
+    }
+    
+    .readmore a {
+        text-transform: uppercase;
+        color: #f46700;
+        font-size: 4.2vw;
+    }
+
+    .page-navigation {
+        margin-bottom: 1.5vh;
+    }
+
+    .btn-circle {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.42857;
+    }
+
+    .btn-circle a {
+        text-decoration: none !important;
+        color: white;
+        font-size: 20;
+    }
+
+
+/* FOOTER CSS BELOW */
+
+    .container-fluid {
+        padding: 0 !important;
+        background-color: #9C9C9C;
+    }
+    
+    footer {
+        background-color: #9C9C9C;
+    }
+    
+    .container-fluid .row {
+        background-color: #404040;
+        font-size: 12px
+    }
+    
+    #titleCategories {
+        padding-top: 2vh;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #allCategories {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #titleCategories p, #instagram p {
+        margin: auto;
+        text-align: left;
+        color: #9C9C9C; 
+        margin-bottom: 3px;
+    }
+    
+    #instagram {
+        margin: 0;
+    }
+    
+    #instaPictures {
+        padding-bottom: 7px;
+    }
+    
+    footer a {
+        text-decoration: none !important;
+        color: #FEFEFE !important;
+    }
+    
+    a img {
+        width: 9vh;
+        height: 9vh;
+    }
+    
+    #social {
+        background-color: #323232
+    }
+    
+    #social {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    
+    #social p {
+        background-color: #555555;
+        border-radius: 50%;
+        height: 36px;
+        width: 36px;
+        text-align: center;
+        border: 2 solid #131313;
+        padding-top: 3px;
+    }
+
+}
