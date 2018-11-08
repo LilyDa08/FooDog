@@ -13,117 +13,119 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
     <title>Article</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-    
-    
+
+
 <body>
-    <header class="container-fluid">
+    <header class="row container-fluid">
         <!--   Hamburger menu goes here      
         <nav>
         </nav> -->
-        <p id="headerTitle">FooDog</p>
-        <p id="mailDigest1">Digest in your inbox</p>
-        <div id="mail1">
-        <input id="mailInput1" type="email" value="YOUR EMAIL" onclick="disappear('mailInput1')">
-        <button id="mailButton1">SIGN UP</button>
+        <p class="col-4" id="headerTitle">FooDog</p>
+        <p class="col-5" id="mailDigest1">Digest in your inbox</p>
+
+        <div class="row input-group col-3" id="signup">
+            <input type="email" class="form-control col-1" id="dkpForm" placeholder="Your email" aria-label="email" aria-describedby="basic-addon2">
+            <button class="btn mailBtn1">SIGN UP</button>
+
         </div>
     </header>
     <!-- Titre -->
-    <section id="articleTitle">
-        <p id="titleCategory">Category</p>
+    <section class="row container-fluid" id="articleTitle">
+        <h3>nutrition</h3>
         <h1>THE 11 DOG FOOD LABEL TRICKS EVERY OWNER NEEDS TO KNOW</h1>
+
+        <!-- Image -->
+        <figure class="container-fluid">
+        </figure>
     </section>
-    <!-- Image -->
-    <figure>
-        <img id="articleImage" src="images/goodboi1.jpg">
-    </figure>
     <!-- Premiere table -->
-    <table id="tableBefore">
-        <tr>
-            <td id="articleAuthor">
-                <img id="authorImage1" src="images/author.jpg">
-                <p id="authorName1">by : SOME GUY</p>
-            </td>
-            <td id="articleShare1">
-                <p id="share1">SHARE</p>
-                <button id="comment1">COMMENT</button>
-            </td>
-        </tr>
-    </table>
+    <section class="row" id="articleSource">
+        <div class="row col-5" id="articleAuthor">
+            <div class="col-5" id="authorImage1">
+                <img src="assets/author.jpg">
+            </div>
+            <div class="col-7" id="authorName1">
+                <p>by<br>SOME GUY</p>
+            </div>
+
+        </div>
+        <div class="row col-7" id="articleShare1">
+            <a class="col-4" href="#" id="share1">
+                <ion-icon name="share-alt"></ion-icon>
+                <p>share</p>
+            </a>
+            <button class="col-7 btn-comment1">COMMENT</button>
+        </div>
+    </section>
     <!-- Article -->
-    <article id="article">
+    <article class="col-11" id="article">
         <p class="articleTexts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-            <br>Aenean commodo, ligula id bibendum pulvinar, mauris enim blandit sem, vitae mollis neque dui ac ipsum. Sed pharetra sit amet velit id vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+            <br>Aenean commodo, ligula id bibendum pulvinar, mauris enim blandit sem, vitae mollis neque dui ac ipsum. Sed pharetra sit amet velit id vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus.
         </p>
-        <h6 class="articleTitles">Lorem hello</h6>
+        <h4 class="articleTitles">Lorem hello</h4>
         <p class="articleTexts">Sed accumsan at nulla at hendrerit. Maecenas suscipit ultrices imperdiet. Maecenas sed molestie velit. Sed massa leo, ultricies non vestibulum nec, commodo et lacus. <br>
             <br>Duis pulvinar efficitur nisi, quis interdum arcu cursus facilisis. Proin et magna ac leo blandit maximus ut lobortis nisl. Nunc ut dolor sed turpis lobortis congue vel vitae metus.
         </p>
     </article>
     <!-- Second share -->
-    <section id="articleShare2">
-        <p id="share2">SHARE</p>
-        <table id="tableAfter">
-            <tr>
-                <td><button class="shareButtons" id="comment2" style="background-color:gray;">COMMENT</button></td>
-                <td><button class="shareButtons" style="background-color:blue;color:white;">SHARE</button></td>
-            </tr>
-            <tr>
-                <td><button class="shareButtons" style="background-color:lightblue;">TWEET</button></td>
-                <td><button class="shareButtons" style="background-color:red;color:white;">PIN IT</button></td>
-            </tr>
-        </table>
-    </section>
+    <section class="sectionShare">
+        <div class="btnSocial">
+        <button type="button" class="btn btn-comment">comment</button>
+        <button type="button" class="btn btn-share">share</button>
+        <button type="button" class="btn btn-tweet">tweet</button>
+        <button type="button" class="btn btn-pin">pin it</button>
+</div>
 
-    <section id="secondMail">
-        <h6>Subscribe to The Digest Newletter</h6>
-        <p>Get health and wellness tips about your dog delivered to your inbox.</p>
-        <div id="mail2">
-            <input id="mailInput2" type="email" value="YOUR EMAIL" onclick="disappear('mailInput2')">
-            <button id="mailButton2">SIGN UP</button>
+        <div class="secondMail container">
+            <h6>Subscribe to The Digest Newletter</h6>
+            <p>Get health and wellness tips about your dog delivered to your inbox.</p>
+
+            <div class="row input-group" id="mail2">
+                <input type="email" class="form-control" id="mailForm2" placeholder="Your email" aria-label="email" aria-describedby="basic-addon2">
+                <button class="btn mailBtn" id="mailBtn2">SIGN UP</button>
+            </div>
         </div>
-    </section>
 
-    <table id="authorBio">
-        <tr>
-            <td id="firstTD">
-                <img id="authorImage2" src="images/author.jpg">
-            </td>
-            <td id="secondTD">
-                <p id="authorName2">by : SOME GUY</p>
-                <p id="authorText">Sed auctor orci eu condimentum sagittis. Duis sodales, quam nec pulvinar tristique. 
+        <div class="row" id="authorBio">
+            <div class="col-4" id="firstTD">
+                <img id="authorImage2" src="assets/author.jpg">
+            </div>
+            <div class="col-8" id="secondTD">
+                <p id="authorName2">by SOME GUY</p>
+                <p id="authorText">Sed auctor orci eu condimentum sagittis. Duis sodales, quam nec pulvinar tristique.
                 </p>
-            </td>
-        </tr>
-    </table>
-    
-    <section id="recommended">
-        <h6 id="recomTitle"> YOU MIGHT ALSO LIKE </h6>
-        <table id="recomTable">
-            <tr>
+            </div>
+        </div>
+
+        <div id="recommended">
+            <h6 id="recomTitle"> YOU MIGHT ALSO LIKE </h6>
+            <div class="row" id="recomTable">
                 <td id="recomImage1"><img></td>
                 <td id="recomImage2"><img></td>
-            </tr>
-        </table>
-    </section>
-    
-    <form id="response">
-        <input type="text">
-        <input type="text">
-        <input type="email">
-        <input type="url">
-        <button type="submit">LEAVE A COMMENT</button>
-    </form>
+            </div>
+        </div>
 
-    
+        <form id="response">
+            <input type="text">
+            <input type="text">
+            <input type="email">
+            <input type="url">
+            <button type="submit">LEAVE A COMMENT</button>
+        </form>
+
+    </section>
+
+
 
     <!-- Bootstrap stuff -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Icons -->
-    <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
