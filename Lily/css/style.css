@@ -54,7 +54,7 @@ XS  min-width = 0
 
 h1 {
     font-family: "Crimson text";
-    font-size: 13vw;
+    font-size: 3em;
     padding: 0;
     margin: 0;
     margin-top: 2vw;
@@ -64,7 +64,7 @@ h1 {
 h2 {
     color: #e56100;
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 1em;
     padding-bottom: 0.1vw;
     font-weight: 200;
     letter-spacing: 1px;
@@ -73,7 +73,7 @@ h2 {
 
 h4 {
     color: #959596;
-    font-size: 4vw;
+    font-size: 0.95em;
     text-align: center;
     margin: 2px;
     padding: 3px;
@@ -82,7 +82,7 @@ h4 {
 }
 
 .onglet {
-    font-size: 3.5vw;
+    font-size: 0.85em;
     text-transform: uppercase;
     padding: 0;
     margin: 0;
@@ -91,7 +91,6 @@ h4 {
 .title-section {
     border-bottom: 1px solid rgba(128, 128, 128, 0.4);
     margin: 1vh 0 2vh 0;
-    font-size: 3.5vw;
 }
 
 .carrousel {
@@ -118,7 +117,7 @@ h4 {
 #title-ban {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 5vw;
+    font-size: 1.2em;
     margin: 0;
 }
 
@@ -142,7 +141,7 @@ h4 {
 
 .title-article {
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 1em;
     margin-top: 3vw;
     margin-bottom: 3vw;
     margin-left: 1vh;
@@ -162,7 +161,7 @@ h4 {
 .readmore a {
     text-transform: uppercase;
     color: #f46700;
-    font-size: 3.2vw;
+    font-size: 0.8em;
 }
 
 .f1 {
@@ -189,85 +188,6 @@ h4 {
     background-image: url(/assets/threedogs.jpeg);
 }
 
-@media only screen and (min-width : 415px) and (max-width : 900px) {
-
-    #navbar {
-        height: 10vh;
-        display: flex;
-        padding-bottom: 5px;
-        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-    }
-
-    #onglets {
-        padding: 10px 0;
-    }
-
-    h1 {
-        font-size: 9vw;
-    }
-
-    h2 {
-        font-size: 2.5vw;
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
-
-    h4 {
-        font-size: 0.8em;
-        margin: 5px;
-        letter-spacing: 1.5px;
-    }
-
-    .onglet {
-        font-size: 2.5vw;
-    }
-
-    .title-section {
-        font-size: 3.5vw;
-    }
-
-    .banniere {
-        padding: 1.5vw;
-        padding-right: 4vw;
-        height: 10vw;
-    }
-
-    #title-ban {
-        font-weight: 400;
-        font-size: 3.5vw;
-    }
-
-    .article {
-        margin-bottom: 2vh;
-        margin-left: 4.5vw;
-    }
-
-    .article-img {
-        height: 15vh;
-    }
-
-    .title-article p {
-        font-size: 2.6vw;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
-        font-weight: 400;
-        line-height: 4vw;
-    }
-
-    .readmore {
-        text-align: right;
-        align-content: space-between;
-        position: absolute;
-        right: 10px;
-        bottom: 2px;
-    }
-
-    .readmore a {
-        text-transform: uppercase;
-        color: #f46700;
-        font-size: 2vw;
-    }
-}
 
 
 /* FOOTER CSS BELOW */
@@ -278,12 +198,17 @@ h4 {
 
 .container-fluid .row {
     background-color: #464646;
-    font-size: 12px
+    font-size: 0.9em;
+    letter-spacing: 1px;
 }
 
-#titleCategories {
-    padding-top: 1vh;
+#titleCategories,
+#instagram {
+    align-items: center;
     margin: 0;
+    padding: 01vh 0;
+    color: #959595;
+    font-size: 1.2em;
 }
 
 #allCategories {
@@ -292,19 +217,10 @@ h4 {
 
 #allCategories a {
     text-align: center;
-    letter-spacing: 1px;
-    margin: 0.6vh;
-}
-
-#titleCategories p,
-#instagram p {
     margin: auto;
-    color: #959595;
-}
-
-#instagram {
-    margin: 0;
-    padding: 1vh 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 100;
 }
 
 #instaPictures {
@@ -342,5 +258,101 @@ a img {
 }
 
 #social ion-icon {
-    font-size: 2em;  
+    font-size: 2em;
+}
+
+@media only screen and (min-width : 415px) and (max-width : 900px) {
+    body {
+        font-size: 16px;
+    }
+
+    #navbar {
+        height: 10vh;
+        display: flex;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    }
+
+    #onglets {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    h4 {
+        font-size: 0.9em;
+        margin: 5px;
+        letter-spacing: 1.5px;
+    }
+
+    .onglet {
+        font-size: 1.2em;
+    }
+
+    .title-section {
+        font-size: 1.6em;
+    }
+
+    .banniere {
+        padding: 1.5vw;
+        padding-right: 4vw;
+        height: 10vw;
+    }
+
+    #title-ban {
+        font-weight: 400;
+        font-size: 1.6em;
+    }
+
+    .article {
+        margin-bottom: 2vh;
+        margin-left: 4.5vw;
+    }
+
+    .article-img {
+        height: 15vh;
+    }
+
+    .title-article {
+        font-size: 1.4em;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        font-weight: 400;
+        line-height: 4vw;
+    }
+
+    .readmore {
+        text-align: right;
+        align-content: space-between;
+        position: absolute;
+        right: 10px;
+        bottom: 2px;
+    }
+
+    .readmore a {
+        text-transform: uppercase;
+        color: #f46700;
+        font-size: 1em;
+    }
+
+    #allCategories a {
+        text-align: center;
+        margin: auto;
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+
+    a img {
+        width: 15vh;
+        height: 15vh;
+
+    }
 }
