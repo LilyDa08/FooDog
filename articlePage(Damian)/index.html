@@ -41,22 +41,26 @@
         </figure>
     </section>
     <!-- Premiere table -->
-    <section class="row" id="articleSource">
-        <div class="row col-5" id="articleAuthor">
-            <div class="col-5" id="authorImage1">
-                <img src="assets/author.jpg">
-            </div>
-            <div class="col-7" id="authorName1">
-                <p>by<br>SOME GUY</p>
-            </div>
 
+
+    <section class="row" id="articleSource">
+
+        <div class="media col-6" id="articleAuthor">
+            <img src="assets/author.jpg" alt="some guy" class="rounded-circle" id="authorImage1">
+            <div class="media-body col-7" id="authorName1">
+                <h4><small>by</small> some guy</h4>
+            </div>
         </div>
-        <div class="row col-7" id="articleShare1">
-            <a class="col-4" href="#" id="share1">
+
+        <div class="row col-6" id="articleShare1">
+            <a class="col-5" href="#" id="share1">
                 <ion-icon name="share-alt"></ion-icon>
                 <p>share</p>
             </a>
-            <button class="col-7 btn-comment1">COMMENT</button>
+            <a class="col-5" href="#" id="comment">
+                <ion-icon name="text"></ion-icon>
+                <p>comment</p>
+            </a>
         </div>
     </section>
     <!-- Article -->
@@ -64,19 +68,24 @@
         <p class="articleTexts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
             <br>Aenean commodo, ligula id bibendum pulvinar, mauris enim blandit sem, vitae mollis neque dui ac ipsum. Sed pharetra sit amet velit id vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus.
         </p>
-        <h4 class="articleTitles">Lorem hello</h4>
+        <h4 class="articleTitles">First ingredient</h4>
         <p class="articleTexts">Sed accumsan at nulla at hendrerit. Maecenas suscipit ultrices imperdiet. Maecenas sed molestie velit. Sed massa leo, ultricies non vestibulum nec, commodo et lacus. <br>
             <br>Duis pulvinar efficitur nisi, quis interdum arcu cursus facilisis. Proin et magna ac leo blandit maximus ut lobortis nisl. Nunc ut dolor sed turpis lobortis congue vel vitae metus.
+        </p>
+        <h4 class="articleTitles">Gourmet</h4>
+        <p class="articleTexts">Sed accumsan at nulla at hendrerit. Maecenas suscipit ultrices imperdiet. Maecenas sed molestie velit. Sed massa leo, ultricies non vestibulum nec, commodo et lacus. <br>
+            <br>Duis pulvinar efficitur nisi, quis interdum arcu cursus facilisis. Proin et magna ac leo blandit maximus ut lobortis nisl. Nunc ut dolor sed turpis lobortis congue vel vitae metus.
+            Maecenas sed molestie velit. Sed massa leo, ultricies non vestibulum nec, commodo et lacus.
         </p>
     </article>
     <!-- Second share -->
     <section class="sectionShare">
         <div class="btnSocial">
-        <button type="button" class="btn btn-comment">comment</button>
-        <button type="button" class="btn btn-share">share</button>
-        <button type="button" class="btn btn-tweet">tweet</button>
-        <button type="button" class="btn btn-pin">pin it</button>
-</div>
+            <button type="button" class="btn btn-comment">comment</button>
+            <button type="button" class="btn btn-share">share</button>
+            <button type="button" class="btn btn-tweet">tweet</button>
+            <button type="button" class="btn btn-pin">pin it</button>
+        </div>
 
         <div class="secondMail container">
             <h6>Subscribe to The Digest Newletter</h6>
@@ -84,35 +93,59 @@
 
             <div class="row input-group" id="mail2">
                 <input type="email" class="form-control" id="mailForm2" placeholder="Your email" aria-label="email" aria-describedby="basic-addon2">
-                <button class="btn mailBtn" id="mailBtn2">SIGN UP</button>
+                <button class="btn mailBtn2">SIGN UP</button>
+            </div>
+        </div>
+        <div class="row previousArticle">
+            <a class="col-2" href="#" id="previousArrow">
+                <ion-icon name="arrow-dropleft"></ion-icon>
+            </a>
+            <div class="col-10">
+                <h6><small>previous article</small></h6>
+                <h5>superfood in your kitchen: pumpkins for dogs</h5>
             </div>
         </div>
 
-        <div class="row" id="authorBio">
+        <div class="row" id="presentationSite">
             <div class="col-4" id="firstTD">
-                <img id="authorImage2" src="assets/author.jpg">
+                <img id="farmerImg" src="assets/author.jpg">
             </div>
             <div class="col-8" id="secondTD">
-                <p id="authorName2">by SOME GUY</p>
-                <p id="authorText">Sed auctor orci eu condimentum sagittis. Duis sodales, quam nec pulvinar tristique.
+                <p id="siteName">The Farmer'sDog</p>
+                <p id="siteText">Sed auctor orci eu condimentum sagittis. Duis sodales, quam nec pulvinar tristique. Lorem ipsum ctor orci eu condimentum sagittis. Duis sodales, quam nec pulvinar tristique.
                 </p>
             </div>
         </div>
 
         <div id="recommended">
-            <h6 id="recomTitle"> YOU MIGHT ALSO LIKE </h6>
-            <div class="row" id="recomTable">
-                <td id="recomImage1"><img></td>
-                <td id="recomImage2"><img></td>
+
+            <h6 id="alsoLike"> YOU MIGHT ALSO LIKE </h6>
+            <div class="row threeArtciles">
+                <div class="recommendArticle col-4">
+                    <div class="recomImg"><img src="assets/goodboy.jpg" /></div>
+                    <h5 class="recomTitle"><small>superfood in your kitchen: pumpkins for dogs</small></h5>
+                </div>
+                <div class="recommendArticle col-4">
+                    <div class="recomImg"><img src="assets/goodboy.jpg" /></div>
+                    <h5 class="recomTitle"><small>the truth about table scrpas for dogs</small></h5>
+                </div>
+                <div class="recommendArticle col-4">
+                    <div class="recomImg"><img src="assets/goodboy.jpg" /></div>
+                    <h5 class="recomTitle"><small>superfood in your kitchen: apple cider vinegar for dogs</small></h5>
+                </div>
             </div>
         </div>
 
-        <form id="response">
+        <form class="form-group" id="response">
+            <label class="labelRep" for="comment">LEAVE A RESPONSE</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+            <!--
             <input type="text">
             <input type="text">
             <input type="email">
             <input type="url">
-            <button type="submit">LEAVE A COMMENT</button>
+-->
+            <button class="btn mailBtn1" type="submit">submit</button>
         </form>
 
     </section>

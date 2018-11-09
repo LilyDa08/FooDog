@@ -34,7 +34,7 @@ body {
         color: #f46700;
         font-size: 4vw;
         margin: 2vh auto;
-    
+
         font-weight: 200;
         letter-spacing: 1px;
     }
@@ -50,7 +50,7 @@ body {
         width: 100vw;
         height: 40vh;
         background-size: cover;
-         width: 100vw;
+        width: 100vw;
         height: 30vh;
         margin: 0;
         padding: 0;
@@ -91,7 +91,7 @@ body {
         margin: 0;
         background-color: black;
     }
-    
+
     .mailBtn {
         height: 70%;
         margin: 0;
@@ -108,23 +108,22 @@ body {
     #articleAuthor {
         border-right: 1px solid lightgray;
         margin: 0;
-        padding: 1vh;
-        margin-top: 1vh;
-    }
-
-    #authorImage1 {
+        padding: 0;
+        padding-left: 2vh;
+        padding-top: 1vh;
         height: 100%;
+        align-items: center;
     }
-
-    #authorImage1 img {
-        height: 100%;
-        border-radius: 50%;
+    
+    #articleAuthor img {
+        height: 90%;
     }
 
     #authorName1 {
         margin: 0;
         padding: 0;
         text-align: center;
+        
     }
 
     #authorName1 p {
@@ -132,10 +131,10 @@ body {
     }
 
     #articleShare1 {
-        padding: 1vh;
-        margin-left: 0;
-        margin-top: 1.3vh;
-        align-items: baseline
+        margin: 0;
+        padding: 0;
+        padding-top: 2vh;
+        align-items: center;
     }
 
     #share1 {
@@ -154,19 +153,29 @@ body {
         border: 1px solid #919191;
         border-radius: 50%;
         margin: 0;
+        padding: 3px;
     }
 
-   
-    .btn-comment1 {
-        height: 4vh;
-        color: white;
-        font-weight: 200;
+    #comment {
+        text-decoration: none;
+        color: #434343;
         text-transform: uppercase;
-        font-size: 1.9vh;
-        border-radius: 0;
-        margin: 0.5v;
-        background-color: #646464;
+        font-size: 0.8em;
+        line-height: 2vh;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
+
+
+    #comment ion-icon {
+        font-size: 3vh;
+        border: 1px solid #919191;
+        border-radius: 50%;
+        margin: 0;
+        padding: 3px;
+    }
+
 
     /* Article */
 
@@ -178,7 +187,8 @@ body {
     }
 
     .articleTexts {
-        font-size: 2vh;
+        font-size: 2.1vh;
+        font-family: "Crimson Text"
     }
 
     h4 {
@@ -192,10 +202,12 @@ body {
     .sectionShare {
         margin: 3vh auto;
     }
-    .btnSocial{
+
+    .btnSocial {
         text-align: center;
         margin-bottom: 4vh;
     }
+
     .btn {
         height: 5vh;
         width: 35vw;
@@ -226,6 +238,8 @@ body {
 
     .secondMail {
         text-align: center;
+        padding-bottom: 2vh;
+        border-bottom: 1px solid lightgray;
     }
 
     #mail2 {
@@ -240,24 +254,54 @@ body {
         padding: 1vh;
     }
 
+    .mailBtn2 {
+        background-color: #FF8D6A;
+    }
+
+    /*    Previous article */
+
+    .previousArticle {
+        padding: 2vh;
+        border-bottom: 1px solid lightgray;
+        align-items: center
+    }
+
+    #previousArrow {
+        font-size: 3em;
+        color: gray;
+    }
+
+    h6 small {
+        color: #6d6d6d;
+        text-transform: uppercase;
+        font-size: 0.5em;
+    }
+
+    h5 {
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+
     /* Author bio */
 
-    #authorBio {
+    #presentationSite {
         padding: 0;
         margin: 0;
-        margin-top: 5vh;
+        margin-top: 2vh;
         height: 100%;
-         margin-left: 1vh;
+        padding-left: 1vh;
         align-items: center;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 2vh;
     }
 
     #firstTD {
         padding: 0;
         margin: 0;
-       
+
     }
 
-    #authorImage2 {
+    #farmerImg {
         height: 30vw;
         border-radius: 50%;
         padding: 0;
@@ -270,51 +314,56 @@ body {
         margin: 0;
     }
 
-    #authorName2 {
+    #siteName {
+        text-transform: uppercase;
         padding: 0;
         margin: 0;
         font-weight: 800;
     }
 
-    #authorText {
+    #siteText {
         padding: 0;
         margin: 0;
+        width: 90%;
     }
 
     /* Recommended */
-    #recommended {
-        height: 10vh;
-    }
 
     #recommended {
-        position: relative;
-        top: 10vh;
-        height: 20vh;
-        border-top: 1px solid lightgray;
         border-bottom: 1px solid lightgray;
+        padding: 2vh 1.5vh;
+        margin: 0;
     }
 
-    #recomTitle {
-        position: absolute;
-        top: -1vh;
-        left: 3vh;
-        background-color: white;
-        font-size: 10px;
-        font-weight: 800;
-        padding: 0 1.2vh;
+    .recommendArticle {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    #alsoLike{
+        font-size: 1em;
+    }
+    
+    .recomTitle {
+        text-align: center;
+        width: 93%;
+        line-height: 1.8vh;
     }
 
-    #recomTable {
-        position: relative;
-        height: 80%;
+    .recomImg {}
+
+
+    .recomImg img {
+        width: 95%;
+
     }
 
     /* Form */
 
     #response {
-        position: relative;
-        top: 10vh;
-        height: 30vh;
+     padding-top: 2vh
     }
 
 }
+
+/* #FF8D6A */
