@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+/*  ORANGE color: #f46700;   */
+/* FONT pour les titre : CRIMSON TEXT   */
+
+@media only screen and (min-width : 320px) {
+
+    /* Header */
+
+    h1 {
+        font-weight: bold;
+        font-size: 5vw;
+        color: grey;
+        width: 95vw;
+        margin: auto;
+        font-weight: 400;
+        margin-bottom: 1vh
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: #f46700;
+        font-size: 4vw;
+        margin: 2vh auto;
+
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+    #articleTitle {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    figure {
+        background-image: url(../assets/goodboy.jpg);
+        width: 100vw;
+        height: 40vh;
+        background-size: cover;
+        width: 100vw;
+        height: 30vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        margin: 0 !important;
+        border-bottom: 1px solid black;
+        height: 7vh;
+        align-items: center
+    }
+
+    #headerTitle {
+        font-family: "Crimson text";
+        font-size: 4vh;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    #mailDigest1 {
+        font-size: 3.5vw;
+        padding: 0;
+        text-align: right;
+        margin: 0;
+        margin-right: 1vh;
+    }
+
+    #dkpForm {
+        font-size: 1em;
+        border: 1px solid black;
+        height: 100%;
+        display: none;
+    }
+
+    .mailBtn1 {
+        height: 70%;
+        margin: 0;
+        background-color: black;
+    }
+
+    .mailBtn {
+        height: 70%;
+        margin: 0;
+        background-color: black;
+    }
+
+    /* Table (author & share) */
+    #articleSource {
+        height: 11vh;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+
+    #articleAuthor {
+        border-right: 1px solid lightgray;
+        margin: 0;
+        padding: 0;
+        padding-left: 2vh;
+        padding-top: 1vh;
+        height: 100%;
+        align-items: center;
+    }
+    
+    #articleAuthor img {
+        height: 90%;
+    }
+
+    #authorName1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+    }
+
+    #authorName1 p {
+        margin: 0;
+    }
+
+    #articleShare1 {
+        margin: 0;
+        padding: 0;
+        padding-top: 2vh;
+        align-items: center;
+    }
+
+    #share1 {
+        text-decoration: none;
+        color: #434343;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        line-height: 2vh;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #articleShare1 ion-icon {
+        font-size: 3vh;
+        border: 1px solid #919191;
+        border-radius: 50%;
+        margin: 0;
+        padding: 3px;
+    }
+
+    #comment {
+        text-decoration: none;
+        color: #434343;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        line-height: 2vh;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    #comment ion-icon {
+        font-size: 3vh;
+        border: 1px solid #919191;
+        border-radius: 50%;
+        margin: 0;
+        padding: 3px;
+    }
+
+
+    /* Article */
+
+    #article {
+        margin: 4vh auto;
+        padding: 0;
+        text-align: justify;
+        line-height: 2.7vh;
+    }
+
+    .articleTexts {
+        font-size: 2.1vh;
+        font-family: "Crimson Text"
+    }
+
+    h4 {
+        font-size: 2.1vh;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    /* Table after */
+
+    .sectionShare {
+        margin: 3vh auto;
+    }
+
+    .btnSocial {
+        text-align: center;
+        margin-bottom: 4vh;
+    }
+
+    .btn {
+        height: 5vh;
+        width: 35vw;
+        color: white;
+        font-weight: 200;
+        text-transform: uppercase;
+        font-size: 1.9vh;
+        border-radius: 0;
+        margin: 0.5vh auto;
+        padding: 1vh;
+    }
+
+    .btn-comment {
+        background-color: #646464;
+    }
+
+    .btn-share {
+        background-color: #3b5998;
+    }
+
+    .btn-tweet {
+        background-color: #55acee;
+    }
+
+    .btn-pin {
+        background-color: #cb2027;
+    }
+
+    .secondMail {
+        text-align: center;
+        padding-bottom: 2vh;
+        border-bottom: 1px solid lightgray;
+    }
+
+    #mail2 {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    #mailForm2 {
+        height: 100%;
+        font-size: 1em;
+        padding: 1vh;
+    }
+
+    .mailBtn2 {
+        background-color: #FF8D6A;
+    }
+
+    /*    Previous article */
+
+    .previousArticle {
+        padding: 2vh;
+        border-bottom: 1px solid lightgray;
+        align-items: center
+    }
+
+    #previousArrow {
+        font-size: 3em;
+        color: gray;
+    }
+
+    h6 small {
+        color: #6d6d6d;
+        text-transform: uppercase;
+        font-size: 0.5em;
+    }
+
+    h5 {
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+
+    /* Author bio */
+
+    #presentationSite {
+        padding: 0;
+        margin: 0;
+        margin-top: 2vh;
+        height: 100%;
+        padding-left: 1vh;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 2vh;
+    }
+
+    #firstTD {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    #farmerImg {
+        height: 30vw;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #secondTD {
+        width: 40%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #siteName {
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        font-weight: 800;
+    }
+
+    #siteText {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+    }
+
+    /* Recommended */
+
+    #recommended {
+        border-bottom: 1px solid lightgray;
+        padding: 2vh 1.5vh;
+        margin: 0;
+    }
+
+    .recommendArticle {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    #alsoLike{
+        font-size: 1em;
+    }
+    
+    .recomTitle {
+        text-align: center;
+        width: 93%;
+        line-height: 1.8vh;
+    }
+
+    .recomImg {}
+
+
+    .recomImg img {
+        width: 95%;
+
+    }
+
+    /* Form */
+
+    #response {
+     padding-top: 2vh
+    }
+
+}
+
+/* #FF8D6A */
