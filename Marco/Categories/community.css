@@ -79,6 +79,7 @@ h2 {
     article {
         border-bottom: solid 2px #8080801a;
         margin-bottom: 1vh;
+        width: 100vw;
     }
 
     .article-img p {
@@ -159,11 +160,17 @@ h2 {
         padding-top: 2vh;
         padding-left: 15px;
         padding-right: 15px;
+        width: 100vw;
+        margin: 0;
     }
     
     #allCategories {
         padding-left: 5px;
         padding-right: 5px;
+    }
+
+    #allCategories p {
+        text-align: center;
     }
     
     #titleCategories p, #instagram p {
@@ -179,6 +186,10 @@ h2 {
     
     #instaPictures {
         padding-bottom: 7px;
+    }
+
+    #instaPictures a {
+        text-align: center;
     }
     
     footer a {
@@ -198,6 +209,8 @@ h2 {
     #social {
         font-size: 30px;
         padding-top: 10px;
+        width: 100vw;
+        margin: 0;
     }
     
     #social p {
