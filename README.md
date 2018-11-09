@@ -17,7 +17,6 @@ We're four junior web developers.
 FooDog is a project talking about __dogs food__.  
 The client already have a website, but want to increase his online presence through a blog.   
 We have to adapt to a detailed graphic charter and develop a responsive website, ready to be frequently updated.
-here is a [link](https://lilyda08.github.io/FooDog/) to our  "in progress" project. 
 
 ## Repo
 
