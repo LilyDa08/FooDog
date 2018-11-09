@@ -46,7 +46,7 @@ body {
     }
 
     figure {
-        background-image: url(../assets/goodboy.jpg);
+        background-image: url(/assets/goodboy.jpg);
         width: 100vw;
         height: 40vh;
         background-size: cover;
@@ -365,5 +365,88 @@ body {
     }
 
 }
+
+/* FOOTER */
+
+    .container-fluid {
+        padding: 0 !important;
+    }
+    
+    footer {
+        background-color: #9C9C9C;
+    }
+    
+    .container-fluid .row {
+        background-color: #404040;
+        font-size: 12px
+    }
+    
+    #titleCategories {
+        padding-top: 2vh;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100vw;
+        margin: 0;
+    }
+    
+    #allCategories {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #allCategories p {
+        text-align: center;
+    }
+    
+    #titleCategories p, #instagram p {
+        margin: auto;
+        text-align: left;
+        color: #9C9C9C; 
+        margin-bottom: 3px;
+    }
+    
+    #instagram {
+        margin: 0;
+    }
+    
+    #instaPictures {
+        padding-bottom: 7px;
+    }
+
+    #instaPictures a {
+        text-align: center;
+    }
+    
+    footer a {
+        text-decoration: none !important;
+        color: #FEFEFE !important;
+    }
+    
+    a img {
+        width: 9vh;
+        height: 9vh;
+    }
+    
+    #social {
+        background-color: #323232
+    }
+    
+    #social {
+        font-size: 30px;
+        padding-top: 10px;
+        width: 100vw;
+        margin: 0;
+    }
+    
+    #social p {
+        background-color: #555555;
+        border-radius: 50%;
+        height: 36px;
+        width: 36px;
+        text-align: center;
+        border: 2 solid #131313;
+        padding-top: 3px;
+    }
+
 
 /* #FF8D6A */
