@@ -20,23 +20,52 @@ body {
     /* Header */
 
     h1 {
-        font-weight: bold;
-        font-size: 5vw;
-        color: grey;
-        width: 95vw;
-        margin: auto;
-        font-weight: 400;
-        margin-bottom: 1vh
+        font-family: "Crimson text";
+        font-size: 13vw;
+        padding: 0;
+        margin: 0;
+        margin-top: 2vw;
+        text-align: center;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        color: #e56100;
+        font-size: 4vw;
+        margin: 1vh auto;
+        font-weight: 200;
+        letter-spacing: 1px;
+        padding: 1vw;
+        text-align: center;
+        background-color: #f5f5f5;
     }
 
     h3 {
+        font-weight: 600;
+        font-size: 5vw;
+        color: #959595;
+        width: 95vw;
+        margin: auto;
+        font-weight: 400;
+        margin-bottom: 1vh;
         text-transform: uppercase;
-        color: #f46700;
-        font-size: 4vw;
-        margin: 2vh auto;
+    }
+    
+   h4 {
+        font-size: 2.1vh;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
 
-        font-weight: 200;
-        letter-spacing: 1px;
+    h5 {
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+
+     h6 small {
+        color: #6d6d6d;
+        text-transform: uppercase;
+        font-size: 0.5em;
     }
 
     #articleTitle {
@@ -92,12 +121,6 @@ body {
         background-color: black;
     }
 
-    .mailBtn {
-        height: 70%;
-        margin: 0;
-        background-color: black;
-    }
-
     /* Table (author & share) */
     #articleSource {
         height: 11vh;
@@ -114,7 +137,7 @@ body {
         height: 100%;
         align-items: center;
     }
-    
+
     #articleAuthor img {
         height: 90%;
     }
@@ -123,7 +146,7 @@ body {
         margin: 0;
         padding: 0;
         text-align: center;
-        
+
     }
 
     #authorName1 p {
@@ -167,7 +190,6 @@ body {
         margin: 0;
     }
 
-
     #comment ion-icon {
         font-size: 3vh;
         border: 1px solid #919191;
@@ -189,12 +211,6 @@ body {
     .articleTexts {
         font-size: 2.1vh;
         font-family: "Crimson Text"
-    }
-
-    h4 {
-        font-size: 2.1vh;
-        font-weight: 600;
-        text-transform: uppercase;
     }
 
     /* Table after */
@@ -271,17 +287,6 @@ body {
         color: gray;
     }
 
-    h6 small {
-        color: #6d6d6d;
-        text-transform: uppercase;
-        font-size: 0.5em;
-    }
-
-    h5 {
-        text-transform: uppercase;
-        font-size: 1.2em;
-    }
-
     /* Author bio */
 
     #presentationSite {
@@ -340,10 +345,11 @@ body {
         margin: 0;
         text-align: center;
     }
-    #alsoLike{
+
+    #alsoLike {
         font-size: 1em;
     }
-    
+
     .recomTitle {
         text-align: center;
         width: 93%;
@@ -361,92 +367,83 @@ body {
     /* Form */
 
     #response {
-     padding-top: 2vh
+        padding-top: 2vh;
     }
-
 }
 
-/* FOOTER */
+/* FOOTER CSS BELOW */
 
-    .container-fluid {
-        padding: 0 !important;
-    }
-    
-    footer {
-        background-color: #9C9C9C;
-    }
-    
-    .container-fluid .row {
-        background-color: #404040;
-        font-size: 12px
-    }
-    
-    #titleCategories {
-        padding-top: 2vh;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 100vw;
-        margin: 0;
-    }
-    
-    #allCategories {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+.container-fluid {
+    padding: 0 !important;
+}
 
-    #allCategories p {
-        text-align: center;
-    }
-    
-    #titleCategories p, #instagram p {
-        margin: auto;
-        text-align: left;
-        color: #9C9C9C; 
-        margin-bottom: 3px;
-    }
-    
-    #instagram {
-        margin: 0;
-    }
-    
-    #instaPictures {
-        padding-bottom: 7px;
-    }
+footer .row {
+    background-color: #464646;
+    font-size: 12px
+}
 
-    #instaPictures a {
-        text-align: center;
-    }
-    
-    footer a {
-        text-decoration: none !important;
-        color: #FEFEFE !important;
-    }
-    
-    a img {
-        width: 9vh;
-        height: 9vh;
-    }
-    
-    #social {
-        background-color: #323232
-    }
-    
-    #social {
-        font-size: 30px;
-        padding-top: 10px;
-        width: 100vw;
-        margin: 0;
-    }
-    
-    #social p {
-        background-color: #555555;
-        border-radius: 50%;
-        height: 36px;
-        width: 36px;
-        text-align: center;
-        border: 2 solid #131313;
-        padding-top: 3px;
-    }
+#titleCategories {
+    padding-top: 1vh;
+    margin: 0;
+}
 
+#allCategories {
+    padding: 0.2vh 1vh;
+}
+
+#allCategories a {
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0.6vh;
+}
+
+#titleCategories p,
+#instagram p {
+    margin: auto;
+    color: #959595;
+}
+
+#instagram {
+    margin: 0;
+    padding: 1vh 0;
+}
+
+#instaPictures {
+    padding-bottom: 7px;
+}
+
+#instaPictures a {
+    text-align: center;
+    padding-bottom: 1vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a img {
+    width: 9vh;
+    height: 9vh;
+}
+
+#social {
+    background-color: #323232;
+    height: 8vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#social a {
+    background-color: #464646;
+    text-align: center;
+    color: white;
+    padding: 1vh;
+    border-radius: 50%;
+}
+
+#social ion-icon {
+    font-size: 2em;  
+}
 
 /* #FF8D6A */

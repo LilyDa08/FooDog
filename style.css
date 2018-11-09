@@ -1,0 +1,12 @@
+body{
+   width: 100vw; 
+}
+
+p{
+    text-align: center;
+}
+.col, .container-fluid {
+    background-color: plum;
+    border: 2px solid black;
+    border-radius: 5px;
+}
