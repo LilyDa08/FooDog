@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +44,7 @@ XS  min-width = 0
 }
 
 #navbar class-items p {
-   color : #000;
+    color: #000;
 }
 
 #navbar {
@@ -117,20 +116,24 @@ h4 {
     background-color: rgba(255, 255, 255, 0.6);
     bottom: 0;
     right: 0;
-    width:100%;
+    width: 100%;
     height: 15vw;
     text-align: right;
 }
 
-#title-ban {
+.title-ban {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    padding: 0;
     margin: 0;
 }
+.other-figure {
+    display: none;
+}
+
 .featured {
     margin: 0;
-    
     padding: 0;
 }
 
@@ -140,7 +143,7 @@ h4 {
     margin-left: 0 !important;
     margin-bottom: 1vh;
     position: relative;
-   
+
 }
 
 .article-img {
@@ -160,10 +163,14 @@ h4 {
     font-size: 1em;
     margin-top: 3vw;
     margin-bottom: 3vw;
-    padding-left : 1vh;
-    padding-right : 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
     font-weight: 600;
     line-height: 5vw;
+}
+
+.start-article {
+    display: none;
 }
 
 .readmore {
@@ -216,20 +223,25 @@ h4 {
 }
 
 .container-fluid .col {
-
     font-size: 0.9em;
     letter-spacing: 1px;
 }
 
-#titleCategories,
-#instagram {
+.footer-up {
+    margin: 0;
+    padding: 0;
+}
+
+#titleCategories p,
+#instagram p {
     margin: 0;
     padding: 1vh;
     color: #959595;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 #allCategories {
+    margin: 0;
     padding: 0.2vh 1vh;
 }
 
@@ -243,14 +255,20 @@ h4 {
 }
 
 #instaPictures {
-    padding-bottom: 1.5vh;
-    margin: auto;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 2vh;
+    margin: 0;
+    width: 100vw;
 }
+
+#instaPictures a {}
 
 .col-footer p {
     margin: 0;
     letter-spacing: 1px;
 }
+
 footer {
     background-color: #414040;
 }
@@ -263,6 +281,15 @@ footer a {
 a img {
     width: 9vh;
     height: 9vh;
+}
+
+#instagram {
+    padding: 0;
+    margin: 0;
+}
+
+.thumbnail-md {
+    display: none;
 }
 
 #social {
@@ -285,9 +312,13 @@ a img {
     font-size: 2em;
 }
 
-@media only screen and (min-width : 415px) and (max-width : 900px) {
+/*---- TABLET md -----*/
+
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
     body {
-        font-size: 16px;
+        font-size: 14px;
+        width: 95vw;
     }
 
     #navbar {
@@ -331,7 +362,8 @@ a img {
         height: 10vw;
     }
 
-    #title-ban {
+    .title-ban {
+        padding: 0;
         font-weight: 400;
         font-size: 1.6em;
     }
@@ -342,15 +374,21 @@ a img {
     }
 
     .article-img {
-        height: 15vh;
+      height: 16vh;
     }
 
     .title-article {
         font-size: 1.4em;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
         font-weight: 400;
         line-height: 4vw;
+        margin-bottom: 0;
+    }
+
+    .start-article {
+        display: block;
+        font-size: 1.4em;
+        padding-left: 1vh;
+        font-weight: 200;
     }
 
     .readmore {
@@ -367,46 +405,130 @@ a img {
         font-size: 1em;
     }
 
+    .footer-up {
+        padding-top: 1vh;
+
+    }
+
+    #titleCategories {
+        margin-left: 1vh;
+    }
+
+    #allCategories {}
+
     #allCategories a {
+        text-align: left;
+        text-transform: uppercase;
+        padding-left: 1vh;
+        padding-top: 1vh;
+        padding-bottom: 3vh;
+        font-size: 1em;
+    }
+
+    #instagram {
+        margin-left: 3vh;
+    }
+
+    #instaPictures {
+        padding-right: 1vh;
+    }
+
+
+    #instaPictures a {
+        padding: 1vh;
+        height: 150px;
+    }
+
+    #instaPictures img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .thumbnail-md {
+        display: block;
+        height: auto;
+    }
+
+
+    #social {
+        margin: 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #social a {
+        background-color: #464646;
         text-align: center;
-        margin: auto;
-        font-size: 1.5em;
-        font-weight: 100;
+        color: white;
+        padding: 1vh;
+        border-radius: 50%;
     }
 
-    a img {
-        width: 15vh;
-        height: 15vh;
-
+    #social ion-icon {
+        font-size: 4em;
     }
+
+
 }
 
-@media only screen and (min-width : 901px) {
+
+/*---- DESKTOP lg-----*/
+
+@media only screen and (min-width : 992px) {
     body {
         font-size: 16px;
-        width : 60vw;
+        width: 60vw;
     }
-    
+
     .onglet {
-    font-size: 0.7em;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-}
-    
+        font-size: 0.7em;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
+
     .title-article {
 
-    font-size: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left:0;
-    font-weight: 400;
-    line-height: 2vw;
-}
+        font-size: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        font-weight: 400;
+        line-height: 2vw;
+    }
 
     .title-section {
-    display: none;
-}
-
+        display: none;
+    }
+    .other-figure {
+        display: block;
+        margin: 0;
+        padding:0;
+    }
     
+    .aside-article {
+        margin: 0;
+        padding:0;
+    }
+    
+    .asideOne {
+        margin: 0;
+        padding:0;
+        padding-left: 1vh;
+    }
+    
+    .aside-img {
+        margin: 0;
+        padding:0;
+        padding-bottom: 1vh;
+    }
+     .aside-title {
+        margin: 0;
+        padding:0;
+    }
+    .other-figure img {
+        padding: 0;
+        margin: 0;
+    }
 }
