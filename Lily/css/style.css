@@ -130,13 +130,14 @@ h4 {
 }
 .featured {
     margin: 0;
+    
     padding: 0;
 }
 
 .article {
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
     padding: 0;
-    margin: 0;
+    margin-left: 0 !important;
     margin-bottom: 1vh;
     position: relative;
    
@@ -157,11 +158,10 @@ h4 {
 .title-article {
     text-transform: uppercase;
     font-size: 1em;
-    margin: 0;
-    padding: 0;
     margin-top: 3vw;
     margin-bottom: 3vw;
- padding-left : 1vh;
+    padding-left : 1vh;
+    padding-right : 1vh;
     font-weight: 600;
     line-height: 5vw;
 }
@@ -182,6 +182,9 @@ h4 {
 
 .f1 {
     background-image: url(/assets/dognature.jpeg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 .f2 {
@@ -212,17 +215,16 @@ h4 {
     padding: 0 !important;
 }
 
-.container-fluid .row {
-    background-color: #464646;
+.container-fluid .col {
+
     font-size: 0.9em;
     letter-spacing: 1px;
 }
 
 #titleCategories,
 #instagram {
-    align-items: center;
     margin: 0;
-    padding: 01vh 0;
+    padding: 1vh;
     color: #959595;
     font-size: 1.2em;
 }
@@ -235,17 +237,22 @@ h4 {
     text-align: center;
     margin: auto;
     padding: 0;
-    font-size: 1em;
+    padding-bottom: 1vh;
+    font-size: 1.2em;
     font-weight: 100;
 }
 
 #instaPictures {
-    padding-bottom: 7px;
+    padding-bottom: 1.5vh;
+    margin: auto;
 }
 
-#instaPictures a {
-    text-align: center;
-    padding-bottom: 1vh;
+.col-footer p {
+    margin: 0;
+    letter-spacing: 1px;
+}
+footer {
+    background-color: #414040;
 }
 
 footer a {
@@ -259,6 +266,7 @@ a img {
 }
 
 #social {
+    margin: 0;
     background-color: #323232;
     height: 8vh;
     justify-content: space-around;
