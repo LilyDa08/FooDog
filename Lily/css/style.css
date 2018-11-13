@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,9 @@
 }
 
 body {
+    margin: auto;
     font-size: 13px;
+    width: 100vw;
     font-family: "Open Sans", sans-serif;
     color: #414040;
 }
@@ -31,10 +34,6 @@ XS  min-width = 0
 */
 
 
-.navbar-toggler-icon {
-    color: black;
-}
-
 #onglets {
     display: flex;
     padding: 5px 0;
@@ -45,11 +44,14 @@ XS  min-width = 0
     color: black;
 }
 
+#navbar class-items p {
+   color : #000;
+}
+
 #navbar {
     height: 10vh;
     display: flex;
     padding-bottom: 5px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
 }
 
 h1 {
@@ -59,6 +61,7 @@ h1 {
     margin: 0;
     margin-top: 2vw;
     text-align: center;
+    color: #414040;
 }
 
 h2 {
@@ -81,6 +84,11 @@ h4 {
     font-weight: 300;
 }
 
+.title-section {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+    margin: 1vh 0 2vh 0;
+}
+
 .onglet {
     font-size: 0.85em;
     text-transform: uppercase;
@@ -88,14 +96,14 @@ h4 {
     margin: 0;
 }
 
-.title-section {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
-    margin: 1vh 0 2vh 0;
+.main-content {
+    margin: 0;
+    padding: 0;
 }
 
 .carrousel {
-    width: 100vw;
     height: 40vh;
+    margin: 0;
     background-image: url(/assets/maindog.jpg);
     background-size: cover;
     position: relative;
@@ -107,9 +115,9 @@ h4 {
     padding: 2vw;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.6);
-    width: 100%;
     bottom: 0;
     right: 0;
+    width:100%;
     height: 15vw;
     text-align: right;
 }
@@ -120,34 +128,42 @@ h4 {
     font-size: 1.2em;
     margin: 0;
 }
+.featured {
+    margin: 0;
+    padding: 0;
+}
 
 .article {
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
     padding: 0;
+    margin: 0;
     margin-bottom: 1vh;
-    margin-left: 1vw;
     position: relative;
+   
 }
 
 .article-img {
     background-size: cover;
     background-repeat: no-repeat;
     height: 15vh;
+    margin: 0;
 }
 
 .text-article {
     padding: 0;
+    margin: 0;
 }
 
 .title-article {
     text-transform: uppercase;
     font-size: 1em;
+    margin: 0;
+    padding: 0;
     margin-top: 3vw;
     margin-bottom: 3vw;
-    margin-left: 1vh;
+ padding-left : 1vh;
     font-weight: 600;
     line-height: 5vw;
-    width: 70%;
 }
 
 .readmore {
@@ -355,4 +371,34 @@ a img {
         height: 15vh;
 
     }
+}
+
+@media only screen and (min-width : 901px) {
+    body {
+        font-size: 16px;
+        width : 60vw;
+    }
+    
+    .onglet {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+    
+    .title-article {
+
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left:0;
+    font-weight: 400;
+    line-height: 2vw;
+}
+
+    .title-section {
+    display: none;
+}
+
+    
 }
