@@ -5,7 +5,9 @@
 }
 
 body {
+    margin: auto;
     font-size: 13px;
+    width: 100vw;
     font-family: "Open Sans", sans-serif;
     color: #414040;
 }
@@ -31,10 +33,6 @@ XS  min-width = 0
 */
 
 
-.navbar-toggler-icon {
-    color: black;
-}
-
 #onglets {
     display: flex;
     padding: 5px 0;
@@ -45,26 +43,30 @@ XS  min-width = 0
     color: black;
 }
 
+#navbar class-items p {
+    color: #000;
+}
+
 #navbar {
     height: 10vh;
     display: flex;
     padding-bottom: 5px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
 }
 
 h1 {
     font-family: "Crimson text";
-    font-size: 13vw;
+    font-size: 3em;
     padding: 0;
     margin: 0;
     margin-top: 2vw;
     text-align: center;
+    color: #414040;
 }
 
 h2 {
     color: #e56100;
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 1em;
     padding-bottom: 0.1vw;
     font-weight: 200;
     letter-spacing: 1px;
@@ -73,7 +75,7 @@ h2 {
 
 h4 {
     color: #959596;
-    font-size: 4vw;
+    font-size: 0.95em;
     text-align: center;
     margin: 2px;
     padding: 3px;
@@ -81,22 +83,26 @@ h4 {
     font-weight: 300;
 }
 
+.title-section {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+    margin: 1vh 0 2vh 0;
+}
+
 .onglet {
-    font-size: 3.5vw;
+    font-size: 0.85em;
     text-transform: uppercase;
     padding: 0;
     margin: 0;
 }
 
-.title-section {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
-    margin: 1vh 0 2vh 0;
-    font-size: 3.5vw;
+.main-content {
+    margin: 0;
+    padding: 0;
 }
 
 .carrousel {
-    width: 100vw;
     height: 40vh;
+    margin: 0;
     background-image: url(/assets/maindog.jpg);
     background-size: cover;
     position: relative;
@@ -108,47 +114,63 @@ h4 {
     padding: 2vw;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.6);
-    width: 100%;
     bottom: 0;
     right: 0;
+    width: 100%;
     height: 15vw;
     text-align: right;
 }
 
-#title-ban {
+.title-ban {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 5vw;
+    font-size: 1.1em;
+    padding: 0;
     margin: 0;
+}
+.other-figure {
+    display: none;
+}
+
+.featured {
+    margin: 0;
+    padding: 0;
 }
 
 .article {
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
     padding: 0;
+    margin-left: 0 !important;
     margin-bottom: 1vh;
-    margin-left: 1vw;
     position: relative;
+
 }
 
 .article-img {
     background-size: cover;
     background-repeat: no-repeat;
     height: 15vh;
+    margin: 0;
 }
 
 .text-article {
     padding: 0;
+    margin: 0;
 }
 
 .title-article {
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 1em;
     margin-top: 3vw;
     margin-bottom: 3vw;
-    margin-left: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
     font-weight: 600;
     line-height: 5vw;
-    width: 70%;
+}
+
+.start-article {
+    display: none;
 }
 
 .readmore {
@@ -162,11 +184,14 @@ h4 {
 .readmore a {
     text-transform: uppercase;
     color: #f46700;
-    font-size: 3.2vw;
+    font-size: 0.8em;
 }
 
 .f1 {
     background-image: url(/assets/dognature.jpeg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 .f2 {
@@ -189,85 +214,6 @@ h4 {
     background-image: url(/assets/threedogs.jpeg);
 }
 
-@media only screen and (min-width : 415px) and (max-width : 900px) {
-
-    #navbar {
-        height: 10vh;
-        display: flex;
-        padding-bottom: 5px;
-        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-    }
-
-    #onglets {
-        padding: 10px 0;
-    }
-
-    h1 {
-        font-size: 9vw;
-    }
-
-    h2 {
-        font-size: 2.5vw;
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
-
-    h4 {
-        font-size: 0.8em;
-        margin: 5px;
-        letter-spacing: 1.5px;
-    }
-
-    .onglet {
-        font-size: 2.5vw;
-    }
-
-    .title-section {
-        font-size: 3.5vw;
-    }
-
-    .banniere {
-        padding: 1.5vw;
-        padding-right: 4vw;
-        height: 10vw;
-    }
-
-    #title-ban {
-        font-weight: 400;
-        font-size: 3.5vw;
-    }
-
-    .article {
-        margin-bottom: 2vh;
-        margin-left: 4.5vw;
-    }
-
-    .article-img {
-        height: 15vh;
-    }
-
-    .title-article p {
-        font-size: 2.6vw;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
-        font-weight: 400;
-        line-height: 4vw;
-    }
-
-    .readmore {
-        text-align: right;
-        align-content: space-between;
-        position: absolute;
-        right: 10px;
-        bottom: 2px;
-    }
-
-    .readmore a {
-        text-transform: uppercase;
-        color: #f46700;
-        font-size: 2vw;
-    }
-}
 
 
 /* FOOTER CSS BELOW */
@@ -276,44 +222,55 @@ h4 {
     padding: 0 !important;
 }
 
-.container-fluid .row {
-    background-color: #464646;
-    font-size: 12px
+.container-fluid .col {
+    font-size: 0.9em;
+    letter-spacing: 1px;
 }
 
-#titleCategories {
-    padding-top: 1vh;
+.footer-up {
     margin: 0;
+    padding: 0;
+}
+
+#titleCategories p,
+#instagram p {
+    margin: 0;
+    padding: 1vh;
+    color: #959595;
+    font-size: 1.1em;
 }
 
 #allCategories {
+    margin: 0;
     padding: 0.2vh 1vh;
 }
 
 #allCategories a {
     text-align: center;
-    letter-spacing: 1px;
-    margin: 0.6vh;
-}
-
-#titleCategories p,
-#instagram p {
     margin: auto;
-    color: #959595;
-}
-
-#instagram {
-    margin: 0;
-    padding: 1vh 0;
+    padding: 0;
+    padding-bottom: 1vh;
+    font-size: 1.2em;
+    font-weight: 100;
 }
 
 #instaPictures {
-    padding-bottom: 7px;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 2vh;
+    margin: 0;
+    width: 100vw;
 }
 
-#instaPictures a {
-    text-align: center;
-    padding-bottom: 1vh;
+#instaPictures a {}
+
+.col-footer p {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: #414040;
 }
 
 footer a {
@@ -326,7 +283,17 @@ a img {
     height: 9vh;
 }
 
+#instagram {
+    padding: 0;
+    margin: 0;
+}
+
+.thumbnail-md {
+    display: none;
+}
+
 #social {
+    margin: 0;
     background-color: #323232;
     height: 8vh;
     justify-content: space-around;
@@ -342,5 +309,226 @@ a img {
 }
 
 #social ion-icon {
-    font-size: 2em;  
+    font-size: 2em;
+}
+
+/*---- TABLET md -----*/
+
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    body {
+        font-size: 14px;
+        width: 95vw;
+    }
+
+    #navbar {
+        height: 10vh;
+        display: flex;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    }
+
+    #onglets {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    h4 {
+        font-size: 0.9em;
+        margin: 5px;
+        letter-spacing: 1.5px;
+    }
+
+    .onglet {
+        font-size: 1.2em;
+    }
+
+    .title-section {
+        font-size: 1.6em;
+    }
+
+    .banniere {
+        padding: 1.5vw;
+        padding-right: 4vw;
+        height: 10vw;
+    }
+
+    .title-ban {
+        padding: 0;
+        font-weight: 400;
+        font-size: 1.6em;
+    }
+
+    .article {
+        margin-bottom: 2vh;
+        margin-left: 4.5vw;
+    }
+
+    .article-img {
+      height: 16vh;
+    }
+
+    .title-article {
+        font-size: 1.4em;
+        font-weight: 400;
+        line-height: 4vw;
+        margin-bottom: 0;
+    }
+
+    .start-article {
+        display: block;
+        font-size: 1.4em;
+        padding-left: 1vh;
+        font-weight: 200;
+    }
+
+    .readmore {
+        text-align: right;
+        align-content: space-between;
+        position: absolute;
+        right: 10px;
+        bottom: 2px;
+    }
+
+    .readmore a {
+        text-transform: uppercase;
+        color: #f46700;
+        font-size: 1em;
+    }
+
+    .footer-up {
+        padding-top: 1vh;
+
+    }
+
+    #titleCategories {
+        margin-left: 1vh;
+    }
+
+    #allCategories {}
+
+    #allCategories a {
+        text-align: left;
+        text-transform: uppercase;
+        padding-left: 1vh;
+        padding-top: 1vh;
+        padding-bottom: 3vh;
+        font-size: 1em;
+    }
+
+    #instagram {
+        margin-left: 3vh;
+    }
+
+    #instaPictures {
+        padding-right: 1vh;
+    }
+
+
+    #instaPictures a {
+        padding: 1vh;
+        height: 150px;
+    }
+
+    #instaPictures img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .thumbnail-md {
+        display: block;
+        height: auto;
+    }
+
+
+    #social {
+        margin: 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #social a {
+        background-color: #464646;
+        text-align: center;
+        color: white;
+        padding: 1vh;
+        border-radius: 50%;
+    }
+
+    #social ion-icon {
+        font-size: 4em;
+    }
+
+
+}
+
+
+/*---- DESKTOP lg-----*/
+
+@media only screen and (min-width : 992px) {
+    body {
+        font-size: 16px;
+        width: 60vw;
+    }
+
+    .onglet {
+        font-size: 0.7em;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
+
+    .title-article {
+
+        font-size: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        font-weight: 400;
+        line-height: 2vw;
+    }
+
+    .title-section {
+        display: none;
+    }
+    .other-figure {
+        display: block;
+        margin: 0;
+        padding:0;
+    }
+    
+    .aside-article {
+        margin: 0;
+        padding:0;
+    }
+    
+    .asideOne {
+        margin: 0;
+        padding:0;
+        padding-left: 1vh;
+    }
+    
+    .aside-img {
+        margin: 0;
+        padding:0;
+        padding-bottom: 1vh;
+    }
+     .aside-title {
+        margin: 0;
+        padding:0;
+    }
+    .other-figure img {
+        padding: 0;
+        margin: 0;
+    }
 }
