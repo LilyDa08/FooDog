@@ -8,7 +8,7 @@ body {
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
     color: #414040;
-
+    width: 100vw;
 }
 
 .loupe {
@@ -71,6 +71,10 @@ h3 {
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
 }
 
+form {
+    padding-right: 0;
+}
+
 /*
 .category {
     padding-top: 5px;
@@ -90,9 +94,9 @@ main {
 
 article {
     border-bottom: solid 1px rgba(128, 128, 128, 0.1);
-    margin: 2vh 0 !important;
+    margin: 2vh  !important;
     padding-bottom: 1vh;
-    width: 100vw;
+    width: 90vw !important;
 }
 
 .article-img img {
@@ -164,44 +168,55 @@ figure {
     padding: 0 !important;
 }
 
-footer .row {
-    background-color: #464646;
-    font-size: 12px
+.container-fluid .col {
+    font-size: 0.9em;
+    letter-spacing: 1px;
 }
 
-#titleCategories {
-    padding-top: 1vh;
+.footer-up {
     margin: 0;
+    padding: 0;
+}
+
+#titleCategories p,
+#instagram p {
+    margin: 0;
+    padding: 1vh;
+    color: #959595;
+    font-size: 1.1em;
 }
 
 #allCategories {
+    margin: 0;
     padding: 0.2vh 1vh;
 }
 
 #allCategories a {
     text-align: center;
-    letter-spacing: 1px;
-    margin: 0.8vh;
-}
-
-#titleCategories p,
-#instagram p {
     margin: auto;
-    color: #959595;
-}
-
-#instagram {
-    margin: 0;
-    padding: 1vh 0;
+    padding: 0;
+    padding-bottom: 1vh;
+    font-size: 1.2em;
+    font-weight: 100;
 }
 
 #instaPictures {
-    padding-bottom: 7px;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 2vh;
+    margin: 0;
+    width: 100vw;
 }
 
-#instaPictures a {
-    text-align: center;
-    padding-bottom: 1vh;
+#instaPictures a {}
+
+.col-footer p {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: #414040;
 }
 
 footer a {
@@ -214,12 +229,21 @@ a img {
     height: 9vh;
 }
 
+#instagram {
+    padding: 0;
+    margin: 0;
+}
+
+.thumbnail-md {
+    display: none;
+}
+
 #social {
+    margin: 0;
     background-color: #323232;
     height: 8vh;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
 }
 
 #social a {
@@ -231,5 +255,5 @@ a img {
 }
 
 #social ion-icon {
-    font-size: 2em;  
+    font-size: 2em;
 }
