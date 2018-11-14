@@ -74,18 +74,15 @@ h2 {
 }
 
 h4 {
-    color: #959596;
-    font-size: 0.95em;
-    text-align: center;
-    margin: 2px;
-    padding: 3px;
-    letter-spacing: 1px;
-    font-weight: 300;
-}
-
-.title-section {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
-    margin: 1vh 0 2vh 0;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    color: #414040;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 1vh;
+    font-weight: 600;
 }
 
 .onglet {
@@ -98,12 +95,15 @@ h4 {
 .main-content {
     margin: 0;
     padding: 0;
+    padding-top: 1vh;
+    border-top: 2px solid #f7f7f7;
 }
 
 .carrousel {
     margin: 0;
     position: relative;
     padding: 0;
+
 }
 
 figure img {
@@ -136,25 +136,48 @@ figure img {
     display: none;
 }
 
-.featured {
+.title-section {
+    margin: 3vh 0 2vh 0;
+    padding-top: 1vh;
+    border-top: 3px solid #f7f7f7;
+    position: relative;
+}
+
+.featured,
+.latest {
+    margin: 0;
+    padding: 0;
+}
+
+.latest-row {
     margin: 0;
     padding: 0;
 }
 
 .article {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    border-bottom: 1px solid #f7f7f7;
     padding: 0;
+    margin: 0;
     margin-left: 0 !important;
-    margin-bottom: 1vh;
+    margin-top: 2vw;
     position: relative;
-
+    height: auto;
 }
 
 .article-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vh;
+    padding: 0;
     margin: 0;
+    padding-right: 2vw;
+}
+
+.article-img img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.cat-article {
+    display: none;
 }
 
 .text-article {
@@ -167,7 +190,6 @@ figure img {
     font-size: 1em;
     margin-top: 3vw;
     margin-bottom: 3vw;
-    padding-left: 1vh;
     padding-right: 1vh;
     font-weight: 600;
     line-height: 5vw;
@@ -177,6 +199,9 @@ figure img {
     display: none;
 }
 
+.share-btn {
+    display: none;
+}
 .readmore {
     text-align: right;
     align-content: space-between;
@@ -190,31 +215,6 @@ figure img {
     color: #f46700;
     font-size: 0.8em;
 }
-
-.f1 {
-    background-image: url(../../assets/dognature.jpeg);
-}
-
-.f2 {
-    background-image: url(../../assets/dogEat.jpg);
-}
-
-.f3 {
-    background-image: url(../../assets/skinnydog.jpeg);
-}
-
-.l1 {
-    background-image: url(../../assets/beach-dog.jpg);
-}
-
-.l2 {
-    background-image: url(../../assets/chihuahua.jpeg);
-}
-
-.l3 {
-    background-image: url(../../assets/threedogs.jpeg);
-}
-
 
 
 /* FOOTER CSS BELOW */
@@ -313,7 +313,9 @@ a img {
     font-size: 2em;
 }
 
-/*---- TABLET md -----*/
+/*----
+----------   TABLET md --------
+-----*/
 
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -326,7 +328,6 @@ a img {
         height: 10vh;
         display: flex;
         padding-bottom: 5px;
-        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
     }
 
     #onglets {
@@ -344,17 +345,16 @@ a img {
     }
 
     h4 {
+        top: -2.5vh;
         font-size: 0.9em;
-        margin: 5px;
         letter-spacing: 1.5px;
+        margin-left: 4vh;
+        padding: 1vh;
+        font-weight: 600;
     }
 
     .onglet {
         font-size: 1.2em;
-    }
-
-    .title-section {
-        font-size: 1.6em;
     }
 
     .banniere {
@@ -368,6 +368,8 @@ a img {
         font-weight: 400;
         font-size: 1.6em;
     }
+
+    .title-section {}
 
     .article {
         margin-bottom: 2vh;
@@ -443,14 +445,12 @@ a img {
     #instaPictures img {
         width: 100%;
         height: 100%;
-
     }
 
     .thumbnail-md {
         display: block;
         height: auto;
     }
-
 
     #social {
         margin: 0;
@@ -472,73 +472,62 @@ a img {
 }
 
 
-/*---- DESKTOP lg-----*/
+/*----
+-------------- DESKTOP lg -----------
+--------*/
 
 @media only screen and (min-width : 992px) {
     body {
         font-size: 16px;
         width: 60vw;
     }
-
-
+    
+    #navbar {
+    height: 15vh;
+    display: flex;
+    padding-top: 5vh;
+        margin-bottom: 1vh;
+}
+    .navbar-toggler {
+        display: none;
+    }
+    .form-inline {
+        display: none;
+    }
+    
     h1 {
-        font-family: "Crimson text";
-        font-size: 3em;
-        padding: 0;
+        font-size: 2.5em;
         margin: 0;
-        margin-top: 2vw;
-        text-align: center;
-        color: #414040;
+        padding: 0;
     }
 
     h2 {
-        color: #e56100;
-        text-transform: uppercase;
         font-size: 0.5em;
-        padding-bottom: 0.1vw;
-        font-weight: 200;
-        letter-spacing: 1px;
-        margin: 0;
+        letter-spacing: 0;
+        font-weight: 600;
+        color: #f46700;
     }
 
     h4 {
-        color: #959596;
-        font-size: 0.95em;
-        text-align: center;
-        margin: 2px;
-        padding: 3px;
-        letter-spacing: 1px;
-        font-weight: 300;
+        top: -12px;
+        text-align: left;
+        padding-left: 0;
+        font-size: 0.5em;
     }
 
-    #onglet {
-        width: 50%;
-    }
+    #onglets {}
 
     .onglet {
         font-size: 0.6em;
         text-transform: uppercase;
         padding: 0;
         margin: 0;
+        padding-bottom: 1vh;
     }
-
-    .title-article {
-        font-size: 1em;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 0;
-        font-weight: 400;
-        line-height: 2vw;
-    }
-
-    .title-section h4 {
-     text-align: left;
-    }
-
 
     .main-content {
         margin-bottom: 5vh;
-        
+        padding-top: 2vh;
     }
 
     .carrousel {
@@ -575,60 +564,104 @@ a img {
     .aside-article {
         margin: 0;
         padding: 0;
+        padding-left: 1vh;
     }
 
     .asideOne {
         margin: 0;
         padding: 0;
-        padding-left: 1vh;
+        padding-left: 2.5vh;
     }
 
     .aside-img {
         margin: 0;
         padding: 0;
-        padding-bottom: 1vh;
     }
 
     .aside-title {
+        text-transform: uppercase;
         margin: 0;
-        padding: 0;
-        line-height: 100%;
-        font-size: 0.8em;
-        font-weight: 200;
+        font-size: 0.6em;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+        padding: 1vh 0;
     }
 
     .other-figure img {
         padding: 0;
         margin: 0;
     }
-    
+    .featured {
+        margin-bottom: 4vw;
+    }
     .article {
-        margin-bottom: 2vh;
         margin-left: 4.5vw;
     }
 
     .article-img {
-        height: 16vh;
+        height: auto;
+    }
+
+    .cat-article {
+        display: flex;
+        border-right: 3px solid #f7f7f7;
+        padding: 0;
+        margin: 1vw 0;
+    }
+    .latest-row .text-article {
+        text-align: center;
+    }
+    .latest-row img {
+        padding-bottom: 1vw;
+    }
+    
+    .cat-first, .cat-second {
+        color: #f46700;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        font-size: 0.5em;
+        font-weight: 600;
     }
 
     .title-article {
-        font-size: 0.8em;
+        font-size: 0.7em;
         font-weight: 600;
         line-height: 140%;
-        margin-bottom: 2vh;
-        padding-left: 3vh;
+        margin: 0;
+        margin-left: 0;
+        padding: 1vh 0;
+     
     }
 
     .start-article {
         display: block;
-        font-size: 1em;
-        padding-left: 3vh;
+        font-size: 0.7em;
         font-weight: 200;
-        line-height: 110%;
+    }
+    
+.share-btn {
+    display: flex;
+    color: #959595;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 0.6em;
+}
+    .share-btn ion-icon {
+        border: 1px solid #959595;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 1em;
+        color: black;
     }
 
     .readmore {
         display: none;
     }
- 
+
+    .thumbnail-md {
+        display: block;
+        height: auto;
+    }
+
 }
