@@ -131,6 +131,7 @@ figure img {
     padding: 0;
     margin: 0;
 }
+
 .other-figure {
     display: none;
 }
@@ -192,9 +193,6 @@ figure img {
 
 .f1 {
     background-image: url(../../assets/dognature.jpeg);
-    background-size: cover;
-    margin: 0;
-    padding: 0;
 }
 
 .f2 {
@@ -377,7 +375,7 @@ a img {
     }
 
     .article-img {
-      height: 16vh;
+        height: 16vh;
     }
 
     .title-article {
@@ -471,8 +469,6 @@ a img {
     #social ion-icon {
         font-size: 4em;
     }
-
-
 }
 
 
@@ -484,15 +480,49 @@ a img {
         width: 60vw;
     }
 
+
+    h1 {
+        font-family: "Crimson text";
+        font-size: 3em;
+        padding: 0;
+        margin: 0;
+        margin-top: 2vw;
+        text-align: center;
+        color: #414040;
+    }
+
+    h2 {
+        color: #e56100;
+        text-transform: uppercase;
+        font-size: 0.5em;
+        padding-bottom: 0.1vw;
+        font-weight: 200;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+
+    h4 {
+        color: #959596;
+        font-size: 0.95em;
+        text-align: center;
+        margin: 2px;
+        padding: 3px;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+
+    #onglet {
+        width: 50%;
+    }
+
     .onglet {
-        font-size: 0.7em;
+        font-size: 0.6em;
         text-transform: uppercase;
         padding: 0;
         margin: 0;
     }
 
     .title-article {
-
         font-size: 1em;
         margin-top: 0;
         margin-bottom: 0;
@@ -501,37 +531,104 @@ a img {
         line-height: 2vw;
     }
 
-    .title-section {
-        display: none;
+    .title-section h4 {
+     text-align: left;
     }
+
+
+    .main-content {
+        margin-bottom: 5vh;
+        
+    }
+
+    .carrousel {
+        height: auto;
+    }
+
+    figure img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+
+    .banniere {
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        height: auto;
+    }
+
+    .title-ban {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+    }
+
     .other-figure {
         display: block;
         margin: 0;
-        padding:0;
+        padding: 0;
     }
-    
+
     .aside-article {
         margin: 0;
-        padding:0;
+        padding: 0;
     }
-    
+
     .asideOne {
         margin: 0;
-        padding:0;
+        padding: 0;
         padding-left: 1vh;
     }
-    
+
     .aside-img {
         margin: 0;
-        padding:0;
+        padding: 0;
         padding-bottom: 1vh;
     }
-     .aside-title {
+
+    .aside-title {
         margin: 0;
-        padding:0;
+        padding: 0;
+        line-height: 100%;
+        font-size: 0.8em;
+        font-weight: 200;
     }
+
     .other-figure img {
         padding: 0;
         margin: 0;
     }
+    
+    .article {
+        margin-bottom: 2vh;
+        margin-left: 4.5vw;
+    }
+
+    .article-img {
+        height: 16vh;
+    }
+
+    .title-article {
+        font-size: 0.8em;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 2vh;
+        padding-left: 3vh;
+    }
+
+    .start-article {
+        display: block;
+        font-size: 1em;
+        padding-left: 3vh;
+        font-weight: 200;
+        line-height: 110%;
+    }
+
+    .readmore {
+        display: none;
+    }
+ 
 }
