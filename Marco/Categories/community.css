@@ -8,6 +8,7 @@ body {
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
     color: #414040;
+
 }
 
 .loupe {
@@ -218,6 +219,7 @@ a img {
     height: 8vh;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
 }
 
 #social a {
