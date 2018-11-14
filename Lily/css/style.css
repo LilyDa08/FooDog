@@ -102,6 +102,11 @@ h4 {
 
 .carrousel {
     margin: 0;
+<<<<<<< HEAD
+=======
+    background-image: url(../../assets/maindog.jpg);
+    background-size: cover;
+>>>>>>> marco2
     position: relative;
     padding: 0;
 }
