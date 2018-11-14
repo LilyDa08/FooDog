@@ -101,12 +101,17 @@ h4 {
 }
 
 .carrousel {
-    height: 40vh;
     margin: 0;
     background-image: url(../../assets/maindog.jpg);
     background-size: cover;
     position: relative;
     padding: 0;
+}
+
+figure img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .banniere {
