@@ -101,12 +101,15 @@ h4 {
 }
 
 .carrousel {
-    height: 40vh;
     margin: 0;
-    background-image: url(/assets/maindog.jpg);
-    background-size: cover;
     position: relative;
     padding: 0;
+}
+
+figure img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .banniere {
@@ -188,30 +191,30 @@ h4 {
 }
 
 .f1 {
-    background-image: url(/assets/dognature.jpeg);
+    background-image: url(../../assets/dognature.jpeg);
     background-size: cover;
     margin: 0;
     padding: 0;
 }
 
 .f2 {
-    background-image: url(/assets/dogEat.jpg);
+    background-image: url(../../assets/dogEat.jpg);
 }
 
 .f3 {
-    background-image: url(/assets/skinnydog.jpeg);
+    background-image: url(../../assets/skinnydog.jpeg);
 }
 
 .l1 {
-    background-image: url(/assets/beach-dog.jpg);
+    background-image: url(../../assets/beach-dog.jpg);
 }
 
 .l2 {
-    background-image: url(/assets/chihuahua.jpeg);
+    background-image: url(../../assets/chihuahua.jpeg);
 }
 
 .l3 {
-    background-image: url(/assets/threedogs.jpeg);
+    background-image: url(../../assets/threedogs.jpeg);
 }
 
 
