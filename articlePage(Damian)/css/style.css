@@ -73,7 +73,7 @@ h6 small {
 }
 
 figure {
-    background-image: url(/assets/goodboy.jpg);
+    background-image: url(../../assets/goodboy.jpg);
     width: 100vw;
     height: 40vh;
     background-size: cover;
