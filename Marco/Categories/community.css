@@ -115,6 +115,19 @@ article {
 figure {
     margin-bottom: 3px;
     padding: 0;
+    margin: auto;
+}
+
+.articles {
+    margin: 0 auto
+}
+
+.categoryArticle {
+    margin: 0;
+    display: none;
+    text-transform: uppercase;
+    color: #f3654c;
+    
 }
 
 .titleArticle {
@@ -125,6 +138,10 @@ figure {
     margin-left: 1vh;
     font-weight: 600;
     line-height: 6vw;
+}
+
+.previewArticle {
+    display: none;
 }
 
 .readmore {
@@ -239,8 +256,8 @@ footer a {
 }
 
 a img {
-    width: 9vh;
-    height: 9vh;
+    width: 6vh;
+    height: 6vh;
 }
 
 #instagram {
@@ -271,4 +288,97 @@ a img {
 
 #social ion-icon {
     font-size: 2em;
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    
+    body {
+        font-size: 14px;
+    }
+
+    /*HEADER-NAV CSS*/
+    nav {
+        width: 100vw;
+        background-color: white;
+        position: fixed;
+        z-index: 20;
+    }
+
+    .navbar-toggler ion-icon {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 3em;
+        padding-top: 20px;
+    }
+
+    .form-inline {
+        padding: 20px 20px 20px 3.2em;
+        text-align: center;
+        width: 150px;
+    }
+
+    .btn-default {
+        font-size: 1.8em;
+    }
+
+    /*MAIN CSS*/
+    main {
+        width: 90vw;
+        margin: auto;
+        padding-top: 10vh !important;
+    }
+
+    main .col-md {
+        margin-left: 0 !important;
+    }
+
+    h2 {
+        width: 90vw;
+        font-size: 2em;
+        padding-top: 2.2vw;
+    }
+
+    .article-img img {
+        height: 200px;
+    }
+
+    .categoryArticle {
+        margin: 0;
+        display: initial;
+    }
+
+    .titleArticle {
+        text-transform: uppercase;
+        font-size: 19px;
+        margin: 0;
+        line-height: 4vw;
+    }
+
+    .previewArticle {
+        font-size: 19px;
+        display: initial;
+    }
+
+    .readmore {
+        bottom: 0;
+    }
+
+    .readmore a {
+        font-size: 2.5vw;
+    }
+
+    .btn-circle {
+        font-size: 19px;
+    }
+
+    /*FOOTER CSS*/
+    footer {
+        width: 100vw;
+    }
+
+    
 }
