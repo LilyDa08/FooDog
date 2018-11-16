@@ -219,7 +219,7 @@ figure {
     padding: 0;
     padding-bottom: 1vh;
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 100;
 }
 
 #instaPictures {
@@ -577,13 +577,7 @@ a img {
     .readmore {
         display: none;
     }
-    
-    .btn-circle {
-        font-size: 15px;
-        width: 4vw;
-        height: 4vw;
-        padding: 1.4vw 0vw;
-    }
+
     /*FOOTER CSS BELOW*/
     
     footer .col-footer {

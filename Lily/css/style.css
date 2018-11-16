@@ -97,6 +97,11 @@ h4 {
 
 .carrousel {
     margin: 0;
+<<<<<<< HEAD
+=======
+    background-image: url(../../assets/maindog.jpg);
+    background-size: cover;
+>>>>>>> marco2
     position: relative;
     padding: 0;
 
@@ -442,6 +447,7 @@ a img {
 
     footer .col-footer {
         padding: 0;
+<<<<<<< HEAD
     }
 
     .footer-title {
@@ -453,6 +459,19 @@ a img {
         font-size: 0.8em;
     }
 
+=======
+    }
+
+    .footer-title {
+        margin: 0;
+        padding: 0;
+        padding-top: 3.5vh;
+        padding-left: 1vw;
+        padding-bottom: 0.5vw;
+        font-size: 0.8em;
+    }
+
+>>>>>>> 34c62715c1138ea5a0acbfe59ed75147514478f6
     #allCategories {
         padding: 0;
         margin: 0;
@@ -491,11 +510,19 @@ a img {
         height: 100%;
         width: auto;
     }
+<<<<<<< HEAD
 
     .f-article {
         padding: 0;
     }
 
+=======
+
+    .f-article {
+        padding: 0;
+    }
+
+>>>>>>> 34c62715c1138ea5a0acbfe59ed75147514478f6
     footer .aside-title {
         padding: 0;
         margin: 0;
@@ -534,12 +561,21 @@ a img {
     #social {
 
         height: 5vh;
+<<<<<<< HEAD
     }
 
     .social-links {
         right: 16vw;
     }
 
+=======
+    }
+
+    .social-links {
+        right: 16vw;
+    }
+
+>>>>>>> 34c62715c1138ea5a0acbfe59ed75147514478f6
     #social a {
         margin-right: 0;
     }
