@@ -503,21 +503,79 @@ a img {
     nav {
         width: 100vw;
         background-color: white;
-        position: fixed;
+        position: fixed ;
         z-index: 20;
     }
 
     h1 {
-        font-size: 4vw;
+        font-size: 4.5em;
     }
 
     .navbar-toggler {
         display: none;
     }
 
+    /*MAIN CSS BELOW*/
+
     h2 {
-        width: 100vw;
+        width:70%;
+        font-size: 1.3em;
+        letter-spacing: 0;
+        font-weight: 100;
         color: black;
+    }
+
+    main {
+        width: 40%;
+        margin-right: 0;
+        padding-top: 10vh !important
+    }
+
+    figure {
+        width: 60%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .article-img img {
+        height: 70%;
+        width: 80%;
+    }
+
+    article {
+        border-bottom: solid 2px rgba(128, 128, 128, 0.1);
+        margin: 2vh 0 2vh 20% !important;
+        padding-bottom: 1vh;
+        width: 90vw !important;
+    }
+
+    .articles {
+        margin-left: 0;
+        padding-left: 0;
+        width: 70% !important;
+    }
+
+    .categoryArticle {
+        display: initial;
+    }
+
+    .titleArticle {
+        text-transform: uppercase;
+        font-size: 1vw;
+        margin-top: 0.5vw;
+        margin-left: 0vh;
+        margin-bottom: 0.5vh;
+        font-weight: 600;
+        line-height: 1vw;
+    }     
+
+    .previewArticle {
+        display: initial;
+        line-height: 1vw;
+    }
+
+    .readmore {
+        display: none;
     }
 
     /*FOOTER CSS BELOW*/
