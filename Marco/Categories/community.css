@@ -328,7 +328,7 @@ a img {
     /*MAIN CSS*/
     main {
         width: 90vw;
-        margin: auto;
+        margin: 0;
         padding-top: 10vh !important;
     }
 
@@ -376,9 +376,116 @@ a img {
     }
 
     /*FOOTER CSS*/
-    footer {
-        width: 100vw;
+    
+    footer .col-footer {
+        padding: 0;
     }
 
-    
+    .footer-title {
+        margin: 0;
+        padding: 0;
+        padding-top: 3.5vh;
+        padding-left: 1vw;
+        padding-bottom: 0.5vw;
+        font-size: 0.8em;
+    }
+
+    #allCategories {
+        padding: 0;
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    #allCategories a {
+        margin: 0;
+        text-align: left;
+        font-size: 0.8em;
+        border-bottom: 1px solid #4d4d4d;
+        padding: 1.2vh 0;
+    }
+
+    .f-AllAside {
+        display: block;
+    }
+
+    .f-aside {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.5vh;
+        padding-right: 2vh;
+    }
+
+    .f-aside .aside-img {
+        padding: 0;
+        margin: 0;
+        height: 50px;
+    }
+
+    .f-aside img {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: auto;
+    }
+
+    .f-article {
+        padding: 0;
+    }
+
+    footer .aside-title {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-weight: 200;
+        text-transform: capitalize;
+        font-size: 0.8em;
+    }
+
+    .thumbnail-md {
+        display: block;
+        height: auto;
+    }
+
+    #instaPictures a {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    #instaPictures a img {
+        padding: 0;
+        margin: 0;
+        height: 60px;
+        width: 100%;
+    }
+
+    #social ion-icon {
+        background-color: #3A3E43;
+        height: 2vh;
+        width: 2vh;
+        padding: 1vh;
+        border-radius: 50%;
+    }
+
+    #social {
+
+        height: 5vh;
+    }
+
+    .social-links {
+        right: 16vw;
+    }
+
+    #social a {
+        margin-right: 0;
+    }
+
+    #social ion-icon {
+        height: 2vh;
+        width: 2vh;
+        padding: 0.5vh;
+        border-radius: 50%;
+    }
+}
 }
