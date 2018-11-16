@@ -690,6 +690,10 @@ a img {
         padding: 0;
         margin: 1vw 0;
     }
+    
+     .cat-article p {
+       padding-right: 5px;
+    }
 
     .latest-row .text-article {
         text-align: center;
