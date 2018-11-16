@@ -126,8 +126,9 @@ figure {
     margin: 0;
     display: none;
     text-transform: uppercase;
-    color: #f3654c;
-    
+    color: #f3654c; 
+    border-right: solid 2px #cecdcd;  
+    padding-right: 9px;
 }
 
 .titleArticle {
@@ -195,28 +196,16 @@ figure {
     padding: 0 !important;
 }
 
-.container-fluid .col {
-    font-size: 0.9em;
-    letter-spacing: 1px;
-}
-
 .footer-up {
     margin: 0;
     padding: 0;
 }
 
-#titleCategories p {
-    padding-top: 1vh;
-    padding-bottom: 0;
-    color: #a3a3a3;
+.footer-title {
+    margin: 0;
+    padding: 1vh;
+    color: #959595;
     font-size: 1.1em;
-}
-
-#instagram p {
-    padding: 0vh 0vw 0vh 5vw;
-    color: #a3a3a3;
-    font-size: 1.1em;
-
 }
 
 #allCategories {
@@ -228,9 +217,9 @@ figure {
     text-align: center;
     margin: auto;
     padding: 0;
-    padding-bottom: 0.5vh;
+    padding-bottom: 1vh;
     font-size: 1.2em;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 #instaPictures {
@@ -247,7 +236,7 @@ figure {
 }
 
 footer {
-    background-color: #414040;
+    background-color: #3A3E43;
 }
 
 footer a {
@@ -256,8 +245,12 @@ footer a {
 }
 
 a img {
-    width: 6vh;
-    height: 6vh;
+    width: 9vh;
+    height: 9vh;
+}
+
+.f-AllAside {
+    display: none;
 }
 
 #instagram {
@@ -269,26 +262,35 @@ a img {
     display: none;
 }
 
+#social ion-icon {
+    background-color: #3A3E43;
+    height: 2vh;
+    width: 2vh;
+    padding: 1vh;
+    border-radius: 50%;
+}
+
 #social {
+    background-color: #303336;
+    position: relative;
     margin: 0;
-    background-color: #323232;
-    height: 8vh;
-    justify-content: space-around;
+    padding: 0;
     align-items: center;
+    height: 6vh;
+}
+
+.social-links {
+    position: absolute;
+    right: 2vw;
 }
 
 #social a {
-    background-color: #464646;
     text-align: center;
-    color: white;
-    padding: 1vh;
-    border-radius: 50%;
-    height: 42px;
+    padding: 1vh 0;
+    align-items: center;
+    margin-right: 2vh;
 }
 
-#social ion-icon {
-    font-size: 2em;
-}
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
     
@@ -373,6 +375,9 @@ a img {
 
     .btn-circle {
         font-size: 19px;
+        width: 6vw;
+        height: 6vw;
+        padding: 1.4vw 0vw;
     }
 
     /*FOOTER CSS*/
@@ -402,6 +407,7 @@ a img {
         font-size: 0.8em;
         border-bottom: 1px solid #4d4d4d;
         padding: 1.2vh 0;
+        font-weight: bold;
     }
 
     .f-AllAside {
@@ -434,10 +440,10 @@ a img {
     }
 
     footer .aside-title {
-        padding: 0;
+        padding: 0 0 0 15px;
         margin: 0;
         color: white;
-        font-weight: 200;
+        font-weight: bold;
         text-transform: capitalize;
         font-size: 0.8em;
     }
@@ -448,9 +454,8 @@ a img {
     }
 
     #instaPictures a {
-        padding: 0;
-        margin: 0;
-        margin-bottom: 10px;
+        padding: 0 3px 0 3px;
+        margin: 0 0 5px 0 !important;
     }
 
     #instaPictures a img {
@@ -488,4 +493,143 @@ a img {
         border-radius: 50%;
     }
 }
+
+@media only screen and (min-width : 992px) {
+
+    body {
+        font-size: 12px; 
+    }
+
+    nav {
+        width: 100vw;
+        background-color: white;
+        position: fixed;
+        z-index: 20;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    h2 {
+        width: 100vw;
+        color: black;
+    }
+
+    /*FOOTER CSS BELOW*/
+    
+    footer .col-footer {
+        padding: 0;
+    }
+
+    .footer-title {
+        margin: 0;
+        padding: 0;
+        padding-top: 3.5vh;
+        padding-left: 1vw;
+        padding-bottom: 0.5vw;
+        font-size: 0.8em;
+    }
+
+    #allCategories {
+        padding: 0;
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    #allCategories a {
+        margin: 0;
+        text-align: left;
+        font-size: 0.8em;
+        border-bottom: 1px solid #4d4d4d;
+        padding: 1.2vh 0;
+        font-weight: bold;
+    }
+
+    .f-AllAside {
+        display: block;
+    }
+
+    .f-aside {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.5vh;
+        padding-right: 2vh;
+    }
+
+    .f-aside .aside-img {
+        padding: 0;
+        margin: 0;
+        height: 50px;
+    }
+
+    .f-aside img {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: auto;
+    }
+
+    .f-article {
+        padding: 0;
+    }
+
+    footer .aside-title {
+        padding: 0 0 0 15px;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 0.8em;
+    }
+
+    .thumbnail-md {
+        display: block;
+        height: auto;
+    }
+
+    #instaPictures a {
+        padding: 0 3px 0 3px;
+        margin: 0 0 5px 0 !important;
+    }
+
+    #instaPictures a img {
+        padding: 0;
+        margin: 0;
+        height: 60px;
+        width: 100%;
+    }
+
+    #social ion-icon {
+        background-color: #3A3E43;
+        height: 2vh;
+        width: 2vh;
+        padding: 1vh;
+        border-radius: 50%;
+    }
+
+    #social {
+
+        height: 5vh;
+    }
+
+    .social-links {
+        right: 16vw;
+    }
+
+    #social a {
+        margin-right: 0;
+    }
+
+    #social ion-icon {
+        height: 2vh;
+        width: 2vh;
+        padding: 0.5vh;
+        border-radius: 50%;
+    }
 }
