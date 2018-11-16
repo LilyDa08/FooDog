@@ -26,6 +26,11 @@ h1 {
     text-align: center;
 }
 
+.row {
+    padding: 0;
+    margin: 0;
+}
+
 h2 {
     text-transform: uppercase;
     color: #e56100;
@@ -39,9 +44,8 @@ h2 {
 }
 
 h3 {
-    font-weight: 600;
     font-size: 5vw;
-    color: #959595;
+    color: #3A3E43;
     width: 95vw;
     margin: auto;
     font-weight: 400;
@@ -49,11 +53,6 @@ h3 {
     text-transform: uppercase;
 }
 
-h4 {
-    font-size: 0.95em;
-    font-weight: 600;
-    text-transform: uppercase;
-}
 
 h5 {
     text-transform: uppercase;
@@ -67,6 +66,8 @@ h6 small {
 }
 
 #articleTitle {
+    font-size: 0.95em;
+    font-weight: 600;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -85,18 +86,11 @@ figure {
 
 header {
     margin: 0 !important;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(101, 101, 101, 0.3);
     height: 7vh;
-    align-items: center
+    align-items: center;
 }
 
-#headerTitle {
-    font-family: "Crimson text";
-    font-size: 2em;
-    text-align: right;
-    margin: 0;
-    padding: 0;
-}
 
 #mailDigest1 {
     font-size: 0.9em;
@@ -113,7 +107,7 @@ header {
     display: none;
 }
 
-.mailBtn1 {
+header .mailBtn1 {
     height: 70%;
     margin: 0;
     background-color: black;
@@ -220,7 +214,7 @@ header {
     font-weight: 200;
     text-transform: uppercase;
     font-size: 1em;
-    border-radius: 0;
+    border-radius: 3px;
     margin: 0.5vh auto;
     padding: 1vh;
 }
@@ -360,47 +354,49 @@ header {
 
 .container-fluid {
     padding: 0 !important;
-
 }
 
-footer .row {
-    background-color: #464646;
-    font-size: 1em;
-}
-
-#titleCategories {
-    padding-top: 1vh;
+.footer-up {
     margin: 0;
+    padding: 0;
+}
+
+.footer-title {
+    margin: 0;
+    padding: 1vh;
+    color: #959595;
+    font-size: 1.1em;
 }
 
 #allCategories {
+    margin: 0;
     padding: 0.2vh 1vh;
 }
 
 #allCategories a {
     text-align: center;
-    letter-spacing: 1px;
-    margin: 0.6vh;
-}
-
-#titleCategories p,
-#instagram p {
     margin: auto;
-    color: #959595;
-}
-
-#instagram {
-    margin: 0;
-    padding: 1vh 0;
+    padding: 0;
+    padding-bottom: 1vh;
+    font-size: 1.2em;
+    font-weight: 100;
 }
 
 #instaPictures {
-    padding-bottom: 7px;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 2vh;
+    margin: 0;
+    width: 100vw;
 }
 
-#instaPictures a {
-    text-align: center;
-    padding-bottom: 1vh;
+.col-footer p {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: #3A3E43;
 }
 
 footer a {
@@ -413,90 +409,482 @@ a img {
     height: 9vh;
 }
 
-#social {
-    background-color: #323232;
-    height: 8vh;
-    justify-content: space-around;
-    align-items: center;
+.f-AllAside {
+    display: none;
 }
 
-#social a {
-    background-color: #464646;
-    text-align: center;
-    color: white;
+#instagram {
+    padding: 0;
+    margin: 0;
+}
+
+.thumbnail-md {
+    display: none;
+}
+
+#social ion-icon {
+    background-color: #3A3E43;
+    height: 2vh;
+    width: 2vh;
     padding: 1vh;
     border-radius: 50%;
 }
 
-#social ion-icon {
-    font-size: 2em;
+#social {
+    background-color: #303336;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 6vh;
 }
 
-@media only screen and (min-width : 415px) {
+.social-links {
+    position: absolute;
+    right: 2vw;
+}
+
+#social a {
+    text-align: center;
+    padding: 1vh 0;
+    align-items: center;
+    margin-right: 2vh;
+}
+
+/*----- 
+--------TABLETS-------- 
+------*/
+
+@media only screen and (min-width : 768px) {
 
     body {
-        font-size: 16px;
+        font-size: 14px;
+        width: 100vw;
     }
 
-    h1 {
-        font-size: 3em;
-    }
-
-    h2 {
-        font-size: 1.2em;
-        font-weight: 400;
-        letter-spacing: 1px;
-    }
-
-    h4 {
-        font-size: 0.9em;
-        margin: 5px;
-        letter-spacing: 1.5px;
+    .all-page {
+        width: 85vw;
+        margin: auto;
     }
 
 
-    .article {
-        margin-bottom: 2vh;
-        margin-left: 4.5vw;
+    footer {
+        position: relative;
     }
 
-    .article-img {
-        height: 15vh;
+    footer .col-footer {
+        padding: 0;
     }
 
-    .title-article {
-        font-size: 1.4em;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
-        font-weight: 400;
-        line-height: 4vw;
+    .footer-title {
+        margin: 0;
+        padding: 0;
+        padding-top: 3.5vh;
+        padding-left: 1vw;
+        padding-bottom: 0.5vw;
+        font-size: 0.8em;
     }
 
-    .readmore {
-        text-align: right;
-        align-content: space-between;
-        position: absolute;
-        right: 10px;
-        bottom: 2px;
-    }
-
-    .readmore a {
-        text-transform: uppercase;
-        color: #f46700;
-        font-size: 1em;
+    #allCategories {
+        padding: 0;
+        margin: 0;
+        margin-right: 30px;
     }
 
     #allCategories a {
-        text-align: center;
+        margin: 0;
+        text-align: left;
+        font-size: 0.8em;
+        border-bottom: 1px solid #4d4d4d;
+        padding: 1.2vh 0;
+    }
+
+    .f-AllAside {
+        display: block;
+    }
+
+    .f-aside {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.5vh;
+        padding-right: 2vh;
+    }
+
+    .f-aside .aside-img {
+        padding: 0;
+        margin: 0;
+        height: 50px;
+    }
+
+    .f-aside img {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: auto;
+    }
+
+    .f-article {
+        padding: 0;
+    }
+
+    footer .aside-title {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-weight: 200;
+        text-transform: capitalize;
+        font-size: 0.8em;
+    }
+
+    .thumbnail-md {
+        display: block;
+        height: auto;
+    }
+
+    #instaPictures a {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    #instaPictures a img {
+        padding: 0;
+        margin: 0;
+        height: 60px;
+        width: 100%;
+    }
+
+    #social ion-icon {
+        background-color: #3A3E43;
+        height: 2vh;
+        width: 2vh;
+        padding: 1vh;
+        border-radius: 50%;
+    }
+
+    #social {
+
+        height: 5vh;
+    }
+
+    .social-links {
+        right: 16vw;
+    }
+
+    #social a {
+        margin-right: 0;
+    }
+
+    #social ion-icon {
+        height: 2vh;
+        width: 2vh;
+        padding: 0.5vh;
+        border-radius: 50%;
+    }
+}
+
+
+/*----
+------- DESKTOP --------
+----*/
+
+@media only screen and (min-width : 992px) {
+
+    body {
+        font-size: 16px;
+        width: 100vw;
+    }
+
+    .all-page {
+        width: 50vw;
         margin: auto;
+    }
+
+
+    /* Header */
+
+    h1 {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    h2 {
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 0.5vw;
+        letter-spacing: inherit;
+        font-weight: 600;
+
+    }
+
+    h3 {
+        font-size: 1.2vw;
+        width: 100%;
+        font-weight: bolder;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    h5 {}
+
+    h6 small {}
+
+    figure {}
+
+    header {
+        height: 30px;
+    }
+
+    #headerTitle {}
+
+    #mailDigest1 {
+        font-size: 0.5em;
+    }
+
+    #dkpForm {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+         height: 15px;
+        font-size: 0.35em;
+        padding-left: 5px;
+        text-transform: uppercase;
+    }
+
+    header .mailBtn1 {
+        height: 15px;
+        font-size: 0.4em;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .mailBtn1 {}
+
+    /* Table (author & share) */
+
+    #articleSource {}
+
+    #articleAuthor {}
+
+    #articleAuthor img {}
+
+    #authorName1 {}
+
+    #authorName1 p {}
+
+    #articleShare1 {}
+
+    #share1 {}
+
+    #articleShare1 ion-icon {}
+
+    #comment {}
+
+    /* Article */
+
+    #article {
+        margin: 0;
+        padding: 0;
+        text-align: inherit;
+    }
+
+    .articleTexts {
+        font-size: 0.9vw;
+        line-height: 1.2vw;
+    }
+
+    .articleTitles {
+        font-size: 0.9vw;
+        font-weight: bolder;
+        line-height: 1.2vw;
+    }
+
+    /* Table after */
+
+    .sectionShare {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .btnSocial {
+        margin: 0;
+        margin-bottom: 35px;
+        padding: 0;
+        align-items: center;
+    }
+
+    .btnSocial p {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 0.4em;
+        text-align: right;
+    }
+
+
+
+    .btnSocial .btn {
+        margin: 0;
+        padding: 0;
+        height: 15px;
+        font-size: 0.3em;
+        margin-left: 1vw;
+    }
+
+    .btnSocial ion-icon {
         font-size: 1.5em;
-        font-weight: 100;
+        margin-right: 0.2vw;
     }
 
-    a img {
-        width: 15vh;
-        height: 15vh;
 
+
+    .btn {}
+
+    .btn-comment {}
+
+    .btn-share {}
+
+    .btn-tweet {}
+
+    .btn-pin {}
+
+    .secondMail .subscribe {
+        font-size: 0.8em;
+        font-weight: 600;
     }
 
+    .text-subscribe {
+        font-size: 0.4em;
+    }
+
+
+    #mail2 {
+        padding: 0;
+        margin: 0;
+        height: 20px;
+    }
+
+    #mailForm2 {
+        font-size: 0.4em;
+        padding: 0;
+        padding-left: 5px;
+        border-radius: 0;
+    }
+
+    .mailBtn2 {
+        padding: 0;
+        margin: 0;
+        height: 20px;
+        font-size: 0.4em;
+        border-radius: 0;
+    }
+
+    /*    Previous article */
+
+    .previousArticle {
+        margin: 5px 0;
+        padding: 0;
+        border-right: 1px solid #e6e6e6;
+    }
+
+    .previousArticle h6 {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 15px;
+        font-size: 0.6em;
+    }
+
+    .previousArticle div {
+        margin: 0;
+        padding: 0;
+        padding-right: 10px;
+        padding-bottom: 15px
+    }
+
+    .previousArticle h5 {
+        margin: 0;
+        padding: 0;
+        font-size: 0.4em;
+        font-weight: bolder;
+    }
+
+    #previousArrow {}
+
+    /* Author bio */
+
+    #presentationSite {}
+
+    #firstTD {}
+
+    #farmerImg {}
+
+    #secondTD {}
+
+    #siteName {}
+
+    #siteText {}
+
+    /* Recommended */
+
+    #recommended {}
+
+    .recommendArticle {}
+
+    #alsoLike {}
+
+    .recomTitle {}
+
+    .recomImg img {}
+
+    /* Form */
+
+    #response {}
+
+
+    .footer-title {
+        font-size: 0.7vw;
+    }
+
+    #allCategories a {
+        font-size: 0.7vw;
+        padding: 12px 0;
+    }
+
+    .f-aside {
+        margin-bottom: 15px;
+        padding-right: 20px;
+    }
+
+
+    .f-aside .aside-img {
+        height: 40px;
+    }
+
+    footer .aside-title {
+        text-transform: capitalize;
+        font-size: 0.7vw;
+    }
+
+    #instaPictures a img {
+        height: 60px;
+        width: 65px;
+    }
+
+
+    .social-links {
+        right: 18vw;
+    }
+
+    #social ion-icon {
+        height: 13px;
+        width: 13px;
+        padding: 10px;
+    }
 }
