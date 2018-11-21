@@ -32,7 +32,6 @@ XS  min-width = 0
   (min-width: 1200px) 
 */
 
-
 #onglets {
     display: flex;
     padding: 5px 0;
@@ -40,6 +39,7 @@ XS  min-width = 0
 }
 
 .loupe {
+    font-size: 5em;
     color: black;
 }
 
@@ -47,6 +47,9 @@ XS  min-width = 0
     height: 10vh;
     display: flex;
     padding-bottom: 5px;
+}
+.menu {
+
 }
 
 h1 {
