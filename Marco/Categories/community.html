@@ -18,45 +18,53 @@
 <body>
 
     <!--  NAVBAR -->
-    <nav id="navbar">
-        <button class="navbar-toggler col-3" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <ion-icon name="menu"></ion-icon>
-        </button>
-
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nutrition</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Wellness</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">LifeStyle</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Community</a>
-                </li>
-            </ul>
-        </div>
-
-        <h1 class=" col-6 offset-lg-5 col-lg-2">FooDog</h1>        
-
-        <form class="form-inline col-3 offset-lg-3 col-lg-2" action="/action_page.php">
-            <!--    <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
-            <button class="btn btn-default" type="submit">
-                <ion-icon class="loupe" name="search"></ion-icon>
+    <nav id="navbar container-fluid">
+        <section class="headerTop row">
+            <button class="navbar-toggler col-3" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <ion-icon name="menu"></ion-icon>
             </button>
-        </form>
 
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nutrition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wellness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LifeStyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h1 class=" col-6 offset-lg-5 col-lg-2">FooDog</h1>
+
+            <form class="form-inline col-3 offset-lg-3 col-lg-2" action="/action_page.php">
+                <button class="btn btn-default" type="button">
+                    <ion-icon class="loupe" name="search"></ion-icon>
+                </button>
+            </form>
+        </section>
+        <section class="headerBottom row">
+            <div class="offset-lg-4 col-lg-1 headerCat"> <p>Nutrition</p> </div> 
+            <div class="col-lg-1 headerCat"> <p>Wellness</p> </div> 
+            <div class="col-lg-1 headerCat"> <p>Lifestyle</p> </div> 
+            <div class="col-lg-1 headerCat"> <p>Comunity</p> </div> 
+        </section>
     </nav>
 
-    
+
 
     <!--  MAIN CONTENT-->
     <main class="container">
-        <h2>community</h2>
+        <section class="h2title col-lg-12">
+            <h2>community</h2>
+        </section>
         <article class="row article col-lg-6 ">
             <figure class="offset-xs-1 col-10 article-img centered col-md-4">
                 <img src="../../assets/dog4small.png" alt="">
@@ -64,12 +72,17 @@
             <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
                 <p class="titleArticle">cooking for your dog? watch out for these nutrient deficiences</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music taste...</p>
+                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
+                    taste...</p>
+                <div class="row share-btn">
+                    <ion-icon name="share-alt"></ion-icon>
+                    share
+                </div>
                 <div class="readmore">
                     <a href="#">Read more...</a>
                 </div>
             </div>
-        </article> 
+        </article>
         <article class="row article col-lg-6 ">
             <figure class="offset-xs-1 col-10 article-img centered col-md-4">
                 <img src="../../assets/dog1small.png" alt="">
@@ -77,10 +90,16 @@
             <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
                 <p class="titleArticle">Random title for the second article, hi bob</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music taste...</p>
-                <div class="readmore">
-                    <a href="#">Read more...</a>
+                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
+                    taste...</p>
+                <div class="row share-btn">
+                    <ion-icon name="share-alt"></ion-icon>
+                    share
                 </div>
+            </div>
+            <div class="readmore">
+                <a href="#">Read more...</a>
+            </div>
             </div>
         </article>
         <article class=" row article col-lg-6 ">
@@ -90,7 +109,12 @@
             <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
                 <p class="titleArticle">Random title for the second article, how's it going bob</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music taste...</p>
+                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
+                    taste...</p>
+                <div class="row share-btn">
+                    <ion-icon name="share-alt"></ion-icon>
+                    share
+                </div>
                 <div class="readmore">
                     <a href="#">Read more...</a>
                 </div>
@@ -103,7 +127,12 @@
             <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
                 <p class="titleArticle">Random title for the second article, bob please answer the phone</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music taste...</p>
+                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
+                    taste...</p>
+                <div class="row share-btn">
+                    <ion-icon name="share-alt"></ion-icon>
+                    share
+                </div>
                 <div class="readmore">
                     <a href="#">Read more...</a>
                 </div>
@@ -116,7 +145,12 @@
             <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
                 <p class="titleArticle">Random title for the second article, you can't hide bob i can see you</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music taste...</p>
+                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
+                    taste...</p>
+                <div class="row share-btn">
+                    <ion-icon name="share-alt"></ion-icon>
+                    share
+                </div>
                 <div class="readmore">
                     <a href="#">Read more...</a>
                 </div>
@@ -129,7 +163,12 @@
             <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
                 <p class="titleArticle">Random title for the second article, la vispa teresa oeva fra l'erbetta</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music taste...</p>
+                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
+                    taste...</p>
+                <div class="row share-btn">
+                    <ion-icon name="share-alt"></ion-icon>
+                    share
+                </div>
                 <div class="readmore">
                     <a href="#">Read more...</a>
                 </div>
@@ -142,7 +181,12 @@
             <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
                 <p class="titleArticle">Random title for the second article, nel mezzo di cammin di nostra vita</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music taste...</p>
+                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
+                    taste...</p>
+                <div class="row share-btn">
+                    <ion-icon name="share-alt"></ion-icon>
+                    share
+                </div>
                 <div class="readmore">
                     <a href="#">Read more...</a>
                 </div>
@@ -155,7 +199,12 @@
             <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
                 <p class="titleArticle">cooking for your dog? watch out for these nutrient deficiences</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music taste...</p>
+                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
+                    taste...</p>
+                <div class="row share-btn">
+                    <ion-icon name="share-alt"></ion-icon>
+                    share
+                </div>
                 <div class="readmore">
                     <a href="#">Read more...</a>
                 </div>
@@ -181,70 +230,79 @@
 
     <footer class="container-fluid">
         <div class="row footer-up">
-          <div class="col-footer col-12 offset-md-1 offset-lg-2 col-md-3" id="titleCategories">
-            <p class="footer-title">CATEGORIES</p>
-            <div class="row" id="allCategories">
-              <a class="col-4 col-md-12" href="#">Community</a>
-              <a class="col-4 col-md-12" href="#">Featured</a>
-              <a class="col-4 col-md-12" href="#">Lifestyle</a>
-              <a class="col-4 col-md-12" href="#">Nutrition</a>
-              <a class="col-4 col-md-12" href="#">Wellness</a>
-            </div>
-          </div>
-    
-          <div class="col-footer f-AllAside col-md-3 col-lg-2">
-            <p class="footer-title col-lmd-12">POPULAR POSTS</p>
-            <div class="f-article col-md-12">
-              <a class="row f-aside col-md-12">
-                <div class="aside-img col-12 col-md-4">
-                  <img class="col-12" src="../../assets/3.png">
+            <div class="col-footer col-12 offset-md-1 offset-lg-2 col-md-3" id="titleCategories">
+                <p class="footer-title">CATEGORIES</p>
+                <div class="row" id="allCategories">
+                    <a class="col-4 col-md-12" href="#">Community</a>
+                    <a class="col-4 col-md-12" href="#">Featured</a>
+                    <a class="col-4 col-md-12" href="#">Lifestyle</a>
+                    <a class="col-4 col-md-12" href="#">Nutrition</a>
+                    <a class="col-4 col-md-12" href="#">Wellness</a>
                 </div>
-                <p class="aside-title col-12 col-md-8">5 reasons your dog is vomiting</p>
-              </a>
-              <a class="row f-aside">
-                <div class="aside-img col-12 col-md-4">
-                  <img class="col-12" src="../../assets/2.png">
-                </div>
-                <p class="aside-title col-12 col-md-8">sed do eiusmod tempor labore</p>
-              </a>
-    
-              <a class="row f-aside">
-                <div class="aside-img col-12 col-md-4">
-                  <img class="col-12" src="../../assets/4.png">
-                </div>
-                <p class="aside-title col-12 col-md-8"> aliqua Ut enim ad minim veniam quis</p>
-              </a>
             </div>
-          </div>
-    
-          <div class="col-footer col-12 col-md-3" id="instagram">
-            <p class="footer-title">INSTAGRAM</p>
-            <div class="row col-md-12" id="instaPictures">
-              <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../../assets/dog1small.png" alt="dog1"> </a>
-              <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../../assets/dog2small.png" alt="dog2"> </a>
-              <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../../assets/dog3small.png" alt="dog3"> </a>
-              <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../../assets/dog4small.png" alt="dog4"> </a>
-              <a class="col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../../assets/dog4small.png" alt="dog4"> </a>
-              <a class="col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../../assets/dog4small.png" alt="dog4"> </a>
-              <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../../assets/dog1small.png" alt="dog1"> </a>
-              <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../../assets/dog2small.png" alt="dog2"> </a>
-              <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../../assets/dog3small.png" alt="dog3"> </a>
+
+            <div class="col-footer f-AllAside col-md-3 col-lg-2">
+                <p class="footer-title col-lmd-12">POPULAR POSTS</p>
+                <div class="f-article col-md-12">
+                    <a class="row f-aside col-md-12">
+                        <div class="aside-img col-12 col-md-4">
+                            <img class="col-12" src="../../assets/3.png">
+                        </div>
+                        <p class="aside-title col-12 col-md-8">5 reasons your dog is vomiting</p>
+                    </a>
+                    <a class="row f-aside">
+                        <div class="aside-img col-12 col-md-4">
+                            <img class="col-12" src="../../assets/2.png">
+                        </div>
+                        <p class="aside-title col-12 col-md-8">sed do eiusmod tempor labore</p>
+                    </a>
+
+                    <a class="row f-aside">
+                        <div class="aside-img col-12 col-md-4">
+                            <img class="col-12" src="../../assets/4.png">
+                        </div>
+                        <p class="aside-title col-12 col-md-8"> aliqua Ut enim ad minim veniam quis</p>
+                    </a>
+                </div>
             </div>
-          </div>
+
+            <div class="col-footer col-12 col-md-3" id="instagram">
+                <p class="footer-title">INSTAGRAM</p>
+                <div class="row col-md-12" id="instaPictures">
+                    <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../../assets/dog1small.png"
+                            alt="dog1"> </a>
+                    <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../../assets/dog2small.png"
+                            alt="dog2"> </a>
+                    <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../../assets/dog3small.png"
+                            alt="dog3"> </a>
+                    <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../../assets/dog4small.png"
+                            alt="dog4"> </a>
+                    <a class="col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../../assets/dog4small.png"
+                            alt="dog4"> </a>
+                    <a class="col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../../assets/dog4small.png"
+                            alt="dog4"> </a>
+                    <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../../assets/dog1small.png"
+                            alt="dog1"> </a>
+                    <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../../assets/dog2small.png"
+                            alt="dog2"> </a>
+                    <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../../assets/dog3small.png"
+                            alt="dog3"> </a>
+                </div>
+            </div>
         </div>
         <div class="row col-12" id="social">
-          <div class="social-links">
-          <a href="https://www.facebook.com/">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-    
-          <a href="https://twitter.com/">
-            <ion-icon name="logo-twitter"> </ion-icon>
-          </a>
-    
-          <a href="https://www.instagram.com/">
-            <ion-icon name="logo-instagram"> </ion-icon>
-          </a>
+            <div class="social-links">
+                <a href="https://www.facebook.com/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+
+                <a href="https://twitter.com/">
+                    <ion-icon name="logo-twitter"> </ion-icon>
+                </a>
+
+                <a href="https://www.instagram.com/">
+                    <ion-icon name="logo-instagram"> </ion-icon>
+                </a>
             </div>
         </div>
     </footer>

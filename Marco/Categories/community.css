@@ -29,6 +29,10 @@ body {
     padding: 1.25rem;
 }
 
+.headerBottom {
+    display: none;
+}
+
 h1 {
     font-family: "Crimson text";
     font-size: 13vw;
@@ -38,6 +42,9 @@ h1 {
     text-align: center;
 }
 
+.h2title {
+    padding: 0;
+}
 
 h2 {
     text-transform: uppercase;
@@ -142,6 +149,10 @@ figure {
 }
 
 .previewArticle {
+    display: none;
+}
+
+.share-btn {
     display: none;
 }
 
@@ -505,10 +516,23 @@ a img {
         background-color: white;
         position: fixed ;
         z-index: 20;
+        border-bottom: 2px solid #F5F5F5;
+    }
+
+    .headerBottom {
+        display: flex;
+    }
+
+    .headerCat {
+        text-transform: uppercase;
+        
+        font-weight: 200;
+        font-size: 13px; 
     }
 
     h1 {
-        font-size: 4.5em;
+        margin-top: 0;
+        font-size: 3em;
     }
 
     .navbar-toggler {
@@ -518,7 +542,7 @@ a img {
     /*MAIN CSS BELOW*/
 
     h2 {
-        width:70%;
+        width:100%;
         font-size: 1.3em;
         letter-spacing: 0;
         font-weight: 100;
@@ -528,18 +552,17 @@ a img {
     main {
         width: 40%;
         margin-right: 0;
-        padding-top: 10vh !important
+        padding-top: 13vh !important
     }
 
     figure {
-        width: 60%;
         margin-right: 0;
-        padding-right: 0;
+        padding: 0 !important;
     }
 
     .article-img img {
-        height: 70%;
-        width: 80%;
+        height: 80%;
+        width: 90%;
     }
 
     article {
@@ -552,7 +575,7 @@ a img {
     .articles {
         margin-left: 0;
         padding-left: 0;
-        width: 70% !important;
+        padding-right: 57px;
     }
 
     .categoryArticle {
@@ -566,12 +589,32 @@ a img {
         margin-left: 0vh;
         margin-bottom: 0.5vh;
         font-weight: 600;
-        line-height: 1vw;
+        line-height: 13px;
     }     
 
     .previewArticle {
         display: initial;
-        line-height: 1vw;
+        line-height: 13px;
+    }
+
+    .share-btn {
+        display: flex;
+        align-items: center;
+        color: #959595;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 0.6em;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+
+    .share-btn ion-icon {
+        border: 1px solid #959595;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 1.5em;
+        color: black;
+        margin-right: 7px;
     }
 
     .readmore {
@@ -580,9 +623,9 @@ a img {
     
     .btn-circle {
         font-size: 15px;
-        width: 4vw;
-        height: 4vw;
-        padding: 1.4vw 0vw;
+        width: 2.5vw;
+        height: 2.5vw;
+
     }
     /*FOOTER CSS BELOW*/
     
@@ -644,7 +687,7 @@ a img {
     }
 
     footer .aside-title {
-        padding: 0 0 0 15px;
+        padding: 0 0 0 10px;
         margin: 0;
         color: white;
         font-weight: bold;
@@ -658,8 +701,8 @@ a img {
     }
 
     #instaPictures a {
-        padding: 0 3px 0 3px;
-        margin: 0 0 5px 0 !important;
+        padding: 0 2px 0 1px;
+        margin: 0 0 4px 0 !important;
     }
 
     #instaPictures a img {
