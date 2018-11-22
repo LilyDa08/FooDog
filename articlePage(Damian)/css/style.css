@@ -482,14 +482,20 @@ a img {
     margin-right: 2vh;
 }
 
-/*----
----------------------------- DESKTOP --------------------------
-----*/
+/*----- 
+------------------------  TABLETS  ---------------- 
+------*/
 
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 768px) {
+
+    body {
+        font-size: 16px;
+        width: 100vw;
+    }
 
     .all-page {
-        width: 65vw;
+        width: 90vw;
+        margin: auto;
     }
 
     #articleShare1 a {
@@ -1013,6 +1019,10 @@ a img {
 
 }
 
+/*----
+------- DESKTOP --------
+----*/
+
 @media only screen and (min-width : 992px) {
 
     body {
@@ -1021,30 +1031,194 @@ a img {
     }
 
     .all-page {
-        width: 50vw;
+        width: 65vw;
         margin: auto;
     }
 
+    #articleShare1 a {
+        display: flex;
+    }
 
-    /* Header */
+    /* Table (author & share) */
+    #articleSource {
+        height: 40px;
+        margin: 20px 0;
+    }
 
+    #articleAuthor {
+        margin: 0;
+        padding: 1vh 0 1vh 1vh;
+        align-items: center;
+    }
+
+    #authorImage1 {
+    
+    }
+
+    #authorName1 h4 {
+        font-size: 0.6em;
+    }
+
+    #articleShare1 {
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+
+    #share1 {
+        text-decoration: none;
+        color: #434343;
+        text-transform: uppercase;
+        font-size: 0.5em;
+    }
+
+    #comment {
+        font-weight: 100;
+        font-size: 0.5em;
+    }
+
+    #comment ion-icon {}
+
+    .btn-fac1 {
+        background-color: #3b5998;
+        color: white !important;
+        border-radius: 50%;
+        margin: 0;
+        padding: 3px;
+        text-align: center;
+    }
+
+    .btn-tweet1 {
+        background-color: #55acee;
+        color: white !important;
+        border-radius: 50%;
+        margin: 0;
+        padding: 3px;
+    }
+
+    .btn-pin1 {
+        background-color: #cb2027;
+        color: white !important;
+        border-radius: 50%;
+        margin: 0;
+        padding: 3px;
+    }
+
+    .advertisement {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 70px;
+        display: block;
+    }
+
+    .advertisement ion-icon {
+        color: white;
+        background-color: #5F5F5F;
+        font-size: 0.6em;
+        padding: 3px;
+        border-radius: 50%;
+    }
+
+    .addIcon {
+        margin: 0;
+        padding: 0 70px;
+        align-items: center;
+
+    }
+
+    .advertisement a {
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        align-items: center;
+    }
+
+    .addFollow {
+        text-transform: uppercase;
+        font-size: 0.4em;
+        color: #919191;
+        margin: 0;
+        padding: 0;
+    }
+
+    .imgBtn {
+        position: relative;
+        margin: 15px 0;
+    }
+
+    .advertisement button {
+        position: absolute;
+        bottom: -4%;
+        right: 33%;
+        width: 34%;
+        margin: 0;
+        padding: 4px;
+        background-color: #FF8D6A;
+        font-weight: 600;
+        border: none;
+        color: white;
+        font-size: 0.4em;
+        text-transform: uppercase;
+    }
+
+    .addDog {
+        width: 70%;
+    }
+
+    .addLast {
+        margin: 20px 0;
+        padding: 0;
+        height: 40px;
+    }
+
+    .addLogo {
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    .addText {
+        line-height: 100%;
+        font-size: 0.6em;
+        margin: 0;
+        padding: 0;
+    }
+
+    #addTitle {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #919191;
+        font-size: 0.7em;
+        width: 71%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #addStar {
+        margin: 0;
+        padding: 0;
+        color: #a1a1a1;
+        font-size: 0.5em;
+        width: 71%;
+    }
+
+    /*  */
     h1 {
-        font-size: 1.1em;
+        font-size: 1.2em;
         margin: 0;
         padding: 0;
         text-align: left;
     }
 
     h2 {
-        background-color: rgba(255, 255, 255, 0);
-        font-size: 0.5vw;
-        letter-spacing: inherit;
-        font-weight: 600;
 
+        font-size: 0.7em;
+        letter-spacing: inherit;
+        font-weight: 200;
     }
 
     h3 {
-        font-size: 1.2vw;
+        font-size: 1.6vw;
         width: 100%;
         font-weight: bolder;
         margin-bottom: 15px;
@@ -1054,20 +1228,12 @@ a img {
         font-size: 1em;
     }
 
-    h5 {}
-
-    h6 small {}
-
-    figure {}
-
     header {
-        height: 30px;
+        height: 40px;
     }
 
-    #headerTitle {}
-
     #mailDigest1 {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 
     #dkpForm {
@@ -1075,38 +1241,21 @@ a img {
         padding: 0;
         margin: 0;
         border-radius: 0;
-        height: 15px;
-        font-size: 0.35em;
+        height: 20px;
+        font-size: 0.5em;
         padding-left: 5px;
         text-transform: uppercase;
     }
 
     header .mailBtn1 {
-        height: 15px;
-        font-size: 0.4em;
+        height: 20px;
+        font-size: 0.5em;
         padding: 0;
         border-radius: 0;
     }
 
     .mailBtn1 {}
 
-    /* Table (author & share) */
-
-    #articleSource {}
-
-    #articleAuthor {}
-
-    #articleAuthor img {}
-
-    #authorName1 {}
-
-    #articleShare1 {}
-
-    #share1 {}
-
-    #articleShare1 ion-icon {}
-
-    #comment {}
 
     /* Article */
 
@@ -1117,14 +1266,58 @@ a img {
     }
 
     .articleTexts {
-        font-size: 0.9vw;
-        line-height: 1.2vw;
+        font-size: 0.7em;
+        line-height: 120%;
     }
 
     .articleTitles {
-        font-size: 0.9vw;
+        font-size: 0.8em;
         font-weight: bolder;
-        line-height: 1.2vw;
+        line-height: 1;
+    }
+
+    /*    Previous article */
+
+    .previousArticle {
+        padding: 2vh;
+        border-bottom: 1px solid #f5f5f5;
+        align-items: center
+    }
+
+    #firstTD {
+        padding: 0;
+        margin: 0;
+    }
+
+    #farmerImg {
+        height: auto;
+    }
+
+    #secondTD {
+        width: 40%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #siteName {
+        padding: 0;
+        margin: 0;
+        font-weight: 800;
+        padding-bottom: 10px;
+        font-size: 0.8em;
+    }
+
+    #siteText {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        font-size: 0.7em;
+    }
+
+    .recomTitle {
+        padding-top: 5px;
+        line-height: 100%;
+        font-size: 0.5em;
     }
 
     /* Table after */
@@ -1163,16 +1356,6 @@ a img {
         margin-right: 0.2vw;
     }
 
-    .btn {}
-
-    .btn-comment {}
-
-    .btn-share {}
-
-    .btn-tweet {}
-
-    .btn-pin {}
-
     .secondMail .subscribe {
         font-size: 0.8em;
         font-weight: 600;
@@ -1209,7 +1392,7 @@ a img {
     .previousArticle {
         margin: 5px 0;
         padding: 0;
-        border-right: 1px solid #e6e6e6;
+        border-right: 1px solid #f5f5f5;
     }
 
     .previousArticle h6 {
@@ -1233,78 +1416,142 @@ a img {
         font-weight: bolder;
     }
 
-    #previousArrow {}
-
-    /* Author bio */
-
-    #presentationSite {}
-
-    #firstTD {}
-
-    #farmerImg {}
-
-    #secondTD {}
-
-    #siteName {}
-
-    #siteText {}
 
     /* Recommended */
 
-    #recommended {}
+    #recommended {
+        border-top: 1px solid rgb(239, 239, 239);
+        padding: 2vh 1.5vh;
+        margin: 0;
+    }
 
-    .recommendArticle {}
+    #alsoLike {
+        text-transform: uppercase;
+        font-size: 0.6em;
+    }
 
-    #alsoLike {}
 
-    .recomTitle {}
-
-    .recomImg img {}
-
+    .recomImg img {
+        width: 95%;
+    }
 
     /* Form */
 
-    #response {}
+    #response {
+        padding-top: 2vh;
+        font-size: 0.6em;
+    }
 
-    /* ------ FOOTER --------- */
+
+    /*  */
+    /* -- footer -- */
+
+    footer {
+        position: relative;
+    }
+
+    footer .col-footer {
+        padding: 0;
+    }
+
     .footer-title {
-        font-size: 0.7vw;
+        margin: 0;
+        padding: 0;
+        padding-top: 3.5vh;
+        padding-left: 1vw;
+        padding-bottom: 0.5vw;
+        font-size: 0.8em;
+    }
+
+    #allCategories {
+        padding: 0;
+        margin: 0;
+        margin-right: 30px;
     }
 
     #allCategories a {
-        font-size: 0.7vw;
-        padding: 12px 0;
+        margin: 0;
+        text-align: left;
+        font-size: 0.8em;
+        border-bottom: 1px solid #4d4d4d;
+        padding: 1.2vh 0;
+    }
+
+    .f-AllAside {
+        display: block;
     }
 
     .f-aside {
-        margin-bottom: 15px;
-        padding-right: 20px;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.5vh;
+        padding-right: 2vh;
     }
 
-
     .f-aside .aside-img {
-        height: 40px;
+        padding: 0;
+        margin: 0;
+        height: 50px;
+    }
+
+    .f-aside img {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: auto;
+    }
+
+    .f-article {
+        padding: 0;
     }
 
     footer .aside-title {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-weight: 200;
         text-transform: capitalize;
-        font-size: 0.7vw;
+        font-size: 0.8em;
+    }
+
+    .thumbnail-md {
+        display: block;
+        height: auto;
+    }
+
+    #instaPictures a {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
     }
 
     #instaPictures a img {
+        padding: 0;
+        margin: 0;
         height: 60px;
-        width: 65px;
-    }
-
-
-    .social-links {
-        right: 18vw;
+        width: 100%;
     }
 
     #social ion-icon {
-        height: 13px;
-        width: 13px;
-        padding: 10px;
+        background-color: #3A3E43;
+        height: 2vh;
+        width: 2vh;
+        padding: 1vh;
+        border-radius: 50%;
     }
-}
 
+    #social {
+
+        height: 5vh;
+    }
+
+    .social-links {
+        right: 16vw;
+    }
+
+    #social a {
+        margin-right: 0;
+    }
+
+}
