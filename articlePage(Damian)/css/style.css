@@ -65,25 +65,6 @@ h6 small {
     font-size: 0.5em;
 }
 
-#articleTitle {
-    font-size: 0.8em;
-    font-weight: 600;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-figure {
-    background-image: url(../../assets/goodboy.jpg);
-    width: 100vw;
-    height: 40vh;
-    background-size: cover;
-    width: 100vw;
-    height: 30vh;
-    margin: 0;
-    padding: 0;
-}
-
 header {
     margin: 0 !important;
     border-bottom: 1px solid rgba(101, 101, 101, 0.3);
@@ -105,11 +86,32 @@ header {
     height: 100%;
     display: none;
 }
-
+.navSearch {
+    display: none;
+}
 header .mailBtn1 {
     height: 70%;
     margin: 0;
     background-color: black;
+}
+
+#articleTitle {
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    background-image: url(../../assets/goodboy.jpg);
+    width: 100vw;
+    height: 40vh;
+    background-size: cover;
+    width: 100vw;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
 }
 
 /* Table (author & share) */
@@ -363,6 +365,8 @@ header .mailBtn1 {
 
 #textcomment {
     font-size: 0.8em;
+    border: 1px solid #e6e6e6;
+    border-radius: 0;
 }
 
 .info {
@@ -498,6 +502,60 @@ a img {
         margin: auto;
     }
 
+    /*  */
+    h1 {
+        font-size: 1.4em;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 0.8em;
+        letter-spacing: inherit;
+    }
+
+    h3 {
+        font-size: 1.6vw;
+        width: 100%;
+        font-weight: bolder;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    header {
+        height: 40px;
+    }
+
+    #mailDigest1 {
+        font-size: 0.7em;
+    }
+
+    #dkpForm {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        height: 20px;
+        font-size: 0.5em;
+        padding-left: 5px;
+        text-transform: uppercase;
+    }
+    .navSearch {
+        display: flex;
+    }
+    .form-inline {
+        display: flex;
+    }
+
+    header .mailBtn1 {
+        height: 20px;
+        font-size: 0.5em;
+        padding: 0;
+        border-radius: 0;
+    }
+
     #articleShare1 a {
         display: flex;
     }
@@ -509,13 +567,7 @@ a img {
     }
 
     #articleAuthor {
-        margin: 0;
         padding: 1vh 0 1vh 1vh;
-        align-items: center;
-    }
-
-    #authorImage1 {
-    
     }
 
     #authorName1 h4 {
@@ -523,15 +575,10 @@ a img {
     }
 
     #articleShare1 {
-        margin: 0;
-        padding: 0;
         text-align: right;
     }
 
     #share1 {
-        text-decoration: none;
-        color: #434343;
-        text-transform: uppercase;
         font-size: 0.5em;
     }
 
@@ -539,8 +586,6 @@ a img {
         font-weight: 100;
         font-size: 0.5em;
     }
-
-    #comment ion-icon {}
 
     .btn-fac1 {
         background-color: #3b5998;
@@ -587,7 +632,6 @@ a img {
         margin: 0;
         padding: 0 70px;
         align-items: center;
-
     }
 
     .advertisement a {
@@ -665,66 +709,10 @@ a img {
         width: 71%;
     }
 
-    /*  */
-    h1 {
-        font-size: 1.2em;
-        margin: 0;
-        padding: 0;
-        text-align: left;
-    }
-
-    h2 {
-
-        font-size: 0.7em;
-        letter-spacing: inherit;
-        font-weight: 200;
-    }
-
-    h3 {
-        font-size: 1.6vw;
-        width: 100%;
-        font-weight: bolder;
-        margin-bottom: 15px;
-    }
-
-    h4 {
-        font-size: 1em;
-    }
-
-    header {
-        height: 40px;
-    }
-
-    #mailDigest1 {
-        font-size: 0.7em;
-    }
-
-    #dkpForm {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        border-radius: 0;
-        height: 20px;
-        font-size: 0.5em;
-        padding-left: 5px;
-        text-transform: uppercase;
-    }
-
-    header .mailBtn1 {
-        height: 20px;
-        font-size: 0.5em;
-        padding: 0;
-        border-radius: 0;
-    }
-
-    .mailBtn1 {}
-
-
     /* Article */
 
     #article {
         margin: 0;
-        padding: 0;
         text-align: inherit;
     }
 
@@ -747,40 +735,29 @@ a img {
         align-items: center
     }
 
-    #firstTD {
-        padding: 0;
-        margin: 0;
-    }
-
     #farmerImg {
         height: auto;
     }
 
-    #secondTD {
-        width: 40%;
-        padding: 0;
-        margin: 0;
-    }
-
     #siteName {
-        padding: 0;
-        margin: 0;
         font-weight: 800;
         padding-bottom: 10px;
         font-size: 0.8em;
     }
 
     #siteText {
-        padding: 0;
-        margin: 0;
         width: 90%;
         font-size: 0.7em;
     }
 
     .recomTitle {
         padding-top: 5px;
-        line-height: 100%;
+        font-size: 0.45em;
+        font-weight: bolder;
+    }
+    .labelRep{
         font-size: 0.5em;
+        font-weight: bolder;
     }
 
     /* Table after */
@@ -788,7 +765,6 @@ a img {
     .sectionShare {
         margin: 0;
         padding: 0;
-
     }
 
     .btnSocial {
@@ -830,24 +806,20 @@ a img {
 
 
     #mail2 {
-        padding: 0;
-        margin: 0;
         height: 20px;
     }
 
     #mailForm2 {
-        font-size: 0.4em;
+        font-size: 0.5em;
         padding: 0;
         padding-left: 5px;
-        border-radius: 0;
     }
 
     .mailBtn2 {
         padding: 0;
         margin: 0;
         height: 20px;
-        font-size: 0.4em;
-        border-radius: 0;
+        font-size: 0.5em;
     }
 
     /*    Previous article */
@@ -879,32 +851,45 @@ a img {
         font-weight: bolder;
     }
 
-
     /* Recommended */
 
     #recommended {
         border-top: 1px solid rgb(239, 239, 239);
         padding: 2vh 1.5vh;
         margin: 0;
+        margin-top: 15px;
+        position: relative;
     }
 
     #alsoLike {
+        position: absolute;
         text-transform: uppercase;
-        font-size: 0.6em;
+        font-size: 0.4em;
+        top: -5px;
+        background-color: #fff;
+        padding: 0 8px;
+        left: 0;
+        font-weight: bolder;
     }
-
-
     .recomImg img {
         width: 95%;
     }
 
     /* Form */
-
-    #response {
-        padding-top: 2vh;
+#textcomment {
+    font-size: 0.4em;
+    height : 100px;
+}
+    .info {
+        margin: auto;
+        margin-top: 10px;
+        font-size: 0.4em;
+        padding: 5px;
+    }
+    #response .mailBtn1 {
+        padding: 0;
         font-size: 0.6em;
     }
-
 
     /*  */
     /* -- footer -- */
@@ -918,17 +903,15 @@ a img {
     }
 
     .footer-title {
-        margin: 0;
         padding: 0;
         padding-top: 3.5vh;
         padding-left: 1vw;
-        padding-bottom: 0.5vw;
+        padding-bottom: 1vw;
         font-size: 0.8em;
     }
 
     #allCategories {
         padding: 0;
-        margin: 0;
         margin-right: 30px;
     }
 
@@ -975,6 +958,7 @@ a img {
         color: white;
         font-weight: 200;
         text-transform: capitalize;
+        padding-left: 7px;
         font-size: 0.8em;
     }
 
@@ -1019,539 +1003,115 @@ a img {
 
 }
 
+
 /*----
 ------- DESKTOP --------
 ----*/
 
 @media only screen and (min-width : 992px) {
 
-    body {
-        font-size: 16px;
-        width: 100vw;
-    }
-
     .all-page {
-        width: 65vw;
-        margin: auto;
+        width: 50vw;
     }
 
-    #articleShare1 a {
-        display: flex;
-    }
+    /* Header */
 
-    /* Table (author & share) */
-    #articleSource {
-        height: 40px;
-        margin: 20px 0;
-    }
-
-    #articleAuthor {
-        margin: 0;
-        padding: 1vh 0 1vh 1vh;
-        align-items: center;
-    }
-
-    #authorImage1 {
-    
-    }
-
-    #authorName1 h4 {
-        font-size: 0.6em;
-    }
-
-    #articleShare1 {
-        margin: 0;
-        padding: 0;
-        text-align: right;
-    }
-
-    #share1 {
-        text-decoration: none;
-        color: #434343;
-        text-transform: uppercase;
-        font-size: 0.5em;
-    }
-
-    #comment {
-        font-weight: 100;
-        font-size: 0.5em;
-    }
-
-    #comment ion-icon {}
-
-    .btn-fac1 {
-        background-color: #3b5998;
-        color: white !important;
-        border-radius: 50%;
-        margin: 0;
-        padding: 3px;
-        text-align: center;
-    }
-
-    .btn-tweet1 {
-        background-color: #55acee;
-        color: white !important;
-        border-radius: 50%;
-        margin: 0;
-        padding: 3px;
-    }
-
-    .btn-pin1 {
-        background-color: #cb2027;
-        color: white !important;
-        border-radius: 50%;
-        margin: 0;
-        padding: 3px;
-    }
-
-    .advertisement {
-        text-align: center;
-        margin: 0 auto;
-        padding: 0;
-        margin-top: 70px;
-        display: block;
-    }
-
-    .advertisement ion-icon {
-        color: white;
-        background-color: #5F5F5F;
-        font-size: 0.6em;
-        padding: 3px;
-        border-radius: 50%;
-    }
-
-    .addIcon {
-        margin: 0;
-        padding: 0 70px;
-        align-items: center;
-
-    }
-
-    .advertisement a {
-        margin: 0;
-        text-align: center;
-        padding: 0;
-        align-items: center;
-    }
-
-    .addFollow {
-        text-transform: uppercase;
-        font-size: 0.4em;
-        color: #919191;
-        margin: 0;
-        padding: 0;
-    }
-
-    .imgBtn {
-        position: relative;
-        margin: 15px 0;
-    }
-
-    .advertisement button {
-        position: absolute;
-        bottom: -4%;
-        right: 33%;
-        width: 34%;
-        margin: 0;
-        padding: 4px;
-        background-color: #FF8D6A;
-        font-weight: 600;
-        border: none;
-        color: white;
-        font-size: 0.4em;
-        text-transform: uppercase;
-    }
-
-    .addDog {
-        width: 70%;
-    }
-
-    .addLast {
-        margin: 20px 0;
-        padding: 0;
-        height: 40px;
-    }
-
-    .addLogo {
-        padding: 0;
-        padding-left: 20px;
-    }
-
-    .addText {
-        line-height: 100%;
-        font-size: 0.6em;
-        margin: 0;
-        padding: 0;
-    }
-
-    #addTitle {
-        text-transform: uppercase;
-        font-weight: bold;
-        color: #919191;
-        font-size: 0.7em;
-        width: 71%;
-        margin: 0;
-        padding: 0;
-    }
-
-    #addStar {
-        margin: 0;
-        padding: 0;
-        color: #a1a1a1;
-        font-size: 0.5em;
-        width: 71%;
-    }
-
-    /*  */
     h1 {
-        font-size: 1.2em;
-        margin: 0;
-        padding: 0;
-        text-align: left;
+        font-size: 1.1em;
     }
 
     h2 {
-
-        font-size: 0.7em;
-        letter-spacing: inherit;
-        font-weight: 200;
-    }
-
-    h3 {
-        font-size: 1.6vw;
-        width: 100%;
-        font-weight: bolder;
-        margin-bottom: 15px;
-    }
-
-    h4 {
-        font-size: 1em;
-    }
-
-    header {
-        height: 40px;
-    }
-
-    #mailDigest1 {
-        font-size: 0.7em;
-    }
-
-    #dkpForm {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        border-radius: 0;
-        height: 20px;
-        font-size: 0.5em;
-        padding-left: 5px;
-        text-transform: uppercase;
-    }
-
-    header .mailBtn1 {
-        height: 20px;
-        font-size: 0.5em;
-        padding: 0;
-        border-radius: 0;
-    }
-
-    .mailBtn1 {}
-
-
-    /* Article */
-
-    #article {
-        margin: 0;
-        padding: 0;
-        text-align: inherit;
-    }
-
-    .articleTexts {
-        font-size: 0.7em;
-        line-height: 120%;
-    }
-
-    .articleTitles {
-        font-size: 0.8em;
-        font-weight: bolder;
-        line-height: 1;
-    }
-
-    /*    Previous article */
-
-    .previousArticle {
-        padding: 2vh;
-        border-bottom: 1px solid #f5f5f5;
-        align-items: center
-    }
-
-    #firstTD {
-        padding: 0;
-        margin: 0;
-    }
-
-    #farmerImg {
-        height: auto;
-    }
-
-    #secondTD {
-        width: 40%;
-        padding: 0;
-        margin: 0;
-    }
-
-    #siteName {
-        padding: 0;
-        margin: 0;
-        font-weight: 800;
-        padding-bottom: 10px;
-        font-size: 0.8em;
-    }
-
-    #siteText {
-        padding: 0;
-        margin: 0;
-        width: 90%;
-        font-size: 0.7em;
-    }
-
-    .recomTitle {
-        padding-top: 5px;
-        line-height: 100%;
-        font-size: 0.5em;
-    }
-
-    /* Table after */
-
-    .sectionShare {
-        margin: 0;
-        padding: 0;
-
-    }
-
-    .btnSocial {
-        margin: 0;
-        margin-bottom: 35px;
-        padding: 0;
-        align-items: center;
-    }
-
-    .btnSocial p {
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-        font-size: 0.4em;
-        text-align: right;
-    }
-
-    .btnSocial .btn {
-        margin: 0;
-        padding: 0;
-        height: 15px;
-        font-size: 0.3em;
-        margin-left: 1vw;
-    }
-
-    .btnSocial ion-icon {
-        font-size: 1.5em;
-        margin-right: 0.2vw;
-    }
-
-    .secondMail .subscribe {
-        font-size: 0.8em;
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 0.5vw;
         font-weight: 600;
     }
 
-    .text-subscribe {
-        font-size: 0.4em;
+    h3 {
+        font-size: 1.2vw;
     }
 
-
-    #mail2 {
-        padding: 0;
-        margin: 0;
-        height: 20px;
+    header {
+        height: 30px;
     }
 
-    #mailForm2 {
+    #mailDigest1 {
+        font-size: 0.5em;
+    }
+
+    #dkpForm {
+
+        height: 15px;
+        font-size: 0.35em;
+    }
+
+    header .mailBtn1 {
+        height: 15px;
         font-size: 0.4em;
         padding: 0;
-        padding-left: 5px;
         border-radius: 0;
     }
 
-    .mailBtn2 {
-        padding: 0;
-        margin: 0;
-        height: 20px;
-        font-size: 0.4em;
-        border-radius: 0;
-    }
+    /* Article */
+
+
+    /* Table after */
+
+
 
     /*    Previous article */
 
-    .previousArticle {
-        margin: 5px 0;
-        padding: 0;
-        border-right: 1px solid #f5f5f5;
-    }
+#response .mailBtn1 {
+    font-size: 0.3em;
+    border-radius: 0;
+    height: 20px;
 
-    .previousArticle h6 {
-        margin: 0;
-        padding: 0;
-        padding-bottom: 15px;
-        font-size: 0.6em;
-    }
-
-    .previousArticle div {
-        margin: 0;
-        padding: 0;
-        padding-right: 10px;
-        padding-bottom: 15px
-    }
-
-    .previousArticle h5 {
-        margin: 0;
-        padding: 0;
-        font-size: 0.4em;
-        font-weight: bolder;
-    }
+}
+.addFollow {
+ 
+}
+.addIcon {
+    padding: 0 40px;
+}
 
 
-    /* Recommended */
-
-    #recommended {
-        border-top: 1px solid rgb(239, 239, 239);
-        padding: 2vh 1.5vh;
-        margin: 0;
-    }
-
-    #alsoLike {
-        text-transform: uppercase;
-        font-size: 0.6em;
-    }
-
-
-    .recomImg img {
-        width: 95%;
-    }
-
-    /* Form */
-
-    #response {
-        padding-top: 2vh;
-        font-size: 0.6em;
-    }
-
-
-    /*  */
-    /* -- footer -- */
-
-    footer {
-        position: relative;
-    }
-
-    footer .col-footer {
-        padding: 0;
-    }
-
+    /* ------ FOOTER --------- */
+  
     .footer-title {
-        margin: 0;
-        padding: 0;
-        padding-top: 3.5vh;
-        padding-left: 1vw;
-        padding-bottom: 0.5vw;
-        font-size: 0.8em;
-    }
-
-    #allCategories {
-        padding: 0;
-        margin: 0;
-        margin-right: 30px;
+        font-size: 0.7vw;
     }
 
     #allCategories a {
-        margin: 0;
-        text-align: left;
-        font-size: 0.8em;
-        border-bottom: 1px solid #4d4d4d;
-        padding: 1.2vh 0;
-    }
-
-    .f-AllAside {
-        display: block;
+        font-size: 0.7vw;
+        padding: 12px 0;
     }
 
     .f-aside {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 1.5vh;
-        padding-right: 2vh;
+        margin-bottom: 15px;
+        padding-right: 20px;
     }
 
     .f-aside .aside-img {
-        padding: 0;
-        margin: 0;
-        height: 50px;
-    }
-
-    .f-aside img {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        width: auto;
-    }
-
-    .f-article {
-        padding: 0;
+        height: 40px;
     }
 
     footer .aside-title {
-        padding: 0;
-        margin: 0;
-        color: white;
-        font-weight: 200;
         text-transform: capitalize;
-        font-size: 0.8em;
-    }
-
-    .thumbnail-md {
-        display: block;
-        height: auto;
-    }
-
-    #instaPictures a {
-        padding: 0;
-        margin: 0;
-        margin-bottom: 10px;
+        font-size: 0.7vw;
     }
 
     #instaPictures a img {
-        padding: 0;
-        margin: 0;
         height: 60px;
-        width: 100%;
+        width: 65px;
+    }
+
+
+    .social-links {
+        right: 18vw;
     }
 
     #social ion-icon {
-        background-color: #3A3E43;
-        height: 2vh;
-        width: 2vh;
-        padding: 1vh;
-        border-radius: 50%;
+        height: 13px;
+        width: 13px;
+        padding: 10px;
     }
-
-    #social {
-
-        height: 5vh;
-    }
-
-    .social-links {
-        right: 16vw;
-    }
-
-    #social a {
-        margin-right: 0;
-    }
-
 }
