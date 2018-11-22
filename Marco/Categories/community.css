@@ -11,7 +11,10 @@ body {
 }
 
 .loupe {
+    margin-top: 10px;
+    margin-left: 17px;
     color: black;
+    font-size: 17px;
 }
 
 #navbar class-items p {
@@ -24,13 +27,9 @@ body {
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
 }
-
-.navbar-toggler {
+/*bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
+.dropdown {
     padding: 1.25rem;
-}
-
-.headerBottom {
-    display: none;
 }
 
 h1 {
@@ -40,6 +39,14 @@ h1 {
     margin: 0;
     margin-top: 2vw;
     text-align: center;
+}
+
+.headerBottom {
+    display: none;
+}
+
+.facebook, .twitter, .insta {
+    display: none;
 }
 
 .h2title {
@@ -59,20 +66,6 @@ h2 {
     width: 100vw;
 }
 
-/*
-h3 {
-    font-weight: 600;
-    font-size: 5vw;
-    color: #959595;
-    width: 95vw;
-    margin: auto;
-    font-weight: 400;
-    margin-bottom: 1vh;
-    text-transform: uppercase;
-}
-*/
-
-
 /* HEADER CSS BELOW */
 
 #navbar {
@@ -82,6 +75,53 @@ h3 {
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
 }
 
+.dropbtn {
+    background-color: #e56100;
+    color: white;   
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 14px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #e56100;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.dropdown ion-icon {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+
 form {
     padding-right: 0;
 }
@@ -89,17 +129,6 @@ form {
 .btn-default {
     padding: .5rem .75rem 0.125rem;
 }
-
-/*
-.category {
-    padding-top: 5px;
-    text-align: center;
-    background-color: #F6F6F6;
-    color: #e56100;
-    margin-bottom: 1vh;
-}
-*/
-
 
 /* MAIN CSS BELOW */
 
@@ -316,11 +345,8 @@ a img {
         position: fixed;
         z-index: 20;
     }
-
-    .navbar-toggler ion-icon {
-        height: 2.5em;
-        width: 2.5em;
-    }
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+    
 
     h1 {
         margin-top: 0;
@@ -328,10 +354,10 @@ a img {
         padding-top: 20px;
     }
 
-    .form-inline {
-        padding: 20px 20px 20px 3.2em;
-        text-align: center;
-        width: 150px;
+    .loupe {
+        margin-left: 17px;
+        color: black;
+        font-size: 30px;
     }
 
     .btn-default {
@@ -519,26 +545,49 @@ a img {
         border-bottom: 2px solid #F5F5F5;
     }
 
-    .headerBottom {
-        display: flex;
-    }
-
-    .headerCat {
-        text-transform: uppercase;
-        
-        font-weight: 200;
-        font-size: 13px; 
-    }
-
     h1 {
         margin-top: 0;
         font-size: 3em;
     }
 
-    .navbar-toggler {
+    .dropdown {
         display: none;
     }
 
+    .loupe {
+        margin-top: auto;
+        margin-left: 4px;
+        color: black;
+        font-size: 12px;
+    }
+
+    .facebook, .twitter, .insta {
+        display: initial;;
+    }
+
+    .headerSocial {
+        margin: 4px;
+    }
+
+    .headerSocial a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .headerBottom {
+        margin-top: 7px;
+        display: flex;
+    }
+
+    .headerCat {
+        text-transform: uppercase;        
+        font-weight: 200;
+        font-size: 13px; 
+    }
+
+    .headerCat p {
+        margin-bottom: 0.5rem;
+    }
     /*MAIN CSS BELOW*/
 
     h2 {
@@ -622,11 +671,12 @@ a img {
     }
     
     .btn-circle {
-        font-size: 15px;
+        font-size: 10px;
         width: 2.5vw;
         height: 2.5vw;
-
+        padding: 3px;
     }
+
     /*FOOTER CSS BELOW*/
     
     footer .col-footer {
