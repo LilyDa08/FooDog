@@ -46,27 +46,30 @@
                 </figure>
             </section>
             <!-- Premiere table -->
-
-
             <section class="row" id="articleSource">
 
-                <div class="media col-6" id="articleAuthor">
-                    <img src="../assets/logo.jpg" alt="some guy" class="rounded-circle" id="authorImage1">
-                    <div class="media-body col-7" id="authorName1">
+                <div class="media col-6 col-md-4" id="articleAuthor">
+                    <img src="../assets/logo.jpg" alt="some guy" class="rounded-circle col-4 col-md-2" id="authorImage1">
+                    <div class="media-body col-8" id="authorName1">
                         <h4><small>by</small> some guy</h4>
                     </div>
                 </div>
-
-                <div class="row col-6" id="articleShare1">
-                    <a class="col-5" href="#" id="share1">
-                        <ion-icon name="share-alt"></ion-icon>
-                        <p>share</p>
+                <div class="row col-6 col-md-8" id="articleShare1">
+                    <button type="button" class="offset-1 col-7 offset-md-4 col-md-3" id="comment">
+                        <ion-icon name="chatboxes"></ion-icon>comment
+                    </button>
+                    <p class="col-4 col-md-2" id="share1">share</p>
+                    <a class="col-5 btn-fac1 col-md-1">
+                        <ion-icon name="logo-facebook"></ion-icon>
                     </a>
-                    <a class="col-5" href="#" id="comment">
-                        <ion-icon name="text"></ion-icon>
-                        <p>comment</p>
+                    <a class="btn-tweet1 col-md-1">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a class="btn-pin1 col-md-1">
+                        <ion-icon name="logo-pinterest"></ion-icon>
                     </a>
                 </div>
+
             </section>
             <!-- Article -->
             <article class="col-11" id="article">
@@ -127,11 +130,11 @@
                 </div>
 
                 <div class="row" id="presentationSite">
-                    <div class="col-4" id="firstTD">
+                    <div class="col-3 col-md-2" id="firstTD">
                         <img id="farmerImg" src="../assets/logo.jpg">
                     </div>
-                    <div class="col-8" id="secondTD">
-                        <p id="siteName">The Farmer'sDog</p>
+                    <div class="col-9 col-md-10" id="secondTD">
+                        <p id="siteName">The Farmer's Dog</p>
                         <p id="siteText">Sed auctor orci eu condimentum sagittis. Duis sodales, quam nec pulvinar
                             tristique. Lorem ipsum ctor orci eu condimentum sagittis. Duis sodales, quam nec pulvinar
                             tristique.
@@ -141,7 +144,7 @@
 
                 <div id="recommended">
 
-                    <h6 id="alsoLike"> YOU MIGHT ALSO LIKE </h6>
+                    <h6 id="alsoLike">you might also like</h6>
                     <div class="row threeArtciles">
                         <div class="recommendArticle col-4">
                             <div class="recomImg"><img src="../assets/goodboy.jpg" /></div>
@@ -159,32 +162,39 @@
                 </div>
 
                 <form class="form-group" id="response">
-                    <label class="labelRep" for="comment">LEAVE A RESPONSE</label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                    <!--
-            <input type="text">
-            <input type="text">
-            <input type="email">
-            <input type="url">
-            -->
-                    <button class="btn mailBtn1" type="submit">submit</button>
+                    <label class="labelRep" for="textcomment">LEAVE A RESPONSE</label>
+                    <textarea class="form-control" rows="5" id="textcomment" placeholder="write your comment here..."></textarea>
+    <div class="row inputs col-12">
+            <input class="info yourName col-7 col-md-4" type="text" placeholder="name...">
+            <input class="info yourEmail col-7 col-md-4" type="email" placeholder="email...">
+            <input class="info yourSite col-7  col-md-4"type="url" placeholder="website...">
+        </div>
+                    <button class="btn mailBtn1 col-md-3" type="submit">leave a comment</button>
                 </form>
 
             </section>
 
         </main>
         <div class="advertisement col-md-4">
-            <div>follow us</div>
+            <div class="addFollow">follow us</div>
             <div class="addIcon row col-md-12">
-                   <a class="col-md-3"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a class="col-md-3"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a class="col-md-3"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a class="col-md-3"><ion-icon name="logo-pinterest"></ion-icon></a>
+                <a class="col-md-3">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a class="col-md-3">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a class="col-md-3">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a class="col-md-3">
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
             </div>
             <div class="imgBtn">
-            <img class="addDog" src="../assets/addDog.jpg" alt="Add">
-            <button type="button">try now</button>
-        </div>
+                <img class="addDog" src="../assets/addDog.jpg" alt="Add">
+                <button type="button">try now</button>
+            </div>
             <div class="row addLast">
                 <img class="offset-md-1 col-md-4 addLogo" src="../assets/logo.jpg" alt="logo">
                 <div class="col-md-7 addText">
@@ -196,7 +206,9 @@
 
     </div>
 
-    <!--  FOOTER  -->
+    <!----------
+        -------------------  FOOTER  --------------
+        ------>
 
     <footer class="container-fluid">
         <div class="row footer-up">
