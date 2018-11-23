@@ -40,18 +40,30 @@
             <h1 class=" col-6 offset-lg-5 col-lg-2">FooDog</h1>
 
             <form class="form-inline col-3 offset-lg-3 col-lg-2" action="#">
-                <p class="headerSocial facebook"><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></p>
-                <p class="headerSocial twitter"><a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></p>
-                <p class="headerSocial insta"><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></p>
-                 <div>
-                    <p class="headerSocial loupe"><ion-icon class="loupe" name="search"></ion-icon> </p>
+                <p class="headerSocial facebook"><a href="https://www.facebook.com/">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></p>
+                <p class="headerSocial twitter"><a href="https://twitter.com/">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></p>
+                <p class="headerSocial insta"><a href="https://www.instagram.com/">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></p>
+
+
+                <div class="ricerca">
+                    <p class="headerSocial loupe">
+                        <ion-icon class="loupe" name="search"></ion-icon>
+                    </p>
                     <div id="searchDrop" class="searchInputs" style="display:none">
-                        <input name="search-field" type="text" autocomplete="on" maxlength="50" placeholder="Article Tags" size="7">
-                        <input type="submit">
+                        <input name="search-field" type="text" autocomplete="on" maxlength="50" placeholder="Article Tags" size="17">
+                      <!--  <input type="submit"> -->
                     </div>
                 </div>
+
+                
             </form>
-            
+
         </section>
 
         <section class="headerBottom row">
@@ -73,155 +85,167 @@
 
 
     <!--  MAIN CONTENT-->
+
     <main class="container">
         <section class="h2title col-lg-12">
             <h2>community</h2>
         </section>
-        <article class="row article col-lg-6 ">
-            <figure class="offset-xs-1 col-10 article-img centered col-md-4">
-                <img src="../../assets/dog4small.png" alt="">
-            </figure>
-            <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
-                <p class="categoryArticle"><b>COMMUNITY</b></p>
-                <p class="titleArticle">cooking for your dog? watch out for these nutrient deficiences</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
-                    taste...</p>
-                <div class="row share-btn">
-                    <ion-icon name="share-alt"></ion-icon>
-                    share
+
+        <section id="allArticle">
+            <article class="row article col-lg-6 ">
+                <figure class="offset-xs-1 col-10 article-img centered col-md-4">
+                    <img src="../../assets/dog4small.png" alt="">
+                </figure>
+                <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
+                    <p class="categoryArticle"><b>COMMUNITY</b></p>
+                    <p class="titleArticle">cooking for your dog? watch out for these nutrient deficiences</p>
+                    <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their
+                        music
+                        taste...</p>
+                    <div class="row share-btn">
+                        <ion-icon name="share-alt"></ion-icon>
+                        share
+                    </div>
+                    <div class="readmore">
+                        <a href="#">Read more...</a>
+                    </div>
+                </div>
+            </article>
+            <article class="row article col-lg-6 ">
+                <figure class="offset-xs-1 col-10 article-img centered col-md-4">
+                    <img src="../../assets/dog1small.png" alt="">
+                </figure>
+                <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
+                    <p class="categoryArticle"><b>COMMUNITY</b></p>
+                    <p class="titleArticle">Random title for the second article, hi bob</p>
+                    <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their
+                        music
+                        taste...</p>
+                    <div class="row share-btn">
+                        <ion-icon name="share-alt"></ion-icon>
+                        share
+                    </div>
                 </div>
                 <div class="readmore">
                     <a href="#">Read more...</a>
                 </div>
-            </div>
-        </article>
-        <article class="row article col-lg-6 ">
-            <figure class="offset-xs-1 col-10 article-img centered col-md-4">
-                <img src="../../assets/dog1small.png" alt="">
-            </figure>
-            <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
-                <p class="categoryArticle"><b>COMMUNITY</b></p>
-                <p class="titleArticle">Random title for the second article, hi bob</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
-                    taste...</p>
-                <div class="row share-btn">
-                    <ion-icon name="share-alt"></ion-icon>
-                    share
                 </div>
-            </div>
-            <div class="readmore">
-                <a href="#">Read more...</a>
-            </div>
-            </div>
-        </article>
-        <article class=" row article col-lg-6 ">
-            <figure class="offset-xs-1 col-10 article-img centered col-md-4">
-                <img src="../../assets/dog2small.png" alt="">
-            </figure>
-            <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
-                <p class="categoryArticle"><b>COMMUNITY</b></p>
-                <p class="titleArticle">Random title for the second article, how's it going bob</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
-                    taste...</p>
-                <div class="row share-btn">
-                    <ion-icon name="share-alt"></ion-icon>
-                    share
+            </article>
+            <article class=" row article col-lg-6 ">
+                <figure class="offset-xs-1 col-10 article-img centered col-md-4">
+                    <img src="../../assets/dog2small.png" alt="">
+                </figure>
+                <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
+                    <p class="categoryArticle"><b>COMMUNITY</b></p>
+                    <p class="titleArticle">Random title for the second article, how's it going bob</p>
+                    <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their
+                        music
+                        taste...</p>
+                    <div class="row share-btn">
+                        <ion-icon name="share-alt"></ion-icon>
+                        share
+                    </div>
+                    <div class="readmore">
+                        <a href="#">Read more...</a>
+                    </div>
                 </div>
-                <div class="readmore">
-                    <a href="#">Read more...</a>
+            </article>
+            <article class=" row article col-lg-6 ">
+                <figure class="offset-xs-1 col-10 article-img centered col-md-4">
+                    <img src="../../assets/dog3small.png" alt="">
+                </figure>
+                <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
+                    <p class="categoryArticle"><b>COMMUNITY</b></p>
+                    <p class="titleArticle">Random title for the second article, bob please answer the phone</p>
+                    <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their
+                        music
+                        taste...</p>
+                    <div class="row share-btn">
+                        <ion-icon name="share-alt"></ion-icon>
+                        share
+                    </div>
+                    <div class="readmore">
+                        <a href="#">Read more...</a>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article class=" row article col-lg-6 ">
-            <figure class="offset-xs-1 col-10 article-img centered col-md-4">
-                <img src="../../assets/dog3small.png" alt="">
-            </figure>
-            <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
-                <p class="categoryArticle"><b>COMMUNITY</b></p>
-                <p class="titleArticle">Random title for the second article, bob please answer the phone</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
-                    taste...</p>
-                <div class="row share-btn">
-                    <ion-icon name="share-alt"></ion-icon>
-                    share
+            </article>
+            <article class=" row article col-lg-6 ">
+                <figure class="offset-xs-1 col-10 article-img centered col-md-4">
+                    <img src="../../assets/dog4small.png" alt="">
+                </figure>
+                <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
+                    <p class="categoryArticle"><b>COMMUNITY</b></p>
+                    <p class="titleArticle">Random title for the second article, you can't hide bob i can see you</p>
+                    <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their
+                        music
+                        taste...</p>
+                    <div class="row share-btn">
+                        <ion-icon name="share-alt"></ion-icon>
+                        share
+                    </div>
+                    <div class="readmore">
+                        <a href="#">Read more...</a>
+                    </div>
                 </div>
-                <div class="readmore">
-                    <a href="#">Read more...</a>
+            </article>
+            <article class=" row article col-lg-6 ">
+                <figure class="offset-xs-1 col-10 article-img centered col-md-4">
+                    <img src="../../assets/dog1small.png" alt="">
+                </figure>
+                <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
+                    <p class="categoryArticle"><b>COMMUNITY</b></p>
+                    <p class="titleArticle">Random title for the second article, la vispa teresa oeva fra l'erbetta</p>
+                    <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their
+                        music
+                        taste...</p>
+                    <div class="row share-btn">
+                        <ion-icon name="share-alt"></ion-icon>
+                        share
+                    </div>
+                    <div class="readmore">
+                        <a href="#">Read more...</a>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article class=" row article col-lg-6 ">
-            <figure class="offset-xs-1 col-10 article-img centered col-md-4">
-                <img src="../../assets/dog4small.png" alt="">
-            </figure>
-            <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
-                <p class="categoryArticle"><b>COMMUNITY</b></p>
-                <p class="titleArticle">Random title for the second article, you can't hide bob i can see you</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
-                    taste...</p>
-                <div class="row share-btn">
-                    <ion-icon name="share-alt"></ion-icon>
-                    share
+            </article>
+            <article class=" row article col-lg-6 ">
+                <figure class="offset-xs-1 col-10 article-img centered col-md-4">
+                    <img src="../../assets/dog2small.png" alt="">
+                </figure>
+                <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
+                    <p class="categoryArticle"><b>COMMUNITY</b></p>
+                    <p class="titleArticle">Random title for the second article, nel mezzo di cammin di nostra vita</p>
+                    <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their
+                        music
+                        taste...</p>
+                    <div class="row share-btn">
+                        <ion-icon name="share-alt"></ion-icon>
+                        share
+                    </div>
+                    <div class="readmore">
+                        <a href="#">Read more...</a>
+                    </div>
                 </div>
-                <div class="readmore">
-                    <a href="#">Read more...</a>
+            </article>
+            <article class=" row article col-lg-6 ">
+                <figure class="offset-xs-1 col-10 article-img centered col-md-4">
+                    <img src="../../assets/dog4small.png" alt="">
+                </figure>
+                <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
+                    <p class="categoryArticle"><b>COMMUNITY</b></p>
+                    <p class="titleArticle">cooking for your dog? watch out for these nutrient deficiences</p>
+                    <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their
+                        music
+                        taste...</p>
+                    <div class="row share-btn">
+                        <ion-icon name="share-alt"></ion-icon>
+                        share
+                    </div>
+                    <div class="readmore">
+                        <a href="#">Read more...</a>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article class=" row article col-lg-6 ">
-            <figure class="offset-xs-1 col-10 article-img centered col-md-4">
-                <img src="../../assets/dog1small.png" alt="">
-            </figure>
-            <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
-                <p class="categoryArticle"><b>COMMUNITY</b></p>
-                <p class="titleArticle">Random title for the second article, la vispa teresa oeva fra l'erbetta</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
-                    taste...</p>
-                <div class="row share-btn">
-                    <ion-icon name="share-alt"></ion-icon>
-                    share
-                </div>
-                <div class="readmore">
-                    <a href="#">Read more...</a>
-                </div>
-            </div>
-        </article>
-        <article class=" row article col-lg-6 ">
-            <figure class="offset-xs-1 col-10 article-img centered col-md-4">
-                <img src="../../assets/dog2small.png" alt="">
-            </figure>
-            <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
-                <p class="categoryArticle"><b>COMMUNITY</b></p>
-                <p class="titleArticle">Random title for the second article, nel mezzo di cammin di nostra vita</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
-                    taste...</p>
-                <div class="row share-btn">
-                    <ion-icon name="share-alt"></ion-icon>
-                    share
-                </div>
-                <div class="readmore">
-                    <a href="#">Read more...</a>
-                </div>
-            </div>
-        </article>
-        <article class=" row article col-lg-6 ">
-            <figure class="offset-xs-1 col-10 article-img centered col-md-4">
-                <img src="../../assets/dog4small.png" alt="">
-            </figure>
-            <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
-                <p class="categoryArticle"><b>COMMUNITY</b></p>
-                <p class="titleArticle">cooking for your dog? watch out for these nutrient deficiences</p>
-                <p class="previewArticle">Be sure to feed rocks to your dog: full of minerals and improves their music
-                    taste...</p>
-                <div class="row share-btn">
-                    <ion-icon name="share-alt"></ion-icon>
-                    share
-                </div>
-                <div class="readmore">
-                    <a href="#">Read more...</a>
-                </div>
-            </div>
-        </article>
+            </article>
+        </section>
 
         <nav aria-label="Page navigation example" class="offset-2 col-8 page-navigation">
             <button type="button" class="btn btn-dark btn-circle"> <a href="#" class="arrow">

@@ -22,7 +22,7 @@ body {
 }
 
 #navbar class-items p {
-   color : #000;
+    color: #000;
 }
 
 #navbar {
@@ -31,6 +31,7 @@ body {
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
 }
+
 /*bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
 .dropdown {
     padding: 1.25rem;
@@ -49,7 +50,9 @@ h1 {
     display: none;
 }
 
-.facebook, .twitter, .insta {
+.facebook,
+.twitter,
+.insta {
     display: none;
 }
 
@@ -81,7 +84,7 @@ h2 {
 
 .dropbtn {
     background-color: #e56100;
-    color: white;   
+    color: white;
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -90,7 +93,8 @@ h2 {
     margin-left: 14px;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover,
+.dropbtn:focus {
     background-color: #e56100;
 }
 
@@ -105,21 +109,23 @@ h2 {
     background-color: #f1f1f1;
     min-width: 160px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #00000033;
     z-index: 1;
 }
 
 .dropdown-content a {
     color: black;
     padding: 2px 16px;
-    text-decoration: none;
     display: block;
     font-size: 15px;
     font-weight: 200;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {
+    background-color: #ddd;
+}
 
 .dropdown ion-icon {
     height: 2.5em;
@@ -128,17 +134,28 @@ h2 {
 
 /*sep*/
 
-.searchInputs {
-    float: right;
+.ricerca {
     position: relative;
     display: inline-block;
-    display: none;
+}
+
+#searchDrop {
+    background-color: rgba(0, 0, 0, 0);
+    top: 28px;
+    right: 2px;
     position: absolute;
-    min-width: 160px;
+    min-width: 88px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px #5f5f5f33;
-    right: 0;
+    box-shadow: 0px 8px 16px 0px #6b6b6b33;
     z-index: 1;
+}
+
+#searchfrop input {
+    border-radius: 5px;
+    color: black;
+    padding: 2px 16px;
+    display: block;
+    font-size: 15px;
 }
 
 /*endsep*/
@@ -184,8 +201,8 @@ figure {
     margin: 0;
     display: none;
     text-transform: uppercase;
-    color: #f3654c; 
-    border-right: solid 2px #cecdcd;  
+    color: #f3654c;
+    border-right: solid 2px #cecdcd;
     padding-right: 9px;
 }
 
@@ -355,7 +372,7 @@ a img {
 
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
-    
+
     body {
         font-size: 14px;
     }
@@ -367,8 +384,9 @@ a img {
         position: fixed;
         z-index: 20;
     }
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-    
+
+    /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
 
     h1 {
         margin-top: 0;
@@ -440,7 +458,7 @@ a img {
     }
 
     /*FOOTER CSS*/
-    
+
     footer .col-footer {
         padding: 0;
     }
@@ -556,13 +574,13 @@ a img {
 @media only screen and (min-width : 992px) {
 
     body {
-        font-size: 12px; 
+        font-size: 12px;
     }
 
     nav {
         width: 100vw;
         background-color: white;
-        position: fixed ;
+        position: fixed;
         z-index: 20;
         border-bottom: 2px solid #F5F5F5;
     }
@@ -583,8 +601,11 @@ a img {
         font-size: 12px;
     }
 
-    .facebook, .twitter, .insta {
-        display: initial;;
+    .facebook,
+    .twitter,
+    .insta {
+        display: initial;
+        ;
     }
 
     .headerSocial {
@@ -602,18 +623,19 @@ a img {
     }
 
     .headerCat {
-        text-transform: uppercase;        
+        text-transform: uppercase;
         font-weight: 200;
-        font-size: 11px; 
+        font-size: 11px;
     }
 
     .headerCat p {
         margin-bottom: 0.5rem;
     }
+
     /*MAIN CSS BELOW*/
 
     h2 {
-        width:100%;
+        width: 100%;
         font-size: 1.3em;
         letter-spacing: 0;
         font-weight: 100;
@@ -631,7 +653,7 @@ a img {
         padding: 0 !important;
     }
 
-    .article-img img {
+    #allArticle img {
         height: 80%;
         width: 90%;
     }
@@ -661,7 +683,7 @@ a img {
         margin-bottom: 0.5vh;
         font-weight: 600;
         line-height: 13px;
-    }     
+    }
 
     .previewArticle {
         display: initial;
@@ -691,7 +713,7 @@ a img {
     .readmore {
         display: none;
     }
-    
+
     .btn-circle {
         font-size: 10px;
         width: 2.5vw;
@@ -700,7 +722,7 @@ a img {
     }
 
     /*FOOTER CSS BELOW*/
-    
+
     footer .col-footer {
         padding: 0;
     }
