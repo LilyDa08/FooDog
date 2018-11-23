@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/*  ORANGE color: #f46700;   */
+/* FONT pour les titre : CRIMSON TEXT   */
+
+@media screen and (max-width: 640px) {
+
+    
+/*  ECRIRE TOUT LE PROJET ICI  */
+
+h1 {
+    font-family: "Crimson text";
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+#category {
+
+    justify-content: center;
+    justify-items: center;  
+}
+
+h3 {
+
+text-align:  center;
+color: rgb(230, 115, 63);
+
+
+
+
+}
+
+header {
+    background: yellow;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.hamburger {
+background: red;
+    width: 100px;
+    height: 100px;
+}
+
+.loupe {
+    color: black;
+}
+
+.lesArticles {
+    widows: 80%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.lesArticles figure{
+    width: 30%;
+    height: 50px;
+    background: pink;
+}
+
+.lesArticles img {
+
+width:100%;
+height: auto;
+
+
+}
+.lesArticles .text{
+    width: 70%;
+    height: auto;
+    background: thistle;
+
+}
+
+.lesArticles h2{
+    color: blue;
+    font: 12px;
+}
+
+.lesArticles p{
+    color: gold;
+    font: 12px;
+}
+
+.lesArticles .articleShare{
+    width: 100%;
+    height: 50px;
+    background: darkcyan;
+}
+
+}

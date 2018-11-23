@@ -18,7 +18,7 @@
 <body>
 
   <!--  NAVBAR -->
-  <nav id="navbar">
+  <nav class="row" id="navbar">
     <button class="navbar-toggler col-3" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -48,24 +48,25 @@
         <ion-icon class="loupe" name="search"></ion-icon>
       </button>
     </form>
+    <section class="container offset-lg-3 col-lg-6 offset-lg-3" id="onglets">
+        <div class="onglet col-3" id="nutrition">Nutrition</div>
+        <div class="onglet col-3" id="wellness">Wellness</div>
+        <div class="onglet col-3" id="lifestyle">Lifestyle</div>
+        <div class="onglet col-3" id="community">Community</div>
+      </section>
 
   </nav>
   <!--  MAIN CONTENT-->
   <main>
-    <section class="container offset-lg-3 col-lg-6 offset-lg-3" id="onglets">
-      <div class="onglet col-3" id="nutrition">Nutrition</div>
-      <div class="onglet col-3" id="wellness">Wellness</div>
-      <div class="onglet col-3" id="lifestyle">Lifestyle</div>
-      <div class="onglet col-3" id="community">Community</div>
-    </section>
-    <section class="row main-content">
+  
+
+    <section class="row main-content col-12">
       <figure class="carrousel col-12 col-md-12 col-lg-7">
-        <img src="../assets/maindog.jpg" alt="img">
-        <div class="banniere">
+        <img class="imghome col-lg-12" src="../assets/maindog.jpg">
+        <div class="banniere col-lg-12">
           <h2>wellness</h2>
           <p class="title-ban col-12">5 reasons your dog is vomiting</p>
         </div>
-
       </figure>
 
       <aside class="other-figure col-lg-5">
@@ -78,8 +79,7 @@
             <div class="aside-img col-12"><img class="col-12" src="../assets/2.png"></div>
             <p class="aside-title col-12">sed do eiusmod tempor labore</p>
           </div>
-        </article>
-        <article class="row aside-article">
+   
           <div class="asideOne col-lg-6">
             <div class="aside-img col-12"><img class="col-12" src="../assets/4.png"></div>
             <p class="aside-title col-12"> aliqua Ut enim ad minim veniam quis</p>
@@ -95,27 +95,29 @@
     </section>
 
     <!--  FEATURED  -->
-    <section class="featured col-lg-8">
+    <section class="featured col-lg-9">
       <div class="title-section">
         <h4>Featured Posts</h4>
       </div>
 
+      <div class="lesArticles col-lg-12">
+
       <article class="row article">
-        <div class="article-img col-5 col-lg-6">
+        <div class="article-img col-5 col-md-6">
           <img src="../assets/dogEat.jpg">
         </div>
-        <div class="text-article col-7 col-lg-6">
-          <div class="row cat-article col-lg-5">
-            <p class="cat-first col-lg-7">featured</p>
-            <p class="cat-second col-lg-5">nutrition</p>
+        <div class="text-article col-7 col-md-6">
+          <div class="row cat-article col-md-5">
+            <p class="cat-first col-md-7">featured</p>
+            <p class="cat-second col-md-5">nutrition</p>
           </div>
 
           <p class="title-article">cooking for your dog? watch out for these nutrient deficiences</p>
           <p class="start-article">Lorem ipsum of cooking for your dog? watch out for these nutrient...</p>
-          <div class="row share-btn">
+          <a class="row share-btn">
             <ion-icon name="share-alt"></ion-icon>
             share
-          </div>
+          </a>
           <div class="readmore">
             <a href="#">Read more...</a>
           </div>
@@ -124,20 +126,20 @@
       </article>
 
       <article class="row article">
-        <div class="article-img col-5 col-lg-6">
+        <div class="article-img col-5 col-md-6">
           <img src="../assets/dogEat.jpg">
         </div>
-        <div class="text-article col-7 col-lg-6">
-          <div class="row cat-article col-lg-5">
-            <p class="cat-first col-lg-7">featured</p>
-            <p class="cat-second col-lg-5">nutrition</p>
+        <div class="text-article col-7 col-md-6">
+          <div class="row cat-article col-md-5">
+            <p class="cat-first col-md-7">featured</p>
+            <p class="cat-second col-md-5">nutrition</p>
           </div>
           <p class="title-article">why you should be feeding your dog with sardines</p>
           <p class="start-article">Lorem ipsum of cooking for your dog? watch out for these nutrient...</p>
-          <button class="row share-btn">
+          <a class="row share-btn">
             <ion-icon name="share-alt"></ion-icon>
             share
-          </button>
+          </a>
           <div class="readmore">
             <a href="#">Read more...</a>
           </div>
@@ -145,39 +147,40 @@
 
       </article>
       <article class="row article">
-        <div class="article-img col-5 col-lg-6">
+        <div class="article-img col-5 col-md-6">
           <img src="../assets/dogEat.jpg">
         </div>
-        <div class="text-article col-7 col-lg-6">
-          <div class="row cat-article col-lg-5">
-            <p class="cat-first col-lg-7">featured</p>
-            <p class="cat-second col-lg-5">nutrition</p>
+        <div class="text-article col-7 col-md-6">
+          <div class="row cat-article col-md-5">
+            <p class="cat-first col-md-7">featured</p>
+            <p class="cat-second col-md-5">nutrition</p>
           </div>
           <p class="title-article">why skinny dogs live longer</p>
           <p class="start-article">Lorem ipsum of cooking for your dog? watch out for these nutrient...</p>
-          <div class="row share-btn">
+          <a class="row share-btn">
             <ion-icon name="share-alt"></ion-icon>
             share
-          </div>
+          </a>
           <div class="readmore">
             <a href="#">Read more...</a>
           </div>
         </div>
       </article>
+      </div>
     </section>
 
     <!--   LATEST -->
-    <section class="latest col-lg-8">
+    <section class="latest col-md-12 col-lg-8">
       <div class="title-section">
         <h4>Latest Posts</h4>
       </div>
 
       <div class="row latest-row">
-        <article class="row article col-lg-6">
-          <div class="article-img col-5 col-lg-12">
-            <img src="../assets/dogEat.jpg">
-          </div>
-          <div class="text-article col-7 col-lg-12">
+        <article class="row article col-md-6">
+            <div class="article-img col-5 col-md-12">
+                <img src="../assets/dognature.jpeg">
+              </div>
+          <div class="text-article col-7 col-md-12">
             <p class="cat-second">nutrition</p>
             <p class="title-article">the 11 dog food label tricks every owner needs to know</p>
             <p class="start-article">Lorem ipsum of cooking for every owner needs these nutrient ipsum...</p>
@@ -187,11 +190,12 @@
           </div>
         </article>
 
-        <article class="row article col-lg-6">
-          <div class="article-img col-5 col-lg-12">
-            <img src="../assets/dogEat.jpg">
-          </div>
-          <div class="text-article col-7 col-lg-12">
+        <article class="row article col-md-6">
+     
+           <div class="article-img col-5 col-md-12">
+                <img src="../assets/dogEat.jpg">
+              </div>
+          <div class="text-article col-7 col-md-12">
             <p class="cat-second">nutrition</p>
             <p class="title-article">superfoods in your kitchen: pumpkins for dogs</p>
             <p class="start-article">Lorem ipsum of cooking for every owner needs these nutrient ipsum...</p>
@@ -200,14 +204,12 @@
             </div>
           </div>
         </article>
-      </div>
 
-      <div class="row latest-row">
-        <article class="row article col-lg-6">
-          <div class="article-img col-5 col-lg-12">
+        <article class="row article col-md-6">
+          <div class="article-img col-5 col-md-12">
             <img src="../assets/dogEat.jpg">
           </div>
-          <div class="text-article col-7 col-lg-12">
+          <div class="text-article col-7 col-md-12">
             <p class="cat-second">nutrition</p>
             <p class="title-article">the truth about table scraps for dogs</p>
             <p class="start-article">Lorem ipsum of cooking for every owner needs these nutrient ipsum...</p>
@@ -217,11 +219,11 @@
           </div>
         </article>
 
-        <article class="row article col-lg-6">
-          <div class="article-img col-5 col-lg-12">
+        <article class="row article col-md-6">
+          <div class="article-img col-5 col-md-12">
             <img src="../assets/dogEat.jpg">
           </div>
-          <div class="text-article col-7 col-lg-12">
+          <div class="text-article col-7 col-md-12">
             <p class="cat-second">lifestyle</p>
             <p class="title-article">the truth about table scraps for dogs</p>
             <p class="start-article">Lorem ipsum of cooking for every owner needs these nutrient ipsum...</p>
@@ -277,39 +279,61 @@
       <div class="col-footer col-12 col-md-3" id="instagram">
         <p class="footer-title">INSTAGRAM</p>
         <div class="row col-md-12" id="instaPictures">
-          <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../assets/dog1small.png" alt="dog1"> </a>
-          <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../assets/dog2small.png" alt="dog2"> </a>
-          <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../assets/dog3small.png" alt="dog3"> </a>
-          <a class="col-3 col-md-4" href="https://www.instagram.com/"> <img src="../assets/dog4small.png" alt="dog4"> </a>
-          <a class="col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../assets/dog4small.png" alt="dog4"> </a>
-          <a class="col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../assets/dog4small.png" alt="dog4"> </a>
-          <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../assets/dog1small.png" alt="dog1"> </a>
-          <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../assets/dog2small.png" alt="dog2"> </a>
-          <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/"> <img src="../assets/dog3small.png" alt="dog3"> </a>
+          <a class="col-3 col-md-4" href="https://www.instagram.com/">
+            <img src="../assets/dog1small.png" alt="dog1">
+          </a>
+          <a class="col-3 col-md-4" href="https://www.instagram.com/">
+            <img src="../assets/dog2small.png" alt="dog2">
+          </a>
+          <a class="col-3 col-md-4" href="https://www.instagram.com/">
+            <img src="../assets/dog3small.png" alt="dog3">
+          </a>
+          <a class="col-3 col-md-4" href="https://www.instagram.com/">
+            <img src="../assets/dog4small.png" alt="dog4">
+          </a>
+          <a class="col-md-4 thumbnail-md" href="https://www.instagram.com/">
+            <img src="../assets/dog4small.png" alt="dog4">
+          </a>
+          <a class="col-md-4 thumbnail-md" href="https://www.instagram.com/">
+            <img src="../assets/dog4small.png" alt="dog4">
+          </a>
+          <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/">
+            <img src="../assets/dog1small.png"
+              alt="dog1"> </a>
+          <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/">
+            <img src="../assets/dog2small.png"
+              alt="dog2"> </a>
+          <a class="col-3 col-md-4 thumbnail-md" href="https://www.instagram.com/">
+            <img src="../assets/dog3small.png"
+              alt="dog3"> </a>
         </div>
       </div>
     </div>
     <div class="row col-12" id="social">
       <div class="social-links">
-      <a href="https://www.facebook.com/">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </a>
+        <a href="https://www.facebook.com/">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
 
-      <a href="https://twitter.com/">
-        <ion-icon name="logo-twitter"> </ion-icon>
-      </a>
+        <a href="https://twitter.com/">
+          <ion-icon name="logo-twitter"> </ion-icon>
+        </a>
 
-      <a href="https://www.instagram.com/">
-        <ion-icon name="logo-instagram"> </ion-icon>
-      </a>
-        </div>
+        <a href="https://www.instagram.com/">
+          <ion-icon name="logo-instagram"> </ion-icon>
+        </a>
+      </div>
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

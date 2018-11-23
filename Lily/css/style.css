@@ -33,7 +33,7 @@ XS  min-width = 0
 */
 
 #onglets {
-    display: flex;
+    display: none;
     padding: 5px 0;
     text-align: center;
 }
@@ -45,12 +45,10 @@ XS  min-width = 0
 
 #navbar {
     height: 10vh;
-    display: flex;
     padding-bottom: 5px;
 }
-.menu {
 
-}
+.menu {}
 
 h1 {
     font-family: "Crimson text";
@@ -99,16 +97,18 @@ h4 {
 }
 
 .carrousel {
-    margin: 0;
     position: relative;
     padding: 0;
-
+    margin: 0 auto;
+    height: 40vh;
 }
 
-figure img {
-    margin: 0;
-    padding: 0;
+.imghome {
+    object-fit: cover;
+    object-position: 50% 50%;
     width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .banniere {
@@ -150,7 +150,8 @@ figure img {
 
 .latest-row {
     margin: 0;
-    padding: 0;
+    padding: 0 5%;
+    ;
 }
 
 .article {
@@ -161,22 +162,31 @@ figure img {
     margin-top: 2vw;
     position: relative;
     height: auto;
+
 }
 
 .article-img {
     padding: 0;
     margin: 0;
-    padding-right: 2vw;
+    height: 20vh;
 }
 
 .article-img img {
+    object-fit: cover;
+    object-position: 50% 50%;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    height: 90%;
 }
+
 
 .latest-row .cat-second {
     display: none;
+}
+
+.latest-row img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .cat-article {
@@ -193,7 +203,7 @@ figure img {
     font-size: 1em;
     margin-top: 3vw;
     margin-bottom: 3vw;
-    padding-right: 1vh;
+    padding-left: 1vh;
     font-weight: 600;
     line-height: 5vw;
 }
@@ -273,11 +283,18 @@ footer {
 footer a {
     text-decoration: none;
     color: #ffffff;
+    height: 5vh;
 }
 
-a img {
-    width: 9vh;
-    height: 9vh;
+footer #instaPictures a {
+    height: 18vw;
+}
+
+footer #instaPictures img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .f-AllAside {
@@ -295,9 +312,8 @@ a img {
 
 #social ion-icon {
     background-color: #3A3E43;
-    height: 2vh;
-    width: 2vh;
-    padding: 1vh;
+    font-size: 0.7em;
+    padding: 4px;
     border-radius: 50%;
 }
 
@@ -307,7 +323,7 @@ a img {
     margin: 0;
     padding: 0;
     align-items: center;
-    height: 6vh;
+    height: 7vh;
 }
 
 .social-links {
@@ -322,10 +338,9 @@ a img {
     margin-right: 2vh;
 }
 
-/*----
-----------   TABLET md --------
+/*----TABLET md
+-----------------------------  TABLET md -----------------------------
 -----*/
-
 
 @media only screen and (min-width : 768px) {
 
@@ -348,12 +363,12 @@ a img {
     }
 
     #navbar {
-        height: 10vh;
-        display: flex;
+        height: 110px;
         padding-bottom: 5px;
     }
 
     #onglets {
+        display: flex;
         padding: 10px 0;
     }
 
@@ -377,7 +392,7 @@ a img {
     }
 
     .onglet {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .banniere {
@@ -391,28 +406,32 @@ a img {
         font-weight: 400;
         font-size: 1.6em;
     }
-
+    .carrousel {
+        height: 400px;
+    }
     .article {
         margin-bottom: 2vh;
-        margin-left: 4.5vw;
+        padding: 0 6px;
     }
-
 
     .text-article {
         padding: 0;
         margin: 0;
         height: auto;
+        line-height: 160%;
     }
 
-    .article-img {
-        height: auto;
+    .featured .article-img {
+        padding-right: 8px;
     }
 
     .title-article {
-        font-size: 1.4em;
-        font-weight: 400;
-        line-height: 4vw;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 2px;
+        line-height: 140%;
     }
 
     .start-article {
@@ -441,6 +460,19 @@ a img {
 
     footer {
         position: relative;
+    }
+
+    footer #instaPictures a {
+        margin: 0;
+        height: 70px;
+        padding: 3px;
+    }
+
+    footer #instaPictures img {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 100%;
     }
 
     footer .col-footer {
@@ -478,25 +510,28 @@ a img {
         display: flex;
         margin: 0;
         padding: 0;
-        margin-bottom: 1.5vh;
         padding-right: 2vh;
+        padding-bottom: 10px;
     }
 
     .f-aside .aside-img {
-        padding: 0;
         margin: 0;
-        height: 50px;
+        height: 70px;
+        padding: 0 3px 3px 0;
     }
 
     .f-aside img {
         padding: 0;
         margin: 0;
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
         height: 100%;
-        width: auto;
     }
 
     .f-article {
         padding: 0;
+        margin: 0;
     }
 
     footer .aside-title {
@@ -535,8 +570,7 @@ a img {
     }
 
     #social {
-
-        height: 5vh;
+        height: 6vh;
     }
 
     .social-links {
@@ -548,16 +582,14 @@ a img {
     }
 
     #social ion-icon {
-        height: 2vh;
-        width: 2vh;
-        padding: 0.5vh;
+        font-size: 0.7em;
+        padding: 3px;
         border-radius: 50%;
     }
 }
 
-
 /*----
--------------- DESKTOP lg -----------
+----------------------------- DESKTOP lg -----------------------------
 --------*/
 
 @media only screen and (min-width : 992px) {
@@ -575,12 +607,12 @@ a img {
     #navbar {
         height: 90px;
         display: flex;
-        padding-top: 30px;
+        padding-top: 25px;
         margin-bottom: 10px;
     }
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2.1em;
         margin: 0;
         padding: 0;
     }
@@ -599,30 +631,35 @@ a img {
         font-size: 0.5em;
     }
 
+    #onglets {}
+
     .onglet {
         font-size: 0.6em;
         text-transform: uppercase;
         padding: 0;
-        margin: 0;
         padding-bottom: 10px;
     }
 
     .main-content {
         margin-bottom: 50px;
         padding-top: 20px;
+        height: 300px;
     }
 
     .carrousel {
-        height: auto;
+        width: 100%;
+        height: 300px;
     }
 
-    figure img {
+    .imghome {
+        object-fit: cover;
+        object-position: 50% 50%;
         width: 100%;
-        height: auto;
-        padding-bottom: 10px;
+        height: 90%;
     }
 
     .banniere {
+        width: 100%;
         position: inherit;
         margin: 0;
         text-align: center;
@@ -633,9 +670,10 @@ a img {
     .title-ban {
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 1em;
+        font-size: 0.9em;
         padding: 0;
         margin: 0;
+        line-height: 110%;
     }
 
     .other-figure {
@@ -649,6 +687,22 @@ a img {
         padding: 0;
         padding-left: 10px;
     }
+
+    .other-figure .aside-img {
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+        height: 100px;
+    }
+    
+    .other-figure .aside-img img{
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
 
     .asideOne {
         margin: 0;
@@ -664,7 +718,7 @@ a img {
     .aside-title {
         text-transform: uppercase;
         margin: 0;
-        font-size: 0.6em;
+        font-size: 0.5em;
         letter-spacing: 0.05em;
         font-weight: 600;
         padding: 10px 0;
@@ -683,19 +737,31 @@ a img {
         margin-left: 4.5vw;
     }
 
-    .article-img {
-        height: auto;
-    }
-
     .cat-article {
         display: flex;
         border-right: 3px solid #f7f7f7;
         padding: 0;
-        margin: 1vw 0;
+        margin: 0;
     }
-    
-     .cat-article p {
-       padding-right: 5px;
+
+    .cat-article p {
+        padding-right: 5px;
+    }
+
+    .article-img {
+        height: 160px;
+    }
+
+    .article-img img {
+        height: 85%;
+    }
+
+    .latest-row .article-img {
+        height: 140px;
+    }
+
+    .latest-row .article-img img {
+        height: 100%;
     }
 
     .latest-row .text-article {
@@ -707,13 +773,18 @@ a img {
         padding-bottom: 1vw;
     }
 
+    .latest-row .text-article {
+        padding: 0;
+
+    }
+
     .cat-first,
     .cat-second {
         color: #f46700;
         text-transform: uppercase;
         padding: 0;
         margin: 0;
-        font-size: 0.5em;
+        font-size: 0.4em;
         font-weight: 600;
     }
 
@@ -721,35 +792,42 @@ a img {
         display: none;
     }
 
+    .text-article {
+        line-height: 100%;
+        padding-left: 15px;
+    }
+
     .title-article {
-        font-size: 0.7em;
+        font-size: 0.65em;
         font-weight: 600;
         line-height: 140%;
         margin: 0;
         margin-left: 0;
-        padding: 10px 0;
+        padding: 4px 0;
     }
 
     .start-article {
         display: block;
-        font-size: 0.7em;
+        font-size: 0.6em;
         font-weight: 200;
+        padding: 5px 0;
+        margin-bottom: 5px;
     }
 
     .share-btn {
         display: flex;
         align-items: center;
-        color: #959595;
         font-weight: 100;
         text-transform: uppercase;
-        font-size: 0.6em;
+        font-size: 0.5em;
+        padding-left: 15px;
     }
 
     .share-btn ion-icon {
-        border: 1px solid #959595;
+        border: 1px solid #ebebeb;
         border-radius: 50%;
-        padding: 5px;
-        font-size: 1.5em;
+        padding: 2px;
+        font-size: 1.1em;
         color: black;
         margin-right: 7px;
     }
@@ -772,32 +850,54 @@ a img {
     }
 
     .f-aside {
-        margin-bottom: 15px;
+        margin: 0;
+        padding: 0;
+
         padding-right: 20px;
     }
 
-
     .f-aside .aside-img {
-        height: 40px;
+        height: 60px;
+    }
+
+    .f-aside .aside-img img {
+    height: 90%;
+
     }
 
     footer .aside-title {
         text-transform: capitalize;
-        font-size: 0.7vw;
-    }
-     #instaPictures a img {
-        height: 60px;
-        width: 65px;
+        font-size: 0.4em;
+        font-weight: 600;
     }
 
+    footer #instaPictures a {
+        text-align: center;
+        height: 70px;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 7px;
+    }
+
+    footer #instaPictures img {
+        padding: 0;
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 80%;
+        height: 100%;
+    }
 
     .social-links {
         right: 18vw;
     }
 
     #social ion-icon {
-        height: 13px;
-        width: 13px;
-        padding: 10px;
+        font-size: 0.1em;
+        padding: 4px;
+    }
+
+    #social {
+        height: 80px;
+        padding-top: 0;
     }
 }
