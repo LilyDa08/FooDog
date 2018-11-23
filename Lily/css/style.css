@@ -96,17 +96,32 @@ h4 {
 }
 
 .carrousel {
-    margin: 0;
+
     position: relative;
     padding: 0;
-
+    margin: 0 auto;
+    
 }
 
-figure img {
+
+.imghome {
+    object-fit: cover;
+
+    /* display: block; */
+    margin: 0 auto;
+
+    width:100%;
+}
+
+
+
+
+
+/* figure img {
     margin: 0;
     padding: 0;
     width: 100%;
-}
+} */
 
 .banniere {
     margin: 0;
@@ -127,6 +142,7 @@ figure img {
     padding: 0;
     margin: 0;
 }
+
 
 .other-figure {
     display: none;
@@ -158,12 +174,18 @@ figure img {
     margin-top: 2vw;
     position: relative;
     height: auto;
+
 }
 
 .article-img {
     padding: 0;
     margin: 0;
     padding-right: 2vw;
+    object-fit: cover;
+    object-position: -10% 40%;
+    /* width: 230px;
+    height: 100px; */
+
 }
 
 .article-img img {
@@ -174,6 +196,13 @@ figure img {
 
 .latest-row .cat-second {
     display: none;
+}
+
+.latest-row img {
+
+    width: 254px;
+    height: 212px;
+
 }
 
 .cat-article {
@@ -401,9 +430,7 @@ a img {
         height: auto;
     }
 
-    .article-img {
-        height: auto;
-    }
+    .article-img {}
 
     .title-article {
         font-size: 1.4em;
@@ -611,9 +638,12 @@ a img {
 
     .carrousel {
         height: auto;
+        min-width: 518px;
+        min-height: 355px;
     }
 
-    figure img {
+
+    .imghome {
         width: 100%;
         height: auto;
         padding-bottom: 10px;
@@ -681,7 +711,8 @@ a img {
     }
 
     .article-img {
-        height: auto;
+
+        
     }
 
     .cat-article {
@@ -690,9 +721,9 @@ a img {
         padding: 0;
         margin: 1vw 0;
     }
-    
-     .cat-article p {
-       padding-right: 5px;
+
+    .cat-article p {
+        padding-right: 5px;
     }
 
     .latest-row .text-article {
@@ -782,7 +813,8 @@ a img {
         text-transform: capitalize;
         font-size: 0.7vw;
     }
-     #instaPictures a img {
+
+    #instaPictures a img {
         height: 60px;
         width: 65px;
     }
