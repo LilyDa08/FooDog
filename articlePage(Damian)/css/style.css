@@ -77,7 +77,7 @@ header {
     padding: 0;
     text-align: right;
     margin: 0;
-    margin-right: 1vh;
+    padding-right: 1vw;
 }
 
 #dkpForm {
@@ -86,9 +86,11 @@ header {
     height: 100%;
     display: none;
 }
+
 .navSearch {
     display: none;
 }
+
 header .mailBtn1 {
     height: 70%;
     margin: 0;
@@ -487,7 +489,8 @@ a img {
 }
 
 /*----- 
-------------------------  TABLETS  ---------------- 
+------------------------  TABLETS  ---------------------------------------
+-------------------------------------------------------------------------- 
 ------*/
 
 @media only screen and (min-width : 768px) {
@@ -504,6 +507,7 @@ a img {
 
     /*  */
     h1 {
+        margin: 0;
         font-size: 1.4em;
         text-align: left;
     }
@@ -542,11 +546,32 @@ a img {
         padding-left: 5px;
         text-transform: uppercase;
     }
+
     .navSearch {
         display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
     }
+
     .form-inline {
-        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-inline ion-icon {
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-inline button {
+        background-color: #30333600;
+    }
+
+    .navSearch img {
+        padding: 0;
+        height: 70%;
     }
 
     header .mailBtn1 {
@@ -568,10 +593,12 @@ a img {
 
     #articleAuthor {
         padding: 1vh 0 1vh 1vh;
+        border-right: none;
     }
 
     #authorName1 h4 {
         font-size: 0.6em;
+        border-right: 2px solid #e6e6e6;
     }
 
     #articleShare1 {
@@ -631,19 +658,18 @@ a img {
     .addIcon {
         margin: 0;
         padding: 0 70px;
-        align-items: center;
+
     }
 
     .advertisement a {
         margin: 0;
         text-align: center;
         padding: 0;
-        align-items: center;
     }
 
     .addFollow {
         text-transform: uppercase;
-        font-size: 0.4em;
+        font-size: 0.6em;
         color: #919191;
         margin: 0;
         padding: 0;
@@ -674,21 +700,24 @@ a img {
     }
 
     .addLast {
+        display: flex;
+        align-items: center;
         margin: 20px 0;
         padding: 0;
         height: 40px;
     }
 
-    .addLogo {
-        padding: 0;
-        padding-left: 20px;
+    .addLast img {
+        width: 100%;
+        padding: 0 10px;
     }
 
     .addText {
         line-height: 100%;
-        font-size: 0.6em;
+        font-size: 0.8em;
         margin: 0;
         padding: 0;
+        padding-right: 15px;
     }
 
     #addTitle {
@@ -755,7 +784,8 @@ a img {
         font-size: 0.45em;
         font-weight: bolder;
     }
-    .labelRep{
+
+    .labelRep {
         font-size: 0.5em;
         font-weight: bolder;
     }
@@ -871,21 +901,24 @@ a img {
         left: 0;
         font-weight: bolder;
     }
+
     .recomImg img {
         width: 95%;
     }
 
     /* Form */
-#textcomment {
-    font-size: 0.4em;
-    height : 100px;
-}
+    #textcomment {
+        font-size: 0.4em;
+        height: 100px;
+    }
+
     .info {
         margin: auto;
         margin-top: 10px;
         font-size: 0.4em;
         padding: 5px;
     }
+
     #response .mailBtn1 {
         padding: 0;
         font-size: 0.6em;
@@ -1024,10 +1057,30 @@ a img {
         background-color: rgba(255, 255, 255, 0);
         font-size: 0.5vw;
         font-weight: 600;
+        padding-bottom: 0;
     }
 
     h3 {
         font-size: 1.2vw;
+    }
+
+    #authorName1 {
+        padding: 0;
+    }
+
+    #authorName1 h4 {
+        font-size: 0.4em;
+    }
+    #articleShare1 {
+
+    }
+
+    #comment {
+        
+    }
+
+    #share1{
+
     }
 
     header {
@@ -1060,22 +1113,21 @@ a img {
 
     /*    Previous article */
 
-#response .mailBtn1 {
-    font-size: 0.3em;
-    border-radius: 0;
-    height: 20px;
+    #response .mailBtn1 {
+        font-size: 0.3em;
+        border-radius: 0;
+        height: 20px;
+    }
 
-}
-.addFollow {
- 
-}
-.addIcon {
-    padding: 0 40px;
-}
+    .addFollow {}
+
+    .addIcon {
+        padding: 0 40px;
+    }
 
 
     /* ------ FOOTER --------- */
-  
+
     .footer-title {
         font-size: 0.7vw;
     }
@@ -1103,7 +1155,6 @@ a img {
         height: 60px;
         width: 65px;
     }
-
 
     .social-links {
         right: 18vw;
