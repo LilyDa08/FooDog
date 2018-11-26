@@ -35,13 +35,11 @@ xhr.onreadystatechange = function () {
     //  }
 
     carrous += /*html*/ `
-
       <figure class="carrousel col-12 col-md-12 col-lg-7"><img src="${parsedData.docs[7].imgUrl}" class="imghome">
         <div class="banniere">
           <h2>wellness</h2>
           <p class="title-ban col-12">5 reasons your dog is vomiting</p>
         </div>
-
       </figure>
       `
 
@@ -68,7 +66,6 @@ xhr.onreadystatechange = function () {
     for (let i = 0; i < 3; i++) {
 
       feature += /*html*/ `
-
 <article class="row article">
         <div class="article-img col-5 col-lg-6">
            <img src="${parsedData.docs[i].imgUrl}">
@@ -78,7 +75,6 @@ xhr.onreadystatechange = function () {
              <p class="cat-first col-lg-7">featured</p>
             <p class="cat-second col-lg-5">nutrition</p>
          </div>
-
            <p class="title-article">${parsedData.docs[i].title}</p>
           <p class="start-article">${parsedData.docs[i].text.substring(0, 100)}...</p>
            <div class="row share-btn">
@@ -89,7 +85,6 @@ xhr.onreadystatechange = function () {
              <a href="#">Read more...</a>
            </div>
          </div>
-
        </article>
  `
     }
@@ -101,7 +96,6 @@ xhr.onreadystatechange = function () {
     for (let i = 0; i < 4; i++) {
 
       latest += /*html*/ `
-
         <article class="row article col-lg-6">
           <div class="article-img col-5 col-lg-12">
             <img src="${parsedData.docs[i].imgUrl}">

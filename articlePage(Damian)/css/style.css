@@ -22,7 +22,6 @@ h1 {
     font-size: 2em;
     padding: 0;
     margin: 0;
-    margin-top: 2vw;
     text-align: center;
 }
 
@@ -30,6 +29,21 @@ h1 {
     padding: 0;
     margin: 0;
 }
+
+#navbar {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(101, 101, 101, 0.3);
+    height: 11vh;
+}
+
+#navbar button {
+    padding: 0;
+    margin: 0;
+}
+
 
 h2 {
     text-transform: uppercase;
@@ -51,7 +65,8 @@ h3 {
     font-weight: 400;
     margin-bottom: 1vh;
     text-transform: uppercase;
-    font-weight: 600
+    font-weight: 600;
+    text-align: center;
 }
 
 h5 {
@@ -63,13 +78,6 @@ h6 small {
     color: #6d6d6d;
     text-transform: uppercase;
     font-size: 0.5em;
-}
-
-header {
-    margin: 0 !important;
-    border-bottom: 1px solid rgba(101, 101, 101, 0.3);
-    height: 11vh;
-    align-items: center;
 }
 
 #mailDigest1 {
@@ -91,16 +99,15 @@ header {
     display: none;
 }
 
-header .mailBtn1 {
+nav .mailBtn1 {
     height: 70%;
-    margin: 0;
+    margin: 0 3px;
     background-color: black;
 }
 
-#articleTitle {
-    font-size: 0.8em;
+.articleTitles {
+    font-size: 1.2em;
     font-weight: 600;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -125,11 +132,9 @@ figure img {
     height: 11vh;
     border-top: 1px solid rgb(239, 239, 239);
     border-bottom: 1px solid rgb(239, 239, 239);
-
 }
 
 #articleAuthor {
-
     border-right: 1px solid rgb(239, 239, 239);
     margin: 0;
     padding: 1vh 0 1vh 1vh;
@@ -145,7 +150,7 @@ figure img {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.7em;
 }
 
 #articleShare1 {
@@ -293,7 +298,6 @@ figure img {
     padding-left: 1vh;
     align-items: center;
     padding: 1vh 0;
-
 }
 
 #firstTD {
@@ -532,7 +536,7 @@ a img {
         font-size: 1em;
     }
 
-    header {
+    #navbar {
         height: 40px;
     }
 
@@ -578,7 +582,7 @@ a img {
         height: 70%;
     }
 
-    header .mailBtn1 {
+    nav .mailBtn1 {
         height: 20px;
         font-size: 0.5em;
         padding: 0;
@@ -591,7 +595,7 @@ a img {
         margin: 0 auto;
         height: 40vh;
     }
-    
+
     figure img {
         object-fit: cover;
         object-position: 50% 50%;
@@ -853,7 +857,6 @@ a img {
         font-size: 0.4em;
     }
 
-
     #mail2 {
         height: 20px;
     }
@@ -1041,7 +1044,6 @@ a img {
     }
 
     #social {
-
         height: 5vh;
     }
 
@@ -1052,13 +1054,12 @@ a img {
     #social a {
         margin-right: 0;
     }
-
 }
 
 
-/*----
-------- DESKTOP --------
-----*/
+/*-------------
+-------------------------- DESKTOP ----------------
+-----------------*/
 
 @media only screen and (min-width : 992px) {
 
@@ -1090,19 +1091,8 @@ a img {
     #authorName1 h4 {
         font-size: 0.4em;
     }
-    #articleShare1 {
 
-    }
-
-    #comment {
-        
-    }
-
-    #share1{
-
-    }
-
-    header {
+    #navbar {
         height: 30px;
     }
 
@@ -1116,7 +1106,7 @@ a img {
         font-size: 0.35em;
     }
 
-    header .mailBtn1 {
+    nav .mailBtn1 {
         height: 15px;
         font-size: 0.4em;
         padding: 0;
@@ -1129,7 +1119,7 @@ a img {
         margin: 0 auto;
         height: 350px;
     }
-    
+
     figure img {
         object-fit: cover;
         object-position: 50% 50%;
@@ -1137,12 +1127,6 @@ a img {
         height: 100%;
         margin: 0 auto;
     }
-    /* Article */
-
-
-    /* Table after */
-
-
 
     /*    Previous article */
 
@@ -1151,8 +1135,6 @@ a img {
         border-radius: 0;
         height: 20px;
     }
-
-    .addFollow {}
 
     .addIcon {
         padding: 0 40px;
