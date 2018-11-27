@@ -397,6 +397,10 @@ footer #instaPictures img {
         padding-bottom: 5px;
     }
 
+    .navbar-toggler {
+        display: none;
+    }
+
     .loupe {
         color: black;
         font-size: 30px;
@@ -473,7 +477,7 @@ footer #instaPictures img {
         top: -2.5vh;
         font-size: 0.9em;
         letter-spacing: 1.5px;
-        margin-left: 4vh;
+        margin-left: 0;
         padding: 1vh;
         font-weight: 600;
     }
