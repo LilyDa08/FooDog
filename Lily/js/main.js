@@ -15,23 +15,16 @@ xhr.onreadystatechange = function () {
     let parsedData = JSON.parse(xhr.responseText);
     console.log(parsedData);
 
-
     // créer un tableau reprenant toutes les images de la structure HTML
 
     let imghome = document.querySelectorAll("img");
-
     // //Boucle qui select tout les images dans l'API
-
     // for (let index = 0; index < parsedData.docs.length; index++) {
     //   console.log('parseData[index] :', parsedData.docs[index].imgUrl);
-
     //   //Boucle qui select les image et les remplace dans l'HTML
-
     //    for (let i = 0; i < imghome.length; i++) {
     //      imghome[i].src = parsedData.docs[i].imgUrl;
-
     //    }
-
     //  }
 
     carrous += /*html*/ `
@@ -42,7 +35,6 @@ xhr.onreadystatechange = function () {
         </div>
       </figure>
       `
-
 
     document.querySelector(".carrousel").innerHTML = carrous;
 

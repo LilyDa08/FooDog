@@ -25,6 +25,117 @@ h1 {
     text-align: center;
 }
 
+/* burger */
+.dropdown {
+    padding: 5px;
+    margin: 0;
+}
+
+#navbar {
+    height: 10vh;
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+.dropbtn {
+    color: black;
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25px;
+    padding: 0;
+    padding-left: 14px;
+    margin: 0;
+}
+
+.dropbtn ion-icon {
+    margin: 0;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    color: #e56100;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2px 16px;
+    display: block;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.dropdown ion-icon {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+/* burger */
+
+
+/* LOUPE */
+.ricerca {
+    position: relative;
+    display: inline-block;
+}
+
+#searchDrop {
+    top: 32px;
+    right: 2px;
+    position: absolute;
+    min-width: 88px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px #6b6b6b33;
+    z-index: 1;
+    
+}
+
+#searchDrop input {
+    color: black;
+    padding: 2px 16px;
+    display: block;
+    font-size: 15px;
+    background-color: #f1f1f1; 
+    
+    
+}
+
+form {
+    padding-right: 0;
+}
+
+
+.loupe {
+    color: black;
+    font-size: 15
+    px;
+}
+
+/*  */
+
 .row {
     padding: 0;
     margin: 0;
@@ -43,7 +154,6 @@ h1 {
     padding: 0;
     margin: 0;
 }
-
 
 h2 {
     text-transform: uppercase;
@@ -591,6 +701,8 @@ a img {
         height: 70%;
     }
 
+
+
     nav .mailBtn1 {
         height: 20px;
         font-size: 0.5em;
@@ -752,6 +864,7 @@ a img {
         height: 100%;
         margin: 0 auto;
     }
+
     .addLogo {
         height: 100%;
         padding: 0 20px;
@@ -772,7 +885,7 @@ a img {
         font-size: 0.7em;
         width: 71%;
         margin: 0;
-        margin-top : 6px;
+        margin-top: 6px;
         padding: 0;
     }
 
@@ -1088,8 +1201,8 @@ a img {
 }
 
 
-/*-------------
--------------------------- DESKTOP ----------------
+/*-------------------
+-------------------------- DESKTOP ------------------------------
 -----------------*/
 
 @media only screen and (min-width : 992px) {
@@ -1113,6 +1226,10 @@ a img {
 
     h3 {
         font-size: 1.2vw;
+    }
+
+    .headerSocial {
+        margin: 4px;
     }
 
     #authorName1 {
@@ -1187,11 +1304,13 @@ a img {
         height: 100%;
         margin: 0 auto;
     }
+
     .addLogo {
         height: 100%;
-        padding: 0 10px;
+        padding: 0;
     }
-    .addText{
+
+    .addText {
         padding: 0;
     }
 
