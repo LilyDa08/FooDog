@@ -28,12 +28,11 @@ xhr.onreadystatechange = function () {
     //  }
 
     carrous += /*html*/ `
-      <figure class="carrousel col-12 col-md-12 col-lg-7"><img src="${parsedData.docs[7].imgUrl}" class="imghome">
+      <img src="${parsedData.docs[7].imgUrl}" class="imghome">
         <div class="banniere">
           <h2>wellness</h2>
           <p class="title-ban col-12">5 reasons your dog is vomiting</p>
         </div>
-      </figure>
       `
 
     document.querySelector(".carrousel").innerHTML = carrous;

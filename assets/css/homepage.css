@@ -437,7 +437,6 @@ footer #instaPictures img {
         color: black;
     }
 
-
     #searchDrop {
         top: 48px;
         right: -30px;
@@ -485,21 +484,19 @@ footer #instaPictures img {
     .onglet {
         font-size: 1.1em;
     }
-
+    
     .banniere {
-        padding: 1.5vw;
         padding-right: 4vw;
-        height: 10vw;
+        height: 110px;
     }
 
     .title-ban {
         padding: 0;
         font-weight: 400;
         font-size: 1.6em;
+        line-height: 
     }
-    .carrousel {
-        height: 400px;
-    }
+   
     .article {
         margin-bottom: 2vh;
         padding: 0 6px;
@@ -679,9 +676,9 @@ footer #instaPictures img {
     }
 }
 
-/*----
+/*-$$$$$$$$$$$$$$$$$$$$---
 ----------------------------- DESKTOP lg -----------------------------
---------*/
+--------$$$$$$$$$$$$$$$$$$$$$*/
 
 @media only screen and (min-width : 992px) {
 
@@ -738,14 +735,14 @@ footer #instaPictures img {
     }
 
     .carrousel {
-        width: 100%;
+        width: 413px;
         height: 300px;
     }
 
     .imghome {
         object-fit: cover;
         object-position: 50% 50%;
-        width: 100%;
+        min-width: 100% !important;
         height: 90%;
     }
 
@@ -794,7 +791,6 @@ footer #instaPictures img {
         margin: 0 auto;
     }
     
-
     .asideOne {
         margin: 0;
         padding: 0;
