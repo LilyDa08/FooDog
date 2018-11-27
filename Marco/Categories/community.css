@@ -25,16 +25,9 @@ body {
     color: #000;
 }
 
-#navbar {
-    height: 10vh;
-    display: flex;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-}
-
-/*bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
-.dropdown {
-    padding: 1.25rem;
+#linkTitolo {
+    text-decoration: none;
+    color: black;
 }
 
 h1 {
@@ -75,6 +68,7 @@ h2 {
 
 /* HEADER CSS BELOW */
 
+
 #navbar {
     height: 10vh;
     display: flex;
@@ -99,6 +93,7 @@ h2 {
 }
 
 .dropdown {
+    padding: 1.25rem;
     position: relative;
     display: inline-block;
     height: 40px;
@@ -140,26 +135,22 @@ h2 {
 }
 
 #searchDrop {
-    background-color: rgba(0, 0, 0, 0);
-    top: 28px;
-    right: 2px;
+    top: 5vh;
+    right: -11vw;
+    width: 29vw;
     position: absolute;
     min-width: 88px;
+    border-radius: 5px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px #6b6b6b33;
     z-index: 1;
+    box-shadow: 0px 8px 16px 0px #6b6b6b33;
 }
 
-#searchfrop input {
-    border-radius: 5px;
-    color: black;
-    padding: 2px 16px;
-    display: block;
-    font-size: 15px;
+input {
+    border-radius: 5px;   
 }
 
 /*endsep*/
-
 
 form {
     padding-right: 0;
@@ -370,6 +361,8 @@ a img {
     margin-right: 2vh;
 }
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX TABLET XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX TABLET XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
@@ -385,9 +378,6 @@ a img {
         z-index: 20;
     }
 
-    /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-
-
     h1 {
         margin-top: 0;
         font-size: 3em;
@@ -398,6 +388,22 @@ a img {
         margin-left: 17px;
         color: black;
         font-size: 30px;
+    }
+
+    #searchDrop {
+        top: 48px;
+        right: -30px;
+        width: initial;
+        position: absolute;
+        min-width: 88px;
+        border-radius: 5px;
+        overflow: auto;
+        z-index: 1;
+        box-shadow: 0px 8px 16px 0px #6b6b6b33;
+    }
+    
+    input {
+        border-radius: 5px;   
     }
 
     .btn-default {
@@ -571,6 +577,9 @@ a img {
     }
 }
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DESKTOP XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DESKTOP XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
 @media only screen and (min-width : 992px) {
 
     body {
@@ -601,6 +610,22 @@ a img {
         font-size: 12px;
     }
 
+    #searchDrop {
+        top: 28px;
+        right: 2px;
+        width: initial;
+        position: absolute;
+        min-width: 88px;
+        border-radius: 5px;
+        overflow: auto;
+        z-index: 1;
+        box-shadow: 0px 8px 16px 0px #6b6b6b33;
+    }
+    
+    input {
+        border-radius: 5px;   
+    }
+
     .facebook,
     .twitter,
     .insta {
@@ -628,8 +653,10 @@ a img {
         font-size: 11px;
     }
 
-    .headerCat p {
+    .headerCat a {
         margin-bottom: 0.5rem;
+        text-decoration: none;
+        color: black;
     }
 
     /*MAIN CSS BELOW*/
