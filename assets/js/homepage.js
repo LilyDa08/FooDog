@@ -28,7 +28,7 @@ xhr.onreadystatechange = function () {
     //  }
 
     carrous += /*html*/ `
-      <img src="${parsedData.docs[6].imgUrl}" class="imghome">
+      <img src="${parsedData.docs[4].imgUrl}" class="imghome">
         <div class="banniere">
           <h2>wellness</h2>
           <p class="title-ban col-12">5 reasons your dog is vomiting</p>
@@ -39,7 +39,7 @@ xhr.onreadystatechange = function () {
 
     //*****************************************************************************
 
-    for (let i = 5; i < 9; i++) {
+    for (let i = 0; i < 4; i++) {
 
       other += /*html*/ `
         
