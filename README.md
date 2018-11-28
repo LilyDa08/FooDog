@@ -52,9 +52,9 @@ README edit : 25 november 2018.
 
 The development is still in progress, but here are our mockups for each page type.
 
-![Home Page](MockupSmartphone/Homepage.png)  
+![Home Page](/MockupSmartphone/Homepage.png)  
 ---
-![category Page](MockupSmartphone/category.png)  
+![category Page](/MockupSmartphone/category.png)  
 ---
-![article Page](MockupSmartphone/article.png) 
+![article Page](/MockupSmartphone/article.png) 
 --- 
