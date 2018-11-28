@@ -17,7 +17,10 @@ xhr.onreadystatechange = function () {
 
     // créer un tableau reprenant toutes les images de la structure HTML
 
-    let imghome = document.querySelectorAll("img");
+    let imghome = document.querySelectorAll(".imagehp");
+    let titleHome = document.querySelectorAll(".titlehp");
+    let textHome = document.querySelectorAll(".texthp");
+
     // //Boucle qui select tout les images dans l'API
     // for (let index = 0; index < parsedData.docs.length; index++) {
     //   console.log('parseData[index] :', parsedData.docs[index].imgUrl);
@@ -27,11 +30,13 @@ xhr.onreadystatechange = function () {
     //    }
     //  }
 
+
     carrous += /*html*/ `
-      <img src="${parsedData.docs[4].imgUrl}" class="imghome">
+
+      <a href="article.html?id=${parsedData.docs[0]._id}"> <img src="${parsedData.docs[0].imgUrl}" class="imghome"> </a>
         <div class="banniere">
           <h2>wellness</h2>
-          <p class="title-ban col-12">5 reasons your dog is vomiting</p>
+          <p class="title-ban col-12">${parsedData.docs[0].title}</p>
         </div>
       `
 
@@ -39,12 +44,12 @@ xhr.onreadystatechange = function () {
 
     //*****************************************************************************
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 1; i < 5; i++) {
 
       other += /*html*/ `
         
           <div class="asideOne col-lg-6">
-            <div class="aside-img col-12"><img class="col-12" src="${parsedData.docs[i].imgUrl}"></div>
+            <div class="aside-img col-12"><a href="article.html?id=${parsedData.docs[i]._id}"><img class="col-12" src="${parsedData.docs[i].imgUrl}"></a></div>
             <p class="aside-title col-12">${parsedData.docs[i].title}</p>
           </div>
          `
@@ -57,9 +62,10 @@ xhr.onreadystatechange = function () {
     for (let i = 0; i < 3; i++) {
 
       feature += /*html*/ `
+
 <article class="row article">
         <div class="article-img col-5 col-lg-6">
-           <img src="${parsedData.docs[i].imgUrl}">
+        <a href="article.html?id=${parsedData.docs[i]._id}"><img src="${parsedData.docs[i].imgUrl}"></a>
          </div>
         <div class="text-article col-7 col-lg-6">
           <div class="row cat-article col-lg-5">
@@ -87,9 +93,10 @@ xhr.onreadystatechange = function () {
     for (let i = 0; i < 4; i++) {
 
       latest += /*html*/ `
+
         <article class="row article col-lg-6">
           <div class="article-img col-5 col-lg-12">
-            <img src="${parsedData.docs[i].imgUrl}">
+          <a href="article.html?id=${parsedData.docs[i]._id}"><img src="${parsedData.docs[i].imgUrl}"></a>
           </div>
           <div class="text-article col-7 col-lg-12">
             <p class="cat-second">nutrition</p>
@@ -111,6 +118,12 @@ xhr.onreadystatechange = function () {
 };
 
 xhr.send();
+
+
+
+
+
+
 
 let search = document.querySelector(".loupe")
 

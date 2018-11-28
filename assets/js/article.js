@@ -26,42 +26,35 @@ const dropSearch = () => {
 
 search.addEventListener("click", dropSearch);
 
+//-----------------------------------------------------------------------------------------------
 
+let xhr = new XMLHttpRequest();
+let url = new URLSearchParams(window.location.search);
+url = url.get('id');
+let main = "";
 
-// let xhr = new XMLHttpRequest();
+xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
 
-// let articles = '';
+xhr.onreadystatechange = function () {
 
-// xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
-// xhr.onreadystatechange = function () {
-//     if (this.readyState == 4 && this.status == 200) {
-//         let parsedData = JSON.parse(xhr.responseText);
-//         console.log(parsedData);
+    if (this.readyState == 4 && this.status == 200) {
+        let parsedData = JSON.parse(xhr.responseText);
+        console.log(parsedData);
+        for (let i = 0; i < parsedData.docs.length; i++) {
+            if (parsedData.docs[i]._id == url) {
+                main += /*html*/ `
+                <h2>nutrition</h2>
+                <h3>the 11 dog food label tricks every owner needs to know</h3>
+                <!-- Image -->
+                <figure class="container-fluid">
+                    <img src="${parsedData.docs[i].imgUrl}" alt="main picture">
+                </figure>
+                `
+                document.querySelector("#articleTitle").innerHTML = main;
 
-//         for (let i = 0; i < 9; i++) {
-            
-//             articles += /*html*/ `
-//             <article class="row article col-lg-6 ">
-//             <figure class="offset-xs-1 col-10 article-img centered col-md-4">
-//                 <img src="${parsedData.docs[i].imgUrl}">
-//             </figure>
-//             <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
-//                 <p class="categoryArticle"><b>COMMUNITY</b></p>
-//                 <p class="titleArticle">${parsedData.docs[i].title}</p>
-//                 <p class="previewArticle">${parsedData.docs[i].text.substring(0,100)}</p>
-//                 <div class="row share-btn">
-//                     <ion-icon name="share-alt"></ion-icon>
-//                     share
-//                 </div>
-//                 <div class="readmore">
-//                     <a href="#">Read more...</a>
-//                 </div>
-//             </div>
-//         </article>
-//             `
-//         }
-//         document.querySelector("#allArticle").innerHTML = articles;
-//     }
-// };
+            }
+        }
+    }
+}
 
-// xhr.send();
+xhr.send();
