@@ -28,7 +28,7 @@ Everyone took a different page template and we regularly do small debriefings to
 
 We did all the mockups and started the mobile versions development.  
 You can keep exact track of our work in the "Projects" part.  
-# 25th november
+### 25th november
 the design is done for the 3 main pages.
 we are now working on the AJAX HTTPRequest.
 
