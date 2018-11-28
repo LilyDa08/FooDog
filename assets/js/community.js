@@ -55,11 +55,11 @@ xhr.onreadystatechange = function () {
 
             articles += /*html*/ `
             
-            <article class="row article col-lg-6 ">
-            <figure class="offset-xs-1 col-10 article-img centered col-md-4">
+            <article class="row article col-md-12 offset-lg-3 col-lg-6">
+            <figure class="col-10 article-img centered col-md-5">
             <a href="article.html?id=${parsedData.docs[i]._id}"><img class="imgArticle" src="${parsedData.docs[i].imgUrl}"></a>
             </figure>
-            <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
+            <div class="offset-xs-1 col-10 articles col-md-7">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
                 <p class="titleArticle">${parsedData.docs[i].title}</p>
                 <p class="previewArticle">${parsedData.docs[i].text.substring(0,100)}</p>
@@ -71,7 +71,7 @@ xhr.onreadystatechange = function () {
                     <a href="#">Read more...</a>
                 </div>
             </div>
-            </article>
+        </article>
             `
         }
         document.querySelector("#allArticle").innerHTML = articles;

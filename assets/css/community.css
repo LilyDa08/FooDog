@@ -694,7 +694,9 @@ a img {
         padding: 0;
         height: 150px;
     }
-
+#allArticle{
+    margin: auto;
+}
     .article-img img {
         object-fit: cover;
         object-position: 50% 50%;
