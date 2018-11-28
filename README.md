@@ -27,13 +27,16 @@ Everyone took a different page template and we regularly do small debriefings to
 ## Progression
 
 We did all the mockups and started the mobile versions development.  
-You can keep exact track of our work in the "Projects" part.   
+You can keep exact track of our work in the "Projects" part.  
+### 25th november
+the design is done for the 3 main pages.
+we are now working on the AJAX HTTPRequest.
 
 ## Details
 
 We're all interns at [Becode](https://www.becode.org/) and started the development learning in early september.  
 This project is an exercise to confirm our __HTML__ / __CSS__ / __Javascript__ skills, and introduce/continue the teaching of many skills :  
-- Bootstrap & SASS
+- Bootstrap
 - Ajax, HTTP Requests and Responses
 - Team management, the use of tools like Kanban
 - Development work splitting
@@ -42,14 +45,16 @@ This project is an exercise to confirm our __HTML__ / __CSS__ / __Javascript__ s
 ## Date & Time
 
 We started on 6 november 2018. We have + - two weeks to finish the project.  
->Last README edit : 8 november 2018.
+README edit : 8 november 2018.
+README edit : 25 november 2018.
 
 ## Design
 
 The development is still in progress, but here are our mockups for each page type.
 
-![alt text](https://github.com/LilyDa08/FooDog/blob/master/MockupSmartphone/HomePage_FooDog.png "Home Page")  
+![Home Page](/MockupSmartphone/Homepage.png)  
 ---
-![alt text](https://github.com/LilyDa08/FooDog/blob/master/MockupSmartphone/FooDog%20mock-up%20Marco2.png "Category Page")  
+![category Page](/MockupSmartphone/category.png)  
 ---
-![alt text](https://github.com/LilyDa08/FooDog/blob/master/MockupSmartphone/FooDog%20-%20Article%20mockup.png "Article Page")  
+![article Page](/MockupSmartphone/article.png) 
+--- 
