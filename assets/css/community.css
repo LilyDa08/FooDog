@@ -320,7 +320,6 @@ figure {
     padding: 0;
     padding-bottom: 1vh;
     font-size: 1.2em;
-    font-weight: bold;
 }
 
 #instaPictures {
@@ -417,13 +416,7 @@ a img {
 
     .loupe {
         margin-left: 17px;
-        color: black;
         font-size: 30px;
-    }
-
-    
-    input {
-        border-radius: 5px;   
     }
 
     .btn-default {
@@ -448,26 +441,20 @@ a img {
     }
 
     figure {
-     
         height: 160px;
     }
+
     .article-img img {
-        object-fit: cover;
-        object-position: 50% 50%;
-        width: 100%;
         height: 90%;
       }
 
     .categoryArticle {
-        margin: 0;
         display: initial;
     }
 
     .titleArticle {
-        text-transform: uppercase;
         font-size: 19px;
         margin: 0;
-        line-height: 4vw;
     }
 
     .previewArticle {
@@ -497,7 +484,6 @@ a img {
     }
 
     .footer-title {
-        margin: 0;
         padding: 0;
         padding-top: 3.5vh;
         padding-left: 1vw;
@@ -506,7 +492,6 @@ a img {
     }
 
     #allCategories {
-        padding: 0;
         margin: 0;
         margin-right: 30px;
     }
@@ -517,7 +502,6 @@ a img {
         font-size: 0.8em;
         border-bottom: 1px solid #4d4d4d;
         padding: 1.2vh 0;
-        font-weight: bold;
     }
 
     .f-AllAside {
@@ -575,16 +559,7 @@ a img {
         width: 100%;
     }
 
-    #social ion-icon {
-        background-color: #3A3E43;
-        height: 2vh;
-        width: 2vh;
-        padding: 1vh;
-        border-radius: 50%;
-    }
-
     #social {
-
         height: 5vh;
     }
 
@@ -597,15 +572,12 @@ a img {
     }
 
     #social ion-icon {
-        height: 2vh;
-        width: 2vh;
         padding: 0.5vh;
-        border-radius: 50%;
     }
 }
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DESKTOP XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DESKTOP XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* ------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX- DESKTOP -XXXXXXXXXXXXXXXXXX----------*/
+/* ---------------------XXXXXXXXXXXXXXXXXXX DESKTOP XXXXXXXXXXXXXX-----*/
 
 @media only screen and (min-width : 992px) {
 
@@ -793,7 +765,6 @@ a img {
         font-size: 0.8em;
         border-bottom: 1px solid #4d4d4d;
         padding: 1.2vh 0;
-        font-weight: bold;
     }
 
     .f-AllAside {
