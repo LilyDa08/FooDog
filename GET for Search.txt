@@ -20,4 +20,4 @@ xhr.onreadystatechange = () => {
 
 xhr.open('GET', endpoint);
 xhr.send();
-}
+};

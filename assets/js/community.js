@@ -1,17 +1,17 @@
-let myVar = document.querySelector(".dropbtn")
-let othervar = document.querySelector("#myDropdown")
+let myVar = document.querySelector(".dropbtn");
+let othervar = document.querySelector("#myDropdown");
 
 const dropMenu = () => {
     if (othervar.style.display == "block") {
-        othervar.style.display = "none"
+        othervar.style.display = "none";
     } else {
-        othervar.style.display = "block"
+        othervar.style.display = "block";
     }
 }
 
 myVar.addEventListener("click", dropMenu);
 
-let search = document.querySelector(".loupe")
+let search = document.querySelector(".loupe");
 
 let modal = document.getElementById('myModal');
 
@@ -21,7 +21,7 @@ let span = document.getElementsByClassName("close")[0];
 
 const showModal = () => {
     modal.style.display = "block";
-}
+};
 
 search.addEventListener("click", showModal)
 
@@ -29,15 +29,15 @@ search.addEventListener("click", showModal)
 
 const closeModal = () => {
     modal.style.display = "none";
-}
+};
 
-span.addEventListener("click", closeModal)
+span.addEventListener("click", closeModal);
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
 
 // AJAX REQUESTS BELOW XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -71,7 +71,7 @@ xhr.onreadystatechange = function () {
                 </div>
             </div>
         </article>
-            `
+            `; 
         }
         document.querySelector("#allArticle").innerHTML = articles;
     }
