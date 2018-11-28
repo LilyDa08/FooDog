@@ -52,8 +52,9 @@ README edit : 25 november 2018.
 
 The development is still in progress, but here are our mockups for each page type.
 
-![alt text](https://github.com/LilyDa08/FooDog/blob/master/MockupSmartphone/HomePage_FooDog.png "Home Page")  
+![Home Page](MockupSmartphone/Homepage.png)  
 ---
-![alt text](https://github.com/LilyDa08/FooDog/blob/master/MockupSmartphone/FooDog%20mock-up%20Marco2.png "Category Page")  
+![category Page](MockupSmartphone/category.png)  
 ---
-![alt text](https://github.com/LilyDa08/FooDog/blob/master/MockupSmartphone/FooDog%20-%20Article%20mockup.png "Article Page")  
+![article Page](MockupSmartphone/article.png) 
+--- 
