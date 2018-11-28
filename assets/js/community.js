@@ -71,10 +71,10 @@ xhr.onreadystatechange = function () {
                 </div>
             </div>
         </article>
-            `; 
+            `
         }
         document.querySelector("#allArticle").innerHTML = articles;
     }
-};
+}
 
 xhr.send();
