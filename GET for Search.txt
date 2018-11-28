@@ -1,0 +1,23 @@
+//Code pour avoir un article par tag (recherche)
+
+const url = 'https://foodog.herokuapp.com/articles/';
+const queryParams = '?tagForArticle=';
+
+// https://foodog.herokuapp.com/articles/[?tagForArticle=][inputTag]
+
+const getArticleByTag = () => {
+const inputTag = inputField.value;
+const endpoint = ${url}${queryParams}${inputTag};
+
+const xhr = new XMLHttpRequest();
+xhr.responseType = 'json';
+
+xhr.onreadystatechange = () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+        renderResponse(xhr.response);
+    }
+};
+
+xhr.open('GET', endpoint);
+xhr.send();
+}
