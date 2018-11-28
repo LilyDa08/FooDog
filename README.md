@@ -2,6 +2,7 @@ FooDog
 ======
 
 Welcome on the Github of the "__FooDog__" website project.  
+Here is the [link to our homePage](https://github.com/LilyDa08/FooDog/Homepage.html).   
 
 ## Developers
 
