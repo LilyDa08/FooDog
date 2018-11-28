@@ -97,7 +97,6 @@ h2 {
     text-transform: uppercase;
     color: #e56100;
     font-size: 4vw;
-    margin: 1vh auto;
     font-weight: 200;
     letter-spacing: 1px;
     padding: 1vw;
@@ -137,6 +136,7 @@ h2 {
     position: relative;
     display: inline-block;
     height: 40px;
+    margin: 0;
 }
 
 .dropdown-content {
@@ -174,8 +174,6 @@ h2 {
     display: inline-block;
 }
 
-
-
 input {
     border-radius: 5px;   
 }
@@ -198,24 +196,27 @@ main {
 
 article {
     border-bottom: solid 2px rgba(128, 128, 128, 0.1);
-    margin: 2vh auto 2vh auto !important;
+    margin:0;
     padding-bottom: 1vh;
-    width: 90vw !important;
+    padding-top: 5px;
 }
 
 .article-img img {
-    height: 70vw;
-    width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
 }
 
 figure {
     margin-bottom: 3px;
     padding: 0;
     margin: auto;
+    height: 17vh;
 }
 
 .articles {
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .categoryArticle {
@@ -229,12 +230,12 @@ figure {
 
 .titleArticle {
     text-transform: uppercase;
-    font-size: 4vw;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 15px;
     margin-left: 1vh;
     font-weight: 600;
-    line-height: 6vw;
+    line-height: 120%;
 }
 
 .previewArticle {
@@ -256,7 +257,7 @@ figure {
 .readmore a {
     text-transform: uppercase;
     color: #f46700;
-    font-size: 3.2vw;
+    font-size: 0.9em !important;
 }
 
 .page-navigation {
@@ -442,13 +443,20 @@ a img {
 
     h2 {
         width: 90vw;
-        font-size: 2em;
-        padding-top: 2.2vw;
+        font-size: 1.2em;
+        padding-top: 30px;
     }
 
-    .article-img img {
-        height: 200px;
+    figure {
+     
+        height: 160px;
     }
+    .article-img img {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 90%;
+      }
 
     .categoryArticle {
         margin: 0;
@@ -637,7 +645,7 @@ a img {
     .twitter,
     .insta {
         display: initial;
-        ;
+
     }
 
     .headerSocial {
@@ -670,7 +678,7 @@ a img {
 
     h2 {
         width: 100%;
-        font-size: 1.3em;
+        font-size: 1em;
         letter-spacing: 0;
         font-weight: 100;
         color: black;
@@ -679,24 +687,25 @@ a img {
     main {
         width: 40%;
         margin-right: 0;
-        padding-top: 13vh !important
+        padding-top: 13vh !important;
     }
 
     figure {
-        margin-right: 0;
-        padding: 0 !important;
+        padding: 0;
+        height: 150px;
     }
 
-    #allArticle img {
-        height: 80%;
-        width: 90%;
-    }
+    .article-img img {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 90%;
+      }
 
     article {
         border-bottom: solid 2px rgba(128, 128, 128, 0.1);
-        margin: 2vh 0 2vh 20% !important;
-        padding-bottom: 1vh;
-        width: 90vw !important;
+        margin:0;
+
     }
 
     .articles {
