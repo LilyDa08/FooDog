@@ -50,16 +50,42 @@ XS  min-width = 0
     display: inline-block;
 }
 
-#searchDrop {
-    top: 5vh;
-    right: -11vw;
-    width: 29vw;
-    position: absolute;
-    min-width: 88px;
-    border-radius: 5px;
-    overflow: auto;
-    z-index: 1;
-    box-shadow: 0px 8px 16px 0px #6b6b6b33;
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #000000; /* Fallback color */
+    background-color: #00000066; /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 input {
@@ -403,7 +429,7 @@ footer #instaPictures img {
 
     .loupe {
         color: black;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .facebook,
@@ -437,18 +463,6 @@ footer #instaPictures img {
         color: black;
     }
 
-    #searchDrop {
-        top: 48px;
-        right: -30px;
-        width: initial;
-        position: absolute;
-        min-width: 88px;
-        border-radius: 5px;
-        overflow: auto;
-        z-index: 1;
-        box-shadow: 0px 8px 16px 0px #6b6b6b33;
-    }
-    
     input {
         border-radius: 5px;   
     }
@@ -487,14 +501,21 @@ footer #instaPictures img {
     
     .banniere {
         padding-right: 4vw;
-        height: 110px;
+        height: 80px;
+    }
+
+    .imghome {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
     }
 
     .title-ban {
         padding: 0;
         font-weight: 400;
         font-size: 1.6em;
-        line-height: 
     }
    
     .article {
@@ -706,6 +727,7 @@ footer #instaPictures img {
     }
 
     h2 {
+        margin: 5px;
         font-size: 0.5em;
         letter-spacing: 0;
         font-weight: 600;
@@ -742,7 +764,7 @@ footer #instaPictures img {
     .imghome {
         object-fit: cover;
         object-position: 50% 50%;
-        min-width: 100% !important;
+        width: 100%;
         height: 90%;
     }
 

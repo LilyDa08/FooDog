@@ -28,7 +28,7 @@ xhr.onreadystatechange = function () {
     //  }
 
     carrous += /*html*/ `
-      <img src="${parsedData.docs[7].imgUrl}" class="imghome">
+      <img src="${parsedData.docs[6].imgUrl}" class="imghome">
         <div class="banniere">
           <h2>wellness</h2>
           <p class="title-ban col-12">5 reasons your dog is vomiting</p>
@@ -105,9 +105,38 @@ xhr.onreadystatechange = function () {
 
     document.querySelector(".latest-row").innerHTML = latest;
 
+  } else {
+    return;
   }
 };
 
 xhr.send();
+
+let search = document.querySelector(".loupe")
+
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+search.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 // ----------------------------------------------

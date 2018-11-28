@@ -6,27 +6,40 @@ const dropMenu = () => {
         othervar.style.display = "none"
     } else {
         othervar.style.display = "block"
-
     }
 }
 
 myVar.addEventListener("click", dropMenu);
 
-
 let search = document.querySelector(".loupe")
-let inputs = document.querySelector("#searchDrop")
 
-const dropSearch = () => {
-    if (inputs.style.display == "block") {
-        inputs.style.display = "none"
-    } else {
-        inputs.style.display = "block"
+let modal = document.getElementById('myModal');
+
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+
+const showModal = () => {
+    modal.style.display = "block";
+}
+
+search.addEventListener("click", showModal)
+
+// When the user clicks on <span> (x), close the modal
+
+const closeModal = () => {
+    modal.style.display = "none";
+}
+
+span.addEventListener("click", closeModal)
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
 
-search.addEventListener("click", dropSearch);
-
-
+// AJAX REQUESTS BELOW XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 let xhr = new XMLHttpRequest();
 
