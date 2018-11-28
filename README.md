@@ -2,6 +2,7 @@ FooDog
 ======
 
 Welcome on the Github of the "__FooDog__" website project.  
+Here is the [link to our homePage](https://lilyda08.github.io/FooDog/Homepage.html).   
 
 ## Developers
 
@@ -26,11 +27,8 @@ Everyone took a different page template and we regularly do small debriefings to
 
 ## Progression
 
-We did all the mockups and started the mobile versions development.  
+The design is done for the 3 main pages, we are now working on the AJAX HTTPRequest.  
 You can keep exact track of our work in the "Projects" part.  
-### 25th november
-the design is done for the 3 main pages.
-we are now working on the AJAX HTTPRequest.
 
 ## Details
 
@@ -44,13 +42,13 @@ This project is an exercise to confirm our __HTML__ / __CSS__ / __Javascript__ s
 
 ## Date & Time
 
-We started on 6 november 2018. We have + - two weeks to finish the project.  
-README edit : 8 november 2018.
-README edit : 25 november 2018.
+We started on 6 november 2018. We have + - two weeks to finish the project.   
+README edit : 8 november 2018.  
+README edit : 25 november 2018.  
 
 ## Design
 
-The development is still in progress, but here are our mockups for each page type.
+The design is done, we're now working on pagination and search bar.
 
 ![Home Page](/MockupSmartphone/Homepage.png)  
 ---
