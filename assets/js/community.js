@@ -82,32 +82,3 @@ xhr.send();
 
     // xxxxxxxxxcvvvvvvvvvvvvvxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-
-    const $body = document.querySelector('body');
-    let url = new URLSearchParams(window.location.search);
-    let pageNum = url.get('page');
-    
-
-    const startUrl = `https://foodog.herokuapp.com/articles?page=${pageNum};`
-
-    const rdmName = (data) => {
-   
-    }
-
-    fetch(startUrl, {
-            method: 'GET'
-        })
-        .then((response) => response.json())
-        .then((jsonData) => rdmName(jsonData))
-        .catch(error => console.log(error));
-
-
-    // number of Pages 
-    const $btnPage = document.querySelector('.page-navigation');
-    for (i = 1; i < JSON.pages; i++) {
-        const aElem = document.createElement('a');
-        aElem.classList.add('btn btn-circle');
-        $btnPage.appendChild(aElem);
-        aElem.href = `community.html/?page=${i}`;
-        aElem.innerHTML = i;
-    }
