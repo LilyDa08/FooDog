@@ -1,15 +1,24 @@
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: #000000; /* Fallback color */
-    background-color: #00000066; /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #000000;
+    /* Fallback color */
+    background-color: #00000066;
+    /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -56,9 +65,10 @@ body {
 }
 
 .loupe {
-    margin: 15px auto 5px 17px;
+    margin: 0;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
+    padding-top: 20px;
 }
 
 #navbar class-items p {
@@ -72,7 +82,7 @@ body {
 
 h1 {
     font-family: "Crimson text";
-    font-size: 13vw;
+    font-size: 3em;
     padding: 0;
     margin: 0;
     margin-top: 2vw;
@@ -96,8 +106,7 @@ h1 {
 h2 {
     text-transform: uppercase;
     color: #e56100;
-    font-size: 4vw;
-    margin: 1vh auto;
+    font-size: 1.5em;
     font-weight: 200;
     letter-spacing: 1px;
     padding: 1vw;
@@ -112,6 +121,7 @@ h2 {
 #navbar {
     height: 10vh;
     display: flex;
+    align-items: center;
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
 }
@@ -119,11 +129,11 @@ h2 {
 .dropbtn {
     background-color: #e56100;
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    height: 40px;
+    height: 32px;
     margin-left: 14px;
 }
 
@@ -137,6 +147,7 @@ h2 {
     position: relative;
     display: inline-block;
     height: 40px;
+    margin: 0;
 }
 
 .dropdown-content {
@@ -174,10 +185,8 @@ h2 {
     display: inline-block;
 }
 
-
-
 input {
-    border-radius: 5px;   
+    border-radius: 5px;
 }
 
 /*endsep*/
@@ -198,24 +207,27 @@ main {
 
 article {
     border-bottom: solid 2px rgba(128, 128, 128, 0.1);
-    margin: 2vh auto 2vh auto !important;
+    margin: 0;
     padding-bottom: 1vh;
-    width: 90vw !important;
+    padding-top: 5px;
 }
 
 .article-img img {
-    height: 70vw;
+    object-fit: cover;
+    object-position: 50% 50%;
     width: 100%;
+    height: 100%;
 }
 
 figure {
     margin-bottom: 3px;
-    padding: 0;
+    padding: 8px 0;
     margin: auto;
+    height: 18vh;
 }
 
 .articles {
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .categoryArticle {
@@ -229,12 +241,12 @@ figure {
 
 .titleArticle {
     text-transform: uppercase;
-    font-size: 4vw;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 15px;
     margin-left: 1vh;
     font-weight: 600;
-    line-height: 6vw;
+    line-height: 120%;
 }
 
 .previewArticle {
@@ -256,7 +268,7 @@ figure {
 .readmore a {
     text-transform: uppercase;
     color: #f46700;
-    font-size: 3.2vw;
+    font-size: 0.9em !important;
 }
 
 .page-navigation {
@@ -266,15 +278,15 @@ figure {
 }
 
 .btn-circle {
-    width: 8vw;
-    height: 8vw;
-    padding: 1.6vw 0vw;
     border-radius: 50%;
     text-align: center;
-    font-size: 12px;
     line-height: 1.42857;
     background-color: white;
     border: 1px solid #959595;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    padding: 6px;
 }
 
 .btn-dark {
@@ -292,10 +304,6 @@ figure {
 
 /* FOOTER CSS BELOW */
 
-.container-fluid {
-    padding: 0 !important;
-}
-
 .footer-up {
     margin: 0;
     padding: 0;
@@ -303,11 +311,13 @@ figure {
 
 .footer-title {
     margin: 0;
-    padding: 1vh;
+    padding: 1vh 0;
     color: #959595;
     font-size: 1.1em;
 }
-
+#titleCategories {
+ padding: 0;
+}
 #allCategories {
     margin: 0;
     padding: 0.2vh 1vh;
@@ -319,7 +329,6 @@ figure {
     padding: 0;
     padding-bottom: 1vh;
     font-size: 1.2em;
-    font-weight: bold;
 }
 
 #instaPictures {
@@ -327,7 +336,7 @@ figure {
     padding: 0;
     padding-bottom: 2vh;
     margin: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .col-footer p {
@@ -342,11 +351,20 @@ footer {
 footer a {
     text-decoration: none;
     color: #ffffff;
+    height: 30px;
 }
 
-a img {
-    width: 9vh;
-    height: 9vh;
+.imgInsta {
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.imgInsta img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 80%;
+    height: 100%;
 }
 
 .f-AllAside {
@@ -391,10 +409,10 @@ a img {
     margin-right: 2vh;
 }
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX TABLET XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX TABLET XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXX ----- TABLET --------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXX TABLET XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
-@media only screen and (min-width : 768px) and (max-width : 991px) {
+@media only screen and (min-width : 768px) {
 
     body {
         font-size: 14px;
@@ -410,19 +428,13 @@ a img {
 
     h1 {
         margin-top: 0;
-        font-size: 3em;
+        font-size: 2.5em;
         padding-top: 20px;
     }
 
     .loupe {
         margin-left: 17px;
-        color: black;
         font-size: 30px;
-    }
-
-    
-    input {
-        border-radius: 5px;   
     }
 
     .btn-default {
@@ -441,30 +453,40 @@ a img {
     }
 
     h2 {
-        width: 90vw;
-        font-size: 2em;
-        padding-top: 2.2vw;
+        font-size: 1em;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    figure {
+        height: 160px;
+    }
+
+    .article {
+        width: 80%;
+        margin: auto;
+        padding-top: 10px;
     }
 
     .article-img img {
-        height: 200px;
+        height: 85%;
     }
 
     .categoryArticle {
-        margin: 0;
-        display: initial;
+        display: block;
+        width: 20%;
+        font-size: 0.7em;
+        margin-bottom: 6px;
     }
 
     .titleArticle {
-        text-transform: uppercase;
-        font-size: 19px;
+        font-size: 16px;
         margin: 0;
-        line-height: 4vw;
     }
 
     .previewArticle {
-        font-size: 19px;
-        display: initial;
+        font-size: 14px;
+        display: block;
     }
 
     .readmore {
@@ -476,10 +498,10 @@ a img {
     }
 
     .btn-circle {
-        font-size: 19px;
-        width: 6vw;
-        height: 6vw;
-        padding: 1.4vw 0vw;
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        padding: 4px;
     }
 
     /*FOOTER CSS*/
@@ -489,16 +511,13 @@ a img {
     }
 
     .footer-title {
-        margin: 0;
         padding: 0;
         padding-top: 3.5vh;
-        padding-left: 1vw;
-        padding-bottom: 0.5vw;
+        padding-bottom: 10px;
         font-size: 0.8em;
     }
 
     #allCategories {
-        padding: 0;
         margin: 0;
         margin-right: 30px;
     }
@@ -509,7 +528,6 @@ a img {
         font-size: 0.8em;
         border-bottom: 1px solid #4d4d4d;
         padding: 1.2vh 0;
-        font-weight: bold;
     }
 
     .f-AllAside {
@@ -552,32 +570,30 @@ a img {
 
     .thumbnail-md {
         display: block;
-        height: auto;
     }
 
-    #instaPictures a {
-        padding: 0 3px 0 3px;
-        margin: 0 0 5px 0 !important;
-    }
 
-    #instaPictures a img {
-        padding: 0;
-        margin: 0;
+    footer a {
+        text-decoration: none;
+        color: #ffffff;
         height: 60px;
-        width: 100%;
     }
 
-    #social ion-icon {
-        background-color: #3A3E43;
-        height: 2vh;
-        width: 2vh;
-        padding: 1vh;
-        border-radius: 50%;
+    .imgInsta {
+        height: 80px;
+        padding: 0;
+       
+    }
+
+    .imgInsta img {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 90%;
+        height: 90%;
     }
 
     #social {
-
-        height: 5vh;
+        height: 40px;
     }
 
     .social-links {
@@ -589,15 +605,12 @@ a img {
     }
 
     #social ion-icon {
-        height: 2vh;
-        width: 2vh;
         padding: 0.5vh;
-        border-radius: 50%;
     }
 }
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DESKTOP XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DESKTOP XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* ------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX- DESKTOP -XXXXXXXXXXXXXXXXXX----------*/
+/* ---------------------XXXXXXXXXXXXXXXXXXX DESKTOP XXXXXXXXXXXXXX-----*/
 
 @media only screen and (min-width : 992px) {
 
@@ -606,16 +619,11 @@ a img {
     }
 
     nav {
-        width: 100vw;
-        background-color: white;
-        position: fixed;
-        z-index: 20;
         border-bottom: 2px solid #F5F5F5;
     }
 
     h1 {
-        margin-top: 0;
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
 
     .dropdown {
@@ -625,19 +633,18 @@ a img {
     .loupe {
         margin-top: 5px;
         margin-left: 4px;
-        color: black;
         font-size: 12px;
+        padding: 0;
     }
-  
+
     input {
-        border-radius: 5px;   
+        border-radius: 5px;
     }
 
     .facebook,
     .twitter,
     .insta {
         display: initial;
-        ;
     }
 
     .headerSocial {
@@ -650,6 +657,7 @@ a img {
     }
 
     .headerBottom {
+        padding-bottom: 10px;
         margin-top: 7px;
         display: flex;
     }
@@ -661,42 +669,56 @@ a img {
     }
 
     .headerCat a {
-        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
         text-decoration: none;
         color: black;
+    }
+
+    .headerCat a:hover,
+    .headerCat a:active {
+        border-bottom: 2px solid #f46700;
     }
 
     /*MAIN CSS BELOW*/
 
     h2 {
         width: 100%;
-        font-size: 1.3em;
-        letter-spacing: 0;
-        font-weight: 100;
-        color: black;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgb(112, 112, 112);
+        padding: 17px;
     }
 
     main {
         width: 40%;
         margin-right: 0;
-        padding-top: 13vh !important
+        padding-top: 13vh !important;
     }
 
     figure {
-        margin-right: 0;
-        padding: 0 !important;
+        padding: 0;
+        height: 130px;
     }
 
-    #allArticle img {
-        height: 80%;
-        width: 90%;
+    #allArticle {
+        margin: auto;
+    }
+
+    .article-img img {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 90%;
     }
 
     article {
         border-bottom: solid 2px rgba(128, 128, 128, 0.1);
-        margin: 2vh 0 2vh 20% !important;
-        padding-bottom: 1vh;
-        width: 90vw !important;
+        margin: 0;
+    }
+
+    .categoryArticle {
+        font-size: 0.5em;
     }
 
     .articles {
@@ -705,23 +727,17 @@ a img {
         padding-right: 57px;
     }
 
-    .categoryArticle {
-        display: initial;
-    }
-
     .titleArticle {
-        text-transform: uppercase;
-        font-size: 1vw;
-        margin-top: 0.5vw;
-        margin-left: 0vh;
-        margin-bottom: 0.5vh;
+        font-size: 0.9em;
         font-weight: 600;
-        line-height: 13px;
+        line-height: 130%;
+        padding-bottom: 8px;
     }
 
     .previewArticle {
-        display: initial;
-        line-height: 13px;
+        font-size: 0.8em;
+        line-height: 150%;
+        color: #959595;
     }
 
     .share-btn {
@@ -757,114 +773,14 @@ a img {
 
     /*FOOTER CSS BELOW*/
 
-    footer .col-footer {
-        padding: 0;
-    }
-
-    .footer-title {
-        margin: 0;
-        padding: 0;
-        padding-top: 3.5vh;
-        padding-left: 1vw;
-        padding-bottom: 0.5vw;
-        font-size: 0.8em;
-    }
-
     #allCategories {
-        padding: 0;
-        margin: 0;
-        margin-right: 30px;
-    }
-
-    #allCategories a {
-        margin: 0;
-        text-align: left;
-        font-size: 0.8em;
-        border-bottom: 1px solid #4d4d4d;
-        padding: 1.2vh 0;
-        font-weight: bold;
-    }
-
-    .f-AllAside {
-        display: block;
-    }
-
-    .f-aside {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 1.5vh;
-        padding-right: 2vh;
-    }
-
-    .f-aside .aside-img {
-        padding: 0;
-        margin: 0;
-        height: 50px;
-    }
-
-    .f-aside img {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        width: auto;
-    }
-
-    .f-article {
         padding: 0;
     }
 
     footer .aside-title {
-        padding: 0 0 0 10px;
-        margin: 0;
-        color: white;
-        font-weight: bold;
-        text-transform: capitalize;
-        font-size: 0.8em;
+    padding: 0;
     }
 
-    .thumbnail-md {
-        display: block;
-        height: auto;
-    }
 
-    #instaPictures a {
-        padding: 0 2px 0 1px;
-        margin: 0 0 4px 0 !important;
-    }
 
-    #instaPictures a img {
-        padding: 0;
-        margin: 0;
-        height: 60px;
-        width: 100%;
-    }
-
-    #social ion-icon {
-        background-color: #3A3E43;
-        height: 2vh;
-        width: 2vh;
-        padding: 1vh;
-        border-radius: 50%;
-    }
-
-    #social {
-
-        height: 5vh;
-    }
-
-    .social-links {
-        right: 16vw;
-    }
-
-    #social a {
-        margin-right: 0;
-    }
-
-    #social ion-icon {
-        height: 2vh;
-        width: 2vh;
-        padding: 0.5vh;
-        border-radius: 50%;
-    }
 }

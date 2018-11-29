@@ -55,11 +55,11 @@ xhr.onreadystatechange = function () {
 
             articles += /*html*/ `
             
-            <article class="row article col-lg-6 ">
-            <figure class="offset-xs-1 col-10 article-img centered col-md-4">
+             <article class="row article offset-lg-3 col-md-12 col-lg-6">
+                <figure class="col-10 article-img centered col-md-4 col-lg-5">
             <a href="article.html?id=${parsedData.docs[i]._id}"><img class="imgArticle" src="${parsedData.docs[i].imgUrl}"></a>
             </figure>
-            <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
+            <div class="offset-xs-1 col-10 articles col-md-8 col-lg-7">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
                 <p class="titleArticle">${parsedData.docs[i].title}</p>
                 <p class="previewArticle">${parsedData.docs[i].text.substring(0,100)}</p>
@@ -77,5 +77,40 @@ xhr.onreadystatechange = function () {
         document.querySelector("#allArticle").innerHTML = articles;
     }
 }
+<<<<<<< HEAD
+=======
 
 xhr.send();
+
+    // xxxxxxxxxcvvvvvvvvvvvvvxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+    const $body = document.querySelector('body');
+    let url = new URLSearchParams(window.location.search);
+    let pageNum = url.get('page');
+    
+
+    const startUrl = `https://foodog.herokuapp.com/articles?page=${pageNum};`
+
+    const rdmName = (data) => {
+   
+    }
+>>>>>>> c19b7416895a0dc23d30310af07ccdc6074f63aa
+
+    fetch(startUrl, {
+            method: 'GET'
+        })
+        .then((response) => response.json())
+        .then((jsonData) => rdmName(jsonData))
+        .catch(error => console.log(error));
+
+
+    // number of Pages 
+    const $btnPage = document.querySelector('.page-navigation');
+    for (i = 1; i < JSON.pages; i++) {
+        const aElem = document.createElement('a');
+        aElem.classList.add('btn btn-circle');
+        $btnPage.appendChild(aElem);
+        aElem.href = `community.html/?page=${i}`;
+        aElem.innerHTML = i;
+    }
