@@ -1,5 +1,3 @@
-//<!-- HELLO TEST -->
-
 let xhr = new XMLHttpRequest();
 
 let articles = "";
