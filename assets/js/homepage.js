@@ -1,3 +1,5 @@
+//<!-- HELLO TEST -->
+
 let xhr = new XMLHttpRequest();
 
 let articles = "";
@@ -119,11 +121,7 @@ xhr.onreadystatechange = function () {
 
 xhr.send();
 
-
-
-
-
-
+/* ****************************************************** */
 
 let search = document.querySelector(".loupe")
 
