@@ -44,7 +44,7 @@ xhr.onreadystatechange = function () {
             if (parsedData.docs[i]._id == url) {
                 main += /*html*/ `
                 <h2>nutrition</h2>
-                <h3>the 11 dog food label tricks every owner needs to know</h3>
+                <h3>${parsedData.docs[i].title}</h3>
                 <!-- Image -->
                 <figure class="container-fluid">
                     <img src="${parsedData.docs[i].imgUrl}" alt="main picture">

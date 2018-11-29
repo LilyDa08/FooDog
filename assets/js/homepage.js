@@ -59,7 +59,7 @@ xhr.onreadystatechange = function () {
 
     //*******************************************************************************/
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 4; i < 7; i++) {
 
       feature += /*html*/ `
 
@@ -90,7 +90,7 @@ xhr.onreadystatechange = function () {
 
     //******************************************************************************/
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 1; i < 5; i++) {
 
       latest += /*html*/ `
 

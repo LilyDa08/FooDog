@@ -33,7 +33,7 @@ const closeModal = () => {
 
 span.addEventListener("click", closeModal);
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
@@ -51,12 +51,13 @@ xhr.onreadystatechange = function () {
         let parsedData = JSON.parse(xhr.responseText);
         console.log(parsedData);
 
-        for (let i = 0; i < 9; i++) {
-            
+        for (let i = 0; i < parsedData.docs.length; i++) {
+
             articles += /*html*/ `
+            
             <article class="row article col-lg-6 ">
             <figure class="offset-xs-1 col-10 article-img centered col-md-4">
-                <img src="${parsedData.docs[i].imgUrl}">
+            <a href="article.html?id=${parsedData.docs[i]._id}"><img class="imgArticle" src="${parsedData.docs[i].imgUrl}"></a>
             </figure>
             <div class="offset-xs-1 col-10 articles col-md-7 col-lg">
                 <p class="categoryArticle"><b>COMMUNITY</b></p>
