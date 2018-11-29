@@ -60,7 +60,10 @@ xhr.onreadystatechange = function () {
     //*******************************************************************************/
 
     for (let i = 4; i < 7; i++) {
-
+      let tags='';
+      for(let t =0 ; t < parsedData.docs[i].tagForArticle.length; t++){
+        tags += `<a href='community.html?tag=${parsedData.docs[i].tagForArticle[t]}'><p class="cat-first col-lg-7">${parsedData.docs[i].tagForArticle[t]}</p></a>`;
+      }
       feature += /*html*/ `
 
 <article class="row article">
@@ -69,8 +72,7 @@ xhr.onreadystatechange = function () {
          </div>
         <div class="text-article col-7 col-lg-6">
           <div class="row cat-article col-lg-5">
-             <p class="cat-first col-lg-7">featured</p>
-            <p class="cat-second col-lg-5">nutrition</p>
+            ${tags}
          </div>
            <p class="title-article">${parsedData.docs[i].title}</p>
           <p class="start-article">${parsedData.docs[i].text.substring(0, 100)}...</p>
