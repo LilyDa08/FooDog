@@ -43,8 +43,8 @@ window.onclick = function (event) {
 
 let xhr = new XMLHttpRequest();
 
-let articles = '';
-let popular = "";
+let articles;
+let popular;
 
 let tag = new URLSearchParams(window.location.search);
 tag = tag.get('tag');
@@ -90,7 +90,7 @@ xhr.onreadystatechange = function () {
             </div>
         </article>
             `
-                    document.querySelector("#allArticle").innerHTML = articles;
+                    document.querySelector("#allArticle").innerHTML = articles
                 }
             }
         }
@@ -105,6 +105,9 @@ xhr.onreadystatechange = function () {
             document.querySelector('.f-article').innerHTML = popular;
         }
     }
+    else {
+        return;
+      }
 }
 
 xhr.send();
