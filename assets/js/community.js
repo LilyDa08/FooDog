@@ -103,15 +103,15 @@ xhr.onreadystatechange = function () {
             for (let t = 0; t < parsedData.docs[i].tagForArticle.length; t++) {
 
                 if (parsedData.docs[i].tagForArticle[t].toLowerCase() == tag.toLowerCase()) {
-
+                    
                     for (let tg = 0; tg < parsedData.docs[i].tagForArticle.length; tg++) {
-                        tags += `<a href='community.html?tag=${parsedData.docs[i].tagForArticle[tg]}'><p class="categoryArticle">${parsedData.docs[i].tagForArticle[tg]}</p></a>`;
+                        tags += `<a  href='community.html?tag=${parsedData.docs[i].tagForArticle[tg]}'><p class="categoryArticle">${parsedData.docs[i].tagForArticle[tg]}</p></a>`;
                     }
 
                     articles += /*html*/ `
              <article class="row article offset-lg-3 col-md-12 col-lg-6">
                 <figure class="col-10 article-img centered col-md-4 col-lg-5">
-            <a href="article.html?id=${parsedData.docs[i]._id}"><img class="imgArticle" src="${parsedData.docs[i].imgUrl}"></a>
+            <a href="article.html?id=${parsedData.docs[i]._id}"><img alt="photo" class="imgArticle" src="${parsedData.docs[i].imgUrl}"></a>
             </figure>
             <div class="offset-xs-1 col-10 articles col-md-8 col-lg-7">
                 ${tags}
@@ -136,7 +136,7 @@ xhr.onreadystatechange = function () {
             popular += /*html*/ 
             `<a class="row f-aside col-md-12">
             <div class="aside-img col-12 col-md-4">
-                <img class="col-12" src="${parsedData.docs[i].imgUrl}">
+                <img class="col-12" src="${parsedData.docs[i].imgUrl}" alt="pop">
             </div>
             <p class="aside-title col-12 col-md-8">${parsedData.docs[i].title}</p>
         </a>`
