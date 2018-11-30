@@ -43,35 +43,72 @@ window.onclick = function (event) {
 
 let xhr = new XMLHttpRequest();
 
-let articles;
-let popular;
+let articles = "";
+let popular = "";
 
 let tag = new URLSearchParams(window.location.search);
 tag = tag.get('tag');
-//pageNb = pageUrl.get('page');
 
-let url = "https://foodog.herokuapp.com/articles";
-//let url2 = `https://foodog.herokuapp.com/articles/?tag=${cat}&page=${pageNb}`;
+let url = "https://foodog.herokuapp.com/articles?page=1";
+let url3 = "https://foodog.herokuapp.com/articles?page=3";
+let url2 = "https://foodog.herokuapp.com/articles/?page=2";
+let allPage = new Array();
+
+const storeInArray = (dataparam) => {
+    dataparam.docs.map(function (data) {
+        allPage.push(data)
+    })
+}
+
+const storeInArray2 = (dataparam2) => {
+    dataparam2.docs.map(function (data) {
+        allPage.push(data)
+    })
+}
+
+const storeInArray3 = (dataparam3) => {
+    dataparam3.docs.map(function (data) {
+        allPage.push(data)
+    })
+}
+console.log('allPages :', allPage);
+
+const fetchmyUrl = () => {
+
+    fetch(url)
+        .then((response) => response.json())
+        .then((dataparam) => storeInArray(dataparam))
+        .then(fetch(url2)
+            .then((response) => response.json())
+            .then((dataparam2) => storeInArray2(dataparam2))
+            .then(fetch(url3)
+                .then((response) => response.json())
+                .then((dataparam3) => storeInArray3(dataparam3))
+                .then()))
+        .catch((error) => console.log(error))
+}
+
+fetchmyUrl()
 
 xhr.open("GET", url, true);
 xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         let parsedData = JSON.parse(xhr.responseText);
-        console.log(parsedData);
+        // console.log(parsedData);
         document.querySelector('.pageCategory').innerHTML = tag;
+
         for (let i = 0; i < parsedData.docs.length; i++) {
             let tags = '';
             document.querySelector('.pageCategory').innerHTML = tag;
             for (let t = 0; t < parsedData.docs[i].tagForArticle.length; t++) {
-        
+
                 if (parsedData.docs[i].tagForArticle[t].toLowerCase() == tag.toLowerCase()) {
 
                     for (let tg = 0; tg < parsedData.docs[i].tagForArticle.length; tg++) {
                         tags += `<a href='community.html?tag=${parsedData.docs[i].tagForArticle[tg]}'><p class="categoryArticle">${parsedData.docs[i].tagForArticle[tg]}</p></a>`;
                     }
-                    
+
                     articles += /*html*/ `
-            
              <article class="row article offset-lg-3 col-md-12 col-lg-6">
                 <figure class="col-10 article-img centered col-md-4 col-lg-5">
             <a href="article.html?id=${parsedData.docs[i]._id}"><img class="imgArticle" src="${parsedData.docs[i].imgUrl}"></a>
@@ -90,13 +127,14 @@ xhr.onreadystatechange = function () {
             </div>
         </article>
             `
-                    document.querySelector("#allArticle").innerHTML = articles
+                    document.querySelector("#allArticle").innerHTML = articles;
                 }
             }
         }
-         // POPULAR ARTICLE
-         for (let i = 0; i < 3; i++) {
-            popular += /*html*/ `<a class="row f-aside col-md-12">
+        // POPULAR ARTICLE
+        for (let i = 0; i < 3; i++) {
+            popular += /*html*/ 
+            `<a class="row f-aside col-md-12">
             <div class="aside-img col-12 col-md-4">
                 <img class="col-12" src="${parsedData.docs[i].imgUrl}">
             </div>
@@ -104,24 +142,23 @@ xhr.onreadystatechange = function () {
         </a>`
             document.querySelector('.f-article').innerHTML = popular;
         }
-    }
-    else {
+    } else {
         return;
-      }
+    }
 }
 
 xhr.send();
 
-        // BUTTON
+// BUTTON
 
-        // const $btnPage = document.querySelector('.page-navigation');
+// const $btnPage = document.querySelector('.page-navigation');
 
-        // for (i = 1; i < parsedData.pages; i++) {
+// for (i = 1; i < parsedData.pages; i++) {
 
-        //     const aElem = document.createElement('a');
-        //     aElem.classList.add('btn');
-        //     aElem.classList.add('btn-circle');
-        //     $btnPage.appendChild(aElem);
-        //     aElem.href = `community.html/?tag=&page=${i}`;
-        //     aElem.innerHTML = i;
-        // }
+//     const aElem = document.createElement('a');
+//     aElem.classList.add('btn');
+//     aElem.classList.add('btn-circle');
+//     $btnPage.appendChild(aElem);
+//     aElem.href = `community.html/?tag=&page=${i}`;
+//     aElem.innerHTML = i;
+// }

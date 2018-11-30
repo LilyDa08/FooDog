@@ -6,8 +6,66 @@ let latest = "";
 let carrous = "";
 let other = "";
 let popular = "";
+let allPage = new Array();
 
 xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
+
+// PAGINATION **********************
+
+let url = "https://foodog.herokuapp.com/articles?page=1";
+let url3 = "https://foodog.herokuapp.com/articles?page=3";
+let url2 = "https://foodog.herokuapp.com/articles/?page=2";
+
+
+const storeInArray = (dataparam) => {
+    // console.log('dataparam :', dataparam);
+    dataparam.docs.map(function (data) {
+        // console.log('data.docs :', da;
+        allPage.push(data)
+        console.log('allPages :', allPage);
+    })
+}
+
+const storeInArray2 = (dataparam2) => {
+    // console.log('dataparam :', dataparam);
+    dataparam2.docs.map(function (data) {
+        // console.log('data.docs :', da;
+        allPage.push(data)
+        console.log('allPages :', allPage);
+    })
+}
+
+const storeInArray3 = (dataparam3) => {
+
+    // console.log('dataparam :', dataparam);
+    dataparam3.docs.map(function (data) {
+        // console.log('data.docs :', da;
+        allPage.push(data)
+    })
+}
+console.log('allPages :', allPage);
+
+const fetchmyUrl = () => {
+
+    fetch(url)
+        .then((response) => response.json())
+        .then((dataparam) => storeInArray(dataparam))
+        .then(fetch(url2)
+            .then((response) => response.json())
+            .then((dataparam2) => storeInArray2(dataparam2))
+            .then(fetch(url3)
+                .then((response) => response.json())
+                .then((dataparam3) => storeInArray3(dataparam3))
+                .then()))
+        .catch((error) => console.log(error))
+}
+
+fetchmyUrl();
+
+
+// **********************
+
+
 
 xhr.onreadystatechange = function () {
 
@@ -16,21 +74,9 @@ xhr.onreadystatechange = function () {
     let parsedData = JSON.parse(xhr.responseText);
     console.log(parsedData);
 
-    // créer un tableau reprenant toutes les images de la structure HTML
-
     let imghome = document.querySelectorAll(".imagehp");
     let titleHome = document.querySelectorAll(".titlehp");
     let textHome = document.querySelectorAll(".texthp");
-
-    // //Boucle qui select tout les images dans l'API
-    // for (let index = 0; index < parsedData.docs.length; index++) {
-    //   console.log('parseData[index] :', parsedData.docs[index].imgUrl);
-    //   //Boucle qui select les image et les remplace dans l'HTML
-    //    for (let i = 0; i < imghome.length; i++) {
-    //      imghome[i].src = parsedData.docs[i].imgUrl;
-    //    }
-    //  }
-
 
     carrous += /*html*/ `
 
@@ -40,7 +86,6 @@ xhr.onreadystatechange = function () {
           <p class="title-ban col-12">${parsedData.docs[0].title}</p>
         </div>
       `
-
     document.querySelector(".carrousel").innerHTML = carrous;
 
     //*****************************************************************************
