@@ -54,10 +54,10 @@ xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         let parsedData = JSON.parse(xhr.responseText);
         console.log(parsedData);
-
+        
         for (let i = 0; i < parsedData.docs.length; i++) {
             let tags = '';
-
+            document.querySelector('.pageCategory').innerHTML = tag;
             for (let t = 0; t < parsedData.docs[i].tagForArticle.length; t++) {
 
                 if (parsedData.docs[i].tagForArticle[t].toLowerCase() == tag.toLowerCase()) {
@@ -94,27 +94,7 @@ xhr.onreadystatechange = function () {
     }
 }
 
-<<<<<<< HEAD
-    fetch(startUrl, {
-            method: 'GET'
-        })
-        .then((response) => response.json())
-        .then((jsonData) => rdmName(jsonData))
-        .catch(error => console.log(error));
-
-
-    // number of Pages 
-    const $btnPage = document.querySelector('.page-navigation');
-    for (i = 1; i < JSON.pages; i++) {
-        const aElem = document.createElement('a');
-        aElem.classList.add('btn btn-circle');
-        $btnPage.appendChild(aElem);
-        aElem.href = `community.html/?page=${i}`;
-        aElem.innerHTML = i;
-    }
-=======
 xhr.send();
 
     // xxxxxxxxxcvvvvvvvvvvvvvxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
->>>>>>> 7cd6c929433fff4a7e27dcd6b62491a4a6cf2d9f
