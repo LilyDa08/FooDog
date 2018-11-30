@@ -15,23 +15,6 @@ body {
 /*  ORANGE color: #f46700;   */
 /* FONT pour les titre : CRIMSON TEXT   */
 
-/*
-  taille d'écran Bootstrap:
-XS  min-width = 0
-
- Small devices sm (landscape phones, 576px and up)
-  (min-width: 576px) 
-
- Medium devices  md(tablets, 768px and up)
-  (min-width: 768px) 
-
- Large devices  lg (desktops, 992px and up)
-  (min-width: 992px)
-
- Extra large devices xl (large desktops, 1200px and up)
-  (min-width: 1200px) 
-*/
-
 #onglets {
     display: none;
     padding: 5px 0;
