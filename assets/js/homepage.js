@@ -16,56 +16,44 @@ let url = "https://foodog.herokuapp.com/articles?page=1";
 let url3 = "https://foodog.herokuapp.com/articles?page=3";
 let url2 = "https://foodog.herokuapp.com/articles/?page=2";
 
-
 const storeInArray = (dataparam) => {
-    // console.log('dataparam :', dataparam);
-    dataparam.docs.map(function (data) {
-        // console.log('data.docs :', da;
-        allPage.push(data)
-        console.log('allPages :', allPage);
-    })
+  dataparam.docs.map(function (data) {
+    allPage.push(data)
+  })
+  console.log('allPages :', allPage);
 }
 
 const storeInArray2 = (dataparam2) => {
-    // console.log('dataparam :', dataparam);
-    dataparam2.docs.map(function (data) {
-        // console.log('data.docs :', da;
-        allPage.push(data)
-        console.log('allPages :', allPage);
-    })
+  dataparam2.docs.map(function (data) {
+    allPage.push(data)
+  })
+  console.log('allPages :', allPage);
 }
 
 const storeInArray3 = (dataparam3) => {
-
-    // console.log('dataparam :', dataparam);
-    dataparam3.docs.map(function (data) {
-        // console.log('data.docs :', da;
-        allPage.push(data)
-    })
+  dataparam3.docs.map(function (data) {
+    allPage.push(data)
+  })
+  console.log('allPages :', allPage);
 }
-console.log('allPages :', allPage);
 
 const fetchmyUrl = () => {
 
-    fetch(url)
+  fetch(url)
+    .then((response) => response.json())
+    .then((dataparam) => storeInArray(dataparam))
+    .then(fetch(url2)
+      .then((response) => response.json())
+      .then((dataparam2) => storeInArray2(dataparam2))
+      .then(fetch(url3)
         .then((response) => response.json())
-        .then((dataparam) => storeInArray(dataparam))
-        .then(fetch(url2)
-            .then((response) => response.json())
-            .then((dataparam2) => storeInArray2(dataparam2))
-            .then(fetch(url3)
-                .then((response) => response.json())
-                .then((dataparam3) => storeInArray3(dataparam3))
-                .then()))
-        .catch((error) => console.log(error))
+        .then((dataparam3) => storeInArray3(dataparam3))
+        .then()))
+    .catch((error) => console.log(error))
 }
-
 fetchmyUrl();
 
-
 // **********************
-
-
 
 xhr.onreadystatechange = function () {
 
