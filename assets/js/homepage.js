@@ -5,6 +5,7 @@ let feature = "";
 let latest = "";
 let carrous = "";
 let other = "";
+let popular = "";
 
 xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
 
@@ -33,7 +34,7 @@ xhr.onreadystatechange = function () {
 
     carrous += /*html*/ `
 
-      <a href="article.html?id=${parsedData.docs[0]._id}"> <img src="${parsedData.docs[0].imgUrl}" class="imghome"> </a>
+      <a href="article.html?id=${parsedData.docs[0]._id}"> <img src="${parsedData.docs[0].imgUrl}" class="imghome" alt="bob"> </a>
         <div class="banniere">
           <h2>wellness</h2>
           <p class="title-ban col-12">${parsedData.docs[0].title}</p>
@@ -49,7 +50,7 @@ xhr.onreadystatechange = function () {
       other += /*html*/ `
         
           <div class="asideOne col-lg-6">
-            <div class="aside-img col-12"><a href="article.html?id=${parsedData.docs[i]._id}"><img class="col-12" src="${parsedData.docs[i].imgUrl}"></a></div>
+            <div class="aside-img col-12"><a href="article.html?id=${parsedData.docs[i]._id}"><img class="col-12" src="${parsedData.docs[i].imgUrl}" alt="billy"></a></div>
             <p class="aside-title col-12">${parsedData.docs[i].title}</p>
           </div>
          `
@@ -60,15 +61,15 @@ xhr.onreadystatechange = function () {
     //*******************************************************************************/
 
     for (let i = 4; i < 7; i++) {
-      let tags='';
-      for(let t =0 ; t < parsedData.docs[i].tagForArticle.length; t++){
+      let tags = '';
+      for (let t = 0; t < parsedData.docs[i].tagForArticle.length; t++) {
         tags += `<a href='community.html?tag=${parsedData.docs[i].tagForArticle[t]}'><p class="cat-first col-lg-7">${parsedData.docs[i].tagForArticle[t]}</p></a>`;
       }
       feature += /*html*/ `
 
 <article class="row article">
         <div class="article-img col-5 col-lg-6">
-        <a href="article.html?id=${parsedData.docs[i]._id}"><img src="${parsedData.docs[i].imgUrl}"></a>
+        <a href="article.html?id=${parsedData.docs[i]._id}"><img src="${parsedData.docs[i].imgUrl}" alt="more"></a>
          </div>
         <div class="text-article col-7 col-lg-6">
           <div class="row cat-article col-lg-5">
@@ -98,7 +99,7 @@ xhr.onreadystatechange = function () {
 
         <article class="row article col-lg-6">
           <div class="article-img col-5 col-lg-12">
-          <a href="article.html?id=${parsedData.docs[i]._id}"><img src="${parsedData.docs[i].imgUrl}"></a>
+          <a href="article.html?id=${parsedData.docs[i]._id}"><img src="${parsedData.docs[i].imgUrl}" alt="cazzo"></a>
           </div>
           <div class="text-article col-7 col-lg-12">
             <p class="cat-second">nutrition</p>
@@ -113,6 +114,29 @@ xhr.onreadystatechange = function () {
     }
 
     document.querySelector(".latest-row").innerHTML = latest;
+
+    for (let i = 0; i < 3; i++) {
+      popular += /*html*/ `<a class="row f-aside col-md-12">
+      <div class="aside-img col-12 col-md-4">
+          <img class="col-12" src="${parsedData.docs[i].imgUrl}" alt="caffe">
+      </div>
+      <p class="aside-title col-12 col-md-8">${parsedData.docs[i].title}</p>
+  </a>`
+      document.querySelector('.f-article').innerHTML = popular;
+    }
+
+    // BUTTON
+
+    const $btnPage = document.querySelector('.page-navigation');
+
+    for (i = 1; i < parsedData.pages; i++) {
+      const aElem = document.createElement('a');
+      aElem.classList.add('btn');
+      aElem.classList.add('btn-circle');
+      $btnPage.appendChild(aElem);
+      aElem.href = `community.html/?page=${i+1}`;
+      aElem.innerHTML = i + 1;
+    }
 
   } else {
     return;
@@ -134,20 +158,20 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-search.onclick = function() {
-    modal.style.display = "block";
+search.onclick = function () {
+  modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
+span.onclick = function () {
+  modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 
 // ----------------------------------------------

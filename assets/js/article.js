@@ -36,19 +36,21 @@ url = url.get('id');
 
 let main = "";
 let text = "";
+let other = "";
+let popular = "";
 
 xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
 
 xhr.onreadystatechange = function () {
 
-    if (this.readyState == 4 && this.status == 200) {
-        let parsedData = JSON.parse(xhr.responseText);
-        console.log(parsedData);
-        
-        for (let i = 0; i < parsedData.docs.length; i++) {
-            if (parsedData.docs[i]._id == url) {
+        if (this.readyState == 4 && this.status == 200) {
+            let parsedData = JSON.parse(xhr.responseText);
+            console.log(parsedData);
 
-                main += /*html*/ `
+            for (let i = 0; i < parsedData.docs.length; i++) {
+                if (parsedData.docs[i]._id == url) {
+
+                    main += /*html*/ `
                 
                 <h2>nutrition</h2>
                 <h3>${parsedData.docs[i].title}</h3>
@@ -57,25 +59,40 @@ xhr.onreadystatechange = function () {
                     <img src="${parsedData.docs[i].imgUrl}" alt="main picture">
                 </figure>
                 `
-                document.querySelector("#articleTitle").innerHTML = main;
+                    document.querySelector("#articleTitle").innerHTML = main;
 
+                }
             }
-        }
-//text
-        for (let i = 0; i < parsedData.docs.length; i++) {
-            if (parsedData.docs[i]._id == url) {
+            //text
+            for (let i = 0; i < parsedData.docs.length; i++) {
+                if (parsedData.docs[i]._id == url) {
 
-                text += /*html*/ `
-                
+                    text += /*html*/ `
                 <p class="articleTexts">${parsedData.docs[i].text}</p>
-
                 `
-                document.querySelector("#article").innerHTML = text;
+                    document.querySelector("#article").innerHTML = text;
+                }
+            }
 
+            // other
+            for (let i = 0; i < 3; i++) {
+                other += /*html*/ `<div class="recommendArticle col-4">
+                 <div class="recomImg"><img src="${parsedData.docs[i].imgUrl}"/></div>
+            <h5 class="recomTitle"><small>${parsedData.docs[i].title}</small></h5>
+</div>`
+                document.querySelector('.threeArtciles').innerHTML = other;
+            }
+
+            for (let i = 0; i < 3; i++) {
+                popular += /*html*/ `<a class="row f-aside col-md-12">
+                <div class="aside-img col-12 col-md-4">
+                    <img class="col-12" src="${parsedData.docs[i].imgUrl}">
+                </div>
+                <p class="aside-title col-12 col-md-8">${parsedData.docs[i].title}</p>
+            </a>`
+                document.querySelector('.f-article').innerHTML = popular;
             }
         }
-
     }
-}
-
-xhr.send();
+        xhr.send();
+    

@@ -15,23 +15,6 @@ body {
 /*  ORANGE color: #f46700;   */
 /* FONT pour les titre : CRIMSON TEXT   */
 
-/*
-  taille d'écran Bootstrap:
-XS  min-width = 0
-
- Small devices sm (landscape phones, 576px and up)
-  (min-width: 576px) 
-
- Medium devices  md(tablets, 768px and up)
-  (min-width: 768px) 
-
- Large devices  lg (desktops, 992px and up)
-  (min-width: 992px)
-
- Extra large devices xl (large desktops, 1200px and up)
-  (min-width: 1200px) 
-*/
-
 #onglets {
     display: none;
     padding: 5px 0;
@@ -121,7 +104,11 @@ h1 {
     margin: 0;
     margin-top: 2vw;
     text-align: center;
-    color: #414040;
+    color: #303336;
+}
+h1:hover {
+    color: #303336;
+    text-decoration: none;
 }
 
 h2 {
@@ -302,6 +289,35 @@ h4 {
     font-size: 0.8em;
 }
 
+.btn-circle {
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.42857;
+    background-color: white;
+    border: 1px solid #959595;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+}
+
+.btn-circle a {
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
+.btn-dark {
+    background-color: #959595;
+}
+
+.btn-circle ion-icon {
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
 
 /* FOOTER CSS BELOW */
 
@@ -317,7 +333,7 @@ h4 {
 .footer-title {
     margin: 0;
     padding: 1vh;
-    color: #959595;
+    color: #B5B5B5;
     font-size: 1.1em;
 }
 
@@ -334,6 +350,9 @@ h4 {
     font-size: 1.2em;
     font-weight: 100;
 }
+#allCategories a:hover {
+    color: #e56100;
+    }
 
 #instaPictures {
     text-align: center;
@@ -428,13 +447,18 @@ footer #instaPictures img {
 
     #navbar {
         height: 110px;
-        padding-bottom: 5px;
     }
 
     .navbar-toggler {
         display: none;
     }
-
+    nav {
+        width: 100vw;
+        background-color: white;
+        position: fixed;
+        z-index: 20;
+        padding-bottom: 15px;
+    }
     .loupe {
         color: black;
         font-size: 20px;
@@ -481,7 +505,8 @@ footer #instaPictures img {
 
     #onglets {
         display: flex;
-        padding: 10px 0;
+        padding: 0;
+     
     }
 
     h1 {
@@ -504,7 +529,8 @@ footer #instaPictures img {
     }
 
     .onglet {
-        font-size: 1.1em;
+        font-size: 1em;
+        padding: 10px;
     }
     
     .banniere {
@@ -724,14 +750,16 @@ footer #instaPictures img {
     #navbar {
         height: 90px;
         display: flex;
-        padding-top: 25px;
         margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
     }
 
     h1 {
         font-size: 2.1em;
         margin: 0;
         padding: 0;
+        padding-bottom: 10px;
     }
 
     h2 {
@@ -739,7 +767,7 @@ footer #instaPictures img {
         font-size: 0.5em;
         letter-spacing: 0;
         font-weight: 600;
-        color: #f46700;
+        color: #C75300;
     }
 
     h4 {
@@ -896,7 +924,7 @@ footer #instaPictures img {
 
     .cat-first,
     .cat-second {
-        color: #f46700;
+        color: #C75300;
         text-transform: uppercase;
         padding: 0;
         margin: 0;
@@ -978,7 +1006,6 @@ footer #instaPictures img {
 
     .f-aside .aside-img img {
     height: 90%;
-
     }
 
     footer .aside-title {
