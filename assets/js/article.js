@@ -29,9 +29,13 @@ search.addEventListener("click", dropSearch);
 //-----------------------------------------------------------------------------------------------
 
 let xhr = new XMLHttpRequest();
+
+console.log(window.location.search);
 let url = new URLSearchParams(window.location.search);
 url = url.get('id');
+
 let main = "";
+let text = "";
 
 xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
 
@@ -40,9 +44,12 @@ xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         let parsedData = JSON.parse(xhr.responseText);
         console.log(parsedData);
+        
         for (let i = 0; i < parsedData.docs.length; i++) {
             if (parsedData.docs[i]._id == url) {
+
                 main += /*html*/ `
+                
                 <h2>nutrition</h2>
                 <h3>${parsedData.docs[i].title}</h3>
                 <!-- Image -->
@@ -54,6 +61,20 @@ xhr.onreadystatechange = function () {
 
             }
         }
+//text
+        for (let i = 0; i < parsedData.docs.length; i++) {
+            if (parsedData.docs[i]._id == url) {
+
+                text += /*html*/ `
+                
+                <p class="articleTexts">${parsedData.docs[i].text}</p>
+
+                `
+                document.querySelector("#article").innerHTML = text;
+
+            }
+        }
+
     }
 }
 
