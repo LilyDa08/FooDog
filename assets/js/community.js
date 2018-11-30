@@ -53,10 +53,11 @@ xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
 xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         let parsedData = JSON.parse(xhr.responseText);
-      
+        console.log(parsedData);
+        document.querySelector('.pageCategory').innerHTML = tag;
         for (let i = 0; i < parsedData.docs.length; i++) {
             let tags = '';
-
+            document.querySelector('.pageCategory').innerHTML = tag;
             for (let t = 0; t < parsedData.docs[i].tagForArticle.length; t++) {
         
                 if (parsedData.docs[i].tagForArticle[t].toLowerCase() == tag.toLowerCase()) {
