@@ -299,6 +299,8 @@ h4 {
     width: 35px;
     height: 35px;
     padding: 6px;
+    text-decoration: none; 
+    color: #5d5d5d;
 }
 
 .btn-dark {
@@ -328,7 +330,7 @@ h4 {
 .footer-title {
     margin: 0;
     padding: 1vh;
-    color: #959595;
+    color: #B5B5B5;
     font-size: 1.1em;
 }
 
@@ -762,7 +764,7 @@ footer #instaPictures img {
         font-size: 0.5em;
         letter-spacing: 0;
         font-weight: 600;
-        color: #f46700;
+        color: #C75300;
     }
 
     h4 {
@@ -883,6 +885,7 @@ footer #instaPictures img {
     }
 
     .cat-article p {
+        font-size: 15px;    /*<-REMOVE WHEN DONE TESTING */
         padding-right: 5px;
     }
 
@@ -918,7 +921,7 @@ footer #instaPictures img {
 
     .cat-first,
     .cat-second {
-        color: #f46700;
+        color: #C75300;
         text-transform: uppercase;
         padding: 0;
         margin: 0;
@@ -946,7 +949,7 @@ footer #instaPictures img {
 
     .start-article {
         display: block;
-        font-size: 0.6em;
+        font-size: 12px; /*<-REMOVE WHEN DONE TESTING */
         font-weight: 200;
         padding: 5px 0;
         margin-bottom: 5px;
@@ -957,7 +960,7 @@ footer #instaPictures img {
         align-items: center;
         font-weight: 100;
         text-transform: uppercase;
-        font-size: 0.5em;
+        font-size: 11px; /*<-REMOVE WHEN DONE TESTING */
         padding-left: 15px;
     }
 
@@ -979,11 +982,11 @@ footer #instaPictures img {
     }
 
     .footer-title {
-        font-size: 0.7vw;
+        font-size: 12px; /*<-REMOVE WHEN DONE TESTING */
     }
 
     #allCategories a {
-        font-size: 0.7vw;
+        font-size: 11px; /*<-REMOVE WHEN DONE TESTING */
         padding: 12px 0;
     }
 
@@ -1004,7 +1007,7 @@ footer #instaPictures img {
 
     footer .aside-title {
         text-transform: capitalize;
-        font-size: 0.4em;
+        font-size: 11px; /*<-REMOVE WHEN DONE TESTING */
         font-weight: 600;
     }
 

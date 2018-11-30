@@ -34,7 +34,7 @@ xhr.onreadystatechange = function () {
 
     carrous += /*html*/ `
 
-      <a href="article.html?id=${parsedData.docs[0]._id}"> <img src="${parsedData.docs[0].imgUrl}" class="imghome"> </a>
+      <a href="article.html?id=${parsedData.docs[0]._id}"> <img src="${parsedData.docs[0].imgUrl}" class="imghome" alt="bob"> </a>
         <div class="banniere">
           <h2>wellness</h2>
           <p class="title-ban col-12">${parsedData.docs[0].title}</p>
@@ -50,7 +50,7 @@ xhr.onreadystatechange = function () {
       other += /*html*/ `
         
           <div class="asideOne col-lg-6">
-            <div class="aside-img col-12"><a href="article.html?id=${parsedData.docs[i]._id}"><img class="col-12" src="${parsedData.docs[i].imgUrl}"></a></div>
+            <div class="aside-img col-12"><a href="article.html?id=${parsedData.docs[i]._id}"><img class="col-12" src="${parsedData.docs[i].imgUrl}" alt="billy"></a></div>
             <p class="aside-title col-12">${parsedData.docs[i].title}</p>
           </div>
          `
@@ -69,7 +69,7 @@ xhr.onreadystatechange = function () {
 
 <article class="row article">
         <div class="article-img col-5 col-lg-6">
-        <a href="article.html?id=${parsedData.docs[i]._id}"><img src="${parsedData.docs[i].imgUrl}"></a>
+        <a href="article.html?id=${parsedData.docs[i]._id}"><img src="${parsedData.docs[i].imgUrl}" alt="more"></a>
          </div>
         <div class="text-article col-7 col-lg-6">
           <div class="row cat-article col-lg-5">
@@ -99,7 +99,7 @@ xhr.onreadystatechange = function () {
 
         <article class="row article col-lg-6">
           <div class="article-img col-5 col-lg-12">
-          <a href="article.html?id=${parsedData.docs[i]._id}"><img src="${parsedData.docs[i].imgUrl}"></a>
+          <a href="article.html?id=${parsedData.docs[i]._id}"><img src="${parsedData.docs[i].imgUrl}" alt="cazzo"></a>
           </div>
           <div class="text-article col-7 col-lg-12">
             <p class="cat-second">nutrition</p>
@@ -118,7 +118,7 @@ xhr.onreadystatechange = function () {
     for (let i = 0; i < 3; i++) {
       popular += /*html*/ `<a class="row f-aside col-md-12">
       <div class="aside-img col-12 col-md-4">
-          <img class="col-12" src="${parsedData.docs[i].imgUrl}">
+          <img class="col-12" src="${parsedData.docs[i].imgUrl}" alt="caffe">
       </div>
       <p class="aside-title col-12 col-md-8">${parsedData.docs[i].title}</p>
   </a>`
