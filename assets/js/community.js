@@ -48,7 +48,6 @@ let articles = '';
 let tag = new URLSearchParams(window.location.search);
 tag = tag.get('tag');
 
-
 xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
 xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {

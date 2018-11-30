@@ -77,7 +77,11 @@ body {
 
 #linkTitolo {
     text-decoration: none;
-    color: black;
+    color: #303336;
+}
+#linkTitolo:hover {
+    color: #303336;
+    text-decoration: none;
 }
 
 h1 {
