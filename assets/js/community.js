@@ -45,6 +45,10 @@ let xhr = new XMLHttpRequest();
 
 let articles = '';
 
+let tag = new URLSearchParams(window.location.search);
+tag = tag.get('tag');
+
+
 xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
 xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -52,15 +56,24 @@ xhr.onreadystatechange = function () {
         console.log(parsedData);
 
         for (let i = 0; i < parsedData.docs.length; i++) {
+            let tags = '';
 
-            articles += /*html*/ `
+            for (let t = 0; t < parsedData.docs[i].tagForArticle.length; t++) {
+
+                if (parsedData.docs[i].tagForArticle[t].toLowerCase() == tag.toLowerCase()) {
+
+                    for (let tg = 0; tg < parsedData.docs[i].tagForArticle.length; tg++) {
+                        tags += `<a href='community.html?tag=${parsedData.docs[i].tagForArticle[tg]}'><p class="categoryArticle">${parsedData.docs[i].tagForArticle[tg]}</p></a>`;
+                    }
+                    
+                    articles += /*html*/ `
             
              <article class="row article offset-lg-3 col-md-12 col-lg-6">
                 <figure class="col-10 article-img centered col-md-4 col-lg-5">
             <a href="article.html?id=${parsedData.docs[i]._id}"><img class="imgArticle" src="${parsedData.docs[i].imgUrl}"></a>
             </figure>
             <div class="offset-xs-1 col-10 articles col-md-8 col-lg-7">
-                <p class="categoryArticle"><b>COMMUNITY</b></p>
+                ${tags}
                 <p class="titleArticle">${parsedData.docs[i].title}</p>
                 <p class="previewArticle">${parsedData.docs[i].text.substring(0,100)}</p>
                 <div class="row share-btn">
@@ -73,8 +86,11 @@ xhr.onreadystatechange = function () {
             </div>
         </article>
             `
+
+                    document.querySelector("#allArticle").innerHTML = articles;
+                }
+            }
         }
-        document.querySelector("#allArticle").innerHTML = articles;
     }
 }
 

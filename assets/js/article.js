@@ -30,9 +30,9 @@ search.addEventListener("click", dropSearch);
 
 let xhr = new XMLHttpRequest();
 
+console.log(window.location.search);
 let url = new URLSearchParams(window.location.search);
 url = url.get('id');
-//console.log(url);
 
 let main = "";
 let text = "";
