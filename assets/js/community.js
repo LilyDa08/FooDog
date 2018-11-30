@@ -94,6 +94,7 @@ xhr.onreadystatechange = function () {
     }
 }
 
+<<<<<<< HEAD
     fetch(startUrl, {
             method: 'GET'
         })
@@ -111,3 +112,9 @@ xhr.onreadystatechange = function () {
         aElem.href = `community.html/?page=${i}`;
         aElem.innerHTML = i;
     }
+=======
+xhr.send();
+
+    // xxxxxxxxxcvvvvvvvvvvvvvxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+>>>>>>> 7cd6c929433fff4a7e27dcd6b62491a4a6cf2d9f
