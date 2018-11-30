@@ -67,7 +67,7 @@ xhr.onreadystatechange = function () {
                 if (parsedData.docs[i].tagForArticle[t].toLowerCase() == tag.toLowerCase()) {
                     
                     for (let tg = 0; tg < parsedData.docs[i].tagForArticle.length; tg++) {
-                        tags += `<a id=tag" href='community.html?tag=${parsedData.docs[i].tagForArticle[tg]}'><p class="categoryArticle">${parsedData.docs[i].tagForArticle[tg]}</p></a>`;
+                        tags += `<a  href='community.html?tag=${parsedData.docs[i].tagForArticle[tg]}'><p class="categoryArticle">${parsedData.docs[i].tagForArticle[tg]}</p></a>`;
                     }
                     
                     articles += /*html*/ `

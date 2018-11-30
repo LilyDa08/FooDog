@@ -299,11 +299,8 @@ h4 {
     width: 35px;
     height: 35px;
     padding: 6px;
-}
-
-.btn-circle a {
-    text-decoration: none;
-    color: #7a7a7a;
+    text-decoration: none; 
+    color: #5d5d5d;
 }
 
 .btn-dark {
