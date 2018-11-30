@@ -77,25 +77,6 @@ xhr.onreadystatechange = function () {
         document.querySelector("#allArticle").innerHTML = articles;
     }
 }
-<<<<<<< HEAD
-=======
-
-xhr.send();
-
-    // xxxxxxxxxcvvvvvvvvvvvvvxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-
-    const $body = document.querySelector('body');
-    let url = new URLSearchParams(window.location.search);
-    let pageNum = url.get('page');
-    
-
-    const startUrl = `https://foodog.herokuapp.com/articles?page=${pageNum};`
-
-    const rdmName = (data) => {
-   
-    }
->>>>>>> c19b7416895a0dc23d30310af07ccdc6074f63aa
 
     fetch(startUrl, {
             method: 'GET'
