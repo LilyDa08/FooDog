@@ -334,6 +334,9 @@ figure {
     padding-bottom: 1vh;
     font-size: 1.2em;
 }
+#allCategories a:hover {
+    color: #e56100;
+    }
 
 #instaPictures {
     text-align: center;
