@@ -37,6 +37,7 @@ url = url.get('id');
 let main = "";
 let text = "";
 let other = "";
+let popular = "";
 
 xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
 
@@ -80,6 +81,16 @@ xhr.onreadystatechange = function () {
             <h5 class="recomTitle"><small>${parsedData.docs[i].title}</small></h5>
 </div>`
                 document.querySelector('.threeArtciles').innerHTML = other;
+            }
+
+            for (let i = 0; i < 3; i++) {
+                popular += /*html*/ `<a class="row f-aside col-md-12">
+                <div class="aside-img col-12 col-md-4">
+                    <img class="col-12" src="${parsedData.docs[i].imgUrl}">
+                </div>
+                <p class="aside-title col-12 col-md-8">${parsedData.docs[i].title}</p>
+            </a>`
+                document.querySelector('.f-article').innerHTML = popular;
             }
         }
     }

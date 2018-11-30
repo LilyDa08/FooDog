@@ -44,11 +44,16 @@ window.onclick = function (event) {
 let xhr = new XMLHttpRequest();
 
 let articles = '';
+let popular = "";
 
 let tag = new URLSearchParams(window.location.search);
 tag = tag.get('tag');
+//pageNb = pageUrl.get('page');
 
-xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
+let url = "https://foodog.herokuapp.com/articles";
+//let url2 = `https://foodog.herokuapp.com/articles/?tag=${cat}&page=${pageNb}`;
+
+xhr.open("GET", url, true);
 xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         let parsedData = JSON.parse(xhr.responseText);
@@ -89,10 +94,31 @@ xhr.onreadystatechange = function () {
                 }
             }
         }
+         // POPULAR ARTICLE
+         for (let i = 0; i < 3; i++) {
+            popular += /*html*/ `<a class="row f-aside col-md-12">
+            <div class="aside-img col-12 col-md-4">
+                <img class="col-12" src="${parsedData.docs[i].imgUrl}">
+            </div>
+            <p class="aside-title col-12 col-md-8">${parsedData.docs[i].title}</p>
+        </a>`
+            document.querySelector('.f-article').innerHTML = popular;
+        }
     }
 }
 
 xhr.send();
 
-    // xxxxxxxxxcvvvvvvvvvvvvvxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        // BUTTON
 
+        // const $btnPage = document.querySelector('.page-navigation');
+
+        // for (i = 1; i < parsedData.pages; i++) {
+
+        //     const aElem = document.createElement('a');
+        //     aElem.classList.add('btn');
+        //     aElem.classList.add('btn-circle');
+        //     $btnPage.appendChild(aElem);
+        //     aElem.href = `community.html/?tag=&page=${i}`;
+        //     aElem.innerHTML = i;
+        // }

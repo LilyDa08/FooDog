@@ -5,6 +5,7 @@ let feature = "";
 let latest = "";
 let carrous = "";
 let other = "";
+let popular = "";
 
 xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
 
@@ -113,6 +114,16 @@ xhr.onreadystatechange = function () {
     }
 
     document.querySelector(".latest-row").innerHTML = latest;
+
+    for (let i = 0; i < 3; i++) {
+      popular += /*html*/ `<a class="row f-aside col-md-12">
+      <div class="aside-img col-12 col-md-4">
+          <img class="col-12" src="${parsedData.docs[i].imgUrl}">
+      </div>
+      <p class="aside-title col-12 col-md-8">${parsedData.docs[i].title}</p>
+  </a>`
+      document.querySelector('.f-article').innerHTML = popular;
+  }
 
   } else {
     return;
