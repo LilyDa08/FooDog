@@ -48,7 +48,6 @@ let articles = '';
 let tag = new URLSearchParams(window.location.search);
 tag = tag.get('tag');
 
-
 xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
 xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -59,7 +58,7 @@ xhr.onreadystatechange = function () {
             let tags = '';
             document.querySelector('.pageCategory').innerHTML = tag;
             for (let t = 0; t < parsedData.docs[i].tagForArticle.length; t++) {
-
+        
                 if (parsedData.docs[i].tagForArticle[t].toLowerCase() == tag.toLowerCase()) {
 
                     for (let tg = 0; tg < parsedData.docs[i].tagForArticle.length; tg++) {
@@ -86,7 +85,6 @@ xhr.onreadystatechange = function () {
             </div>
         </article>
             `
-
                     document.querySelector("#allArticle").innerHTML = articles;
                 }
             }
