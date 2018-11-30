@@ -105,7 +105,7 @@ h1 {
 
 h2 {
     text-transform: uppercase;
-    color: #e56100;
+    color: #B84D00;
     font-size: 1.5em;
     font-weight: 200;
     letter-spacing: 1px;
@@ -234,7 +234,7 @@ figure {
     margin: 0;
     display: none;
     text-transform: uppercase;
-    color: #f3654c;
+    color: #C82A0E;
     border-right: solid 2px #cecdcd;
     padding-right: 9px;
 }
@@ -267,7 +267,7 @@ figure {
 
 .readmore a {
     text-transform: uppercase;
-    color: #f46700;
+    color: #C75300;
     font-size: 0.9em !important;
 }
 
@@ -312,7 +312,7 @@ figure {
 .footer-title {
     margin: 0;
     padding: 1vh 0;
-    color: #959595;
+    color: #B5B5B5;
     font-size: 1.1em;
 }
 #titleCategories {
@@ -665,7 +665,7 @@ footer a {
     .headerCat {
         text-transform: uppercase;
         font-weight: 200;
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .headerCat a {
@@ -718,7 +718,7 @@ footer a {
     }
 
     .categoryArticle {
-        font-size: 0.5em;
+        font-size: 9.5px;
     }
 
     .articles {
@@ -735,18 +735,18 @@ footer a {
     }
 
     .previewArticle {
-        font-size: 0.8em;
+        font-size: 12px; /*<-REMOVE WHEN DONE TESTING */
         line-height: 150%;
-        color: #959595;
+        color: #575757;
     }
 
     .share-btn {
         display: flex;
         align-items: center;
-        color: #959595;
+        color: #575757;
         font-weight: 100;
         text-transform: uppercase;
-        font-size: 0.6em;
+        font-size: 0.8em; /*<-REMOVE WHEN DONE TESTING */
         padding-left: 15px;
         padding-top: 5px;
     }
@@ -777,8 +777,18 @@ footer a {
         padding: 0;
     }
 
+    #allCategories a {
+        font-size: 12px;
+        padding: 12px 0;
+    }
+
+    .footer-title {
+        font-size: 12px; /*<-REMOVE WHEN DONE TESTING */
+    }
+
     footer .aside-title {
     padding: 0;
+    font-size: 12px; /*<-REMOVE WHEN DONE TESTING */
     }
 
 
