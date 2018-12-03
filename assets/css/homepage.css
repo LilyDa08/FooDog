@@ -210,7 +210,7 @@ h4 {
 
 .latest-row {
     margin: 0;
-    padding: 0 5%;
+    padding: 0 15px;
     ;
 }
 
@@ -454,6 +454,9 @@ footer #instaPictures img {
         z-index: 20;
         padding-bottom: 15px;
     }
+    #navbar {
+        height : 100px;
+    }
     .loupe {
         color: black;
         font-size: 20px;
@@ -554,6 +557,7 @@ footer #instaPictures img {
     .text-article {
         padding: 0;
         margin: 0;
+        padding-left: 20px;
         height: auto;
         line-height: 160%;
     }
@@ -649,11 +653,12 @@ footer #instaPictures img {
         padding: 0;
         padding-right: 2vh;
         padding-bottom: 10px;
+        height: 55px;
     }
 
     .f-aside .aside-img {
         margin: 0;
-        height: 70px;
+        height: 55px;
         padding: 0 3px 3px 0;
     }
 
@@ -663,7 +668,7 @@ footer #instaPictures img {
         object-fit: cover;
         object-position: 50% 50%;
         width: 100%;
-        height: 100%;
+        height: 90%;
     }
 
     .f-article {
@@ -992,12 +997,12 @@ footer #instaPictures img {
     .f-aside {
         margin: 0;
         padding: 0;
-
         padding-right: 20px;
+        height : 70px;
     }
 
     .f-aside .aside-img {
-        height: 60px;
+        height: 70px;
     }
 
     .f-aside .aside-img img {
