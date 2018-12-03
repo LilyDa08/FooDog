@@ -1,6 +1,0 @@
-//add Event Listeners for every Category and Article
-
-var clickedTab = document.getElementById(tabName);
-nutritionTab.addEventListener("click", function(){
-    var parameter = nutritionTab.getAttribute('id');
-});
