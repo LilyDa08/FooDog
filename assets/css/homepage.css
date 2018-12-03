@@ -11,7 +11,6 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #414040;
 }
-
 /*  ORANGE color: #f46700;   */
 /* FONT pour les titre : CRIMSON TEXT   */
 
@@ -179,6 +178,7 @@ h4 {
     right: 0;
     width: 100%;
     height: 8vh;
+    padding-right: 25px;
     text-align: right;
 }
 
@@ -187,6 +187,7 @@ h4 {
     font-weight: 600;
     font-size: 1.1em;
     padding: 0;
+    
     margin: 0;
 }
 
@@ -440,10 +441,7 @@ footer #instaPictures img {
     main {
         width: 85vw;
         margin: auto;
-    }
-
-    #navbar {
-        height: 110px;
+        padding-top: 100px;
     }
 
     .navbar-toggler {
@@ -503,7 +501,6 @@ footer #instaPictures img {
     #onglets {
         display: flex;
         padding: 0;
-     
     }
 
     h1 {
@@ -742,6 +739,8 @@ footer #instaPictures img {
     main {
         width: 60vw;
         margin: auto;
+            padding-top: 80px
+        
     }
 
     #navbar {
@@ -885,7 +884,7 @@ footer #instaPictures img {
     }
 
     .cat-article p {
-        font-size: 15px;    /*<-REMOVE WHEN DONE TESTING */
+        font-size: 10px;    /*<-REMOVE WHEN DONE TESTING */
         padding-right: 5px;
     }
 
@@ -921,7 +920,7 @@ footer #instaPictures img {
 
     .cat-first,
     .cat-second {
-        color: #C75300;
+        color: rgb(202, 84, 0);
         text-transform: uppercase;
         padding: 0;
         margin: 0;

@@ -26,10 +26,10 @@
                     <ion-icon name="menu"></ion-icon>
                 </button>
                 <div id="myDropdown" class="dropdown-content" style="display:none">
-                    <a href="#">Nutrition</a>
-                    <a href="#">Wellness</a>
-                    <a href="#">Lifestyle</a>
-                    <a href="#">Community</a>
+                    <a href="community.html?tag=NUTRITION">Nutrition</a>
+                    <a href="community.html?tag=WELLNESS">Wellness</a>
+                    <a href="community.html?tag=LIFESTYLE">Lifestyle</a>
+                    <a href="community.html?tag=COMMUNITY">Community</a>
                 </div>
             </div>
 
@@ -77,7 +77,8 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <p><b>Search for your desired tags here.</b></p>
-            <input name="search-field" type="text" autocomplete="on" maxlength="50" placeholder="Article Tags" size="17">
+            <input id="search-bar" name="search-field" type="text" autocomplete="on" maxlength="50" placeholder="Article Tags" size="17">
+            <ul id="search-ul"></ul>
         </div>
     </div>
 

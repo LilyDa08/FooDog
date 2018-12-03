@@ -6,8 +6,54 @@ let latest = "";
 let carrous = "";
 let other = "";
 let popular = "";
+let allPage = new Array();
 
 xhr.open("GET", "https://foodog.herokuapp.com/articles", true);
+
+// PAGINATION **********************
+
+let url = "https://foodog.herokuapp.com/articles?page=1";
+let url3 = "https://foodog.herokuapp.com/articles?page=3";
+let url2 = "https://foodog.herokuapp.com/articles/?page=2";
+
+const storeInArray = (dataparam) => {
+  dataparam.docs.map(function (data) {
+    allPage.push(data)
+  })
+  console.log('allPages :', allPage);
+}
+
+const storeInArray2 = (dataparam2) => {
+  dataparam2.docs.map(function (data) {
+    allPage.push(data)
+  })
+  console.log('allPages :', allPage);
+}
+
+const storeInArray3 = (dataparam3) => {
+  dataparam3.docs.map(function (data) {
+    allPage.push(data)
+  })
+  console.log('allPages :', allPage);
+}
+
+const fetchmyUrl = () => {
+
+  fetch(url)
+    .then((response) => response.json())
+    .then((dataparam) => storeInArray(dataparam))
+    .then(fetch(url2)
+      .then((response) => response.json())
+      .then((dataparam2) => storeInArray2(dataparam2))
+      .then(fetch(url3)
+        .then((response) => response.json())
+        .then((dataparam3) => storeInArray3(dataparam3))
+        .then()))
+    .catch((error) => console.log(error))
+}
+fetchmyUrl();
+
+// **********************
 
 xhr.onreadystatechange = function () {
 
@@ -16,21 +62,9 @@ xhr.onreadystatechange = function () {
     let parsedData = JSON.parse(xhr.responseText);
     console.log(parsedData);
 
-    // créer un tableau reprenant toutes les images de la structure HTML
-
     let imghome = document.querySelectorAll(".imagehp");
     let titleHome = document.querySelectorAll(".titlehp");
     let textHome = document.querySelectorAll(".texthp");
-
-    // //Boucle qui select tout les images dans l'API
-    // for (let index = 0; index < parsedData.docs.length; index++) {
-    //   console.log('parseData[index] :', parsedData.docs[index].imgUrl);
-    //   //Boucle qui select les image et les remplace dans l'HTML
-    //    for (let i = 0; i < imghome.length; i++) {
-    //      imghome[i].src = parsedData.docs[i].imgUrl;
-    //    }
-    //  }
-
 
     carrous += /*html*/ `
 
@@ -40,7 +74,6 @@ xhr.onreadystatechange = function () {
           <p class="title-ban col-12">${parsedData.docs[0].title}</p>
         </div>
       `
-
     document.querySelector(".carrousel").innerHTML = carrous;
 
     //*****************************************************************************
@@ -174,4 +207,87 @@ window.onclick = function (event) {
   }
 }
 
-// ----------------------------------------------
+// ---------------- SEARCH REQUEST------------------------------
+
+
+const $search = document.querySelector('.search');
+const $results = document.querySelector('.results');
+const $clipUl = document.querySelector('.songs');
+const $artistName = document.querySelector('.artist');
+
+
+const movieClipList = (songs) => {  
+  while ($clipUl.hasChildNodes()) {
+    $clipUl.removeChild($clipUl.firstChild);
+  }
+  const showMovieClip = (song) => {
+    const $songList = document.createElement('li');
+    let iFrame = `<iframe width="537" height="302" src="https://www.youtube.com/embed/${song.youtube_id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+    
+    $songList.innerHTML = song.title + "</br>" + iFrame;
+    $clipUl.appendChild($songList);
+  }
+
+  songs.map(song => showMovieClip(song))
+}
+
+  const getId = (artist) => {
+    while ($results.hasChildNodes()) {
+      $results.removeChild($results.firstChild);
+    }
+    $search.value = "";
+    const $chosenArtist = artist.currentTarget;
+    $artistName.innerHTML = $chosenArtist.textContent;
+    const urlSong = `https://musicdemons.com/api/v1/artist/${$chosenArtist.id}/songs`;
+
+
+  fetch(urlSong, {
+      method: 'GET'
+    })
+    .then((response) => response.json())
+    .then((jsonData) => movieClipList(jsonData))
+    .catch(error => console.log(error));
+  }
+
+const createResultList = (results) => {
+  const createArtistList = (artist) => {
+    const $artistList = document.createElement('li');
+    $artistList.innerHTML = artist.name;
+    $artistList.setAttribute('id', artist.id);
+    //console.log($artistList)
+    $results.appendChild($artistList);
+    $artistList.addEventListener('click', getId)
+  }
+  results.map(artist => createArtistList(artist))
+}
+
+const search = (value) => {
+  while ($results.hasChildNodes()) {
+    $results.removeChild($results.firstChild);
+  }
+  const url = 'https://musicdemons.com/api/v1/artist/autocomplete';
+  fetch(url, {
+      method: 'POST',
+      headers: {
+        // 'Content-Type': 'application/JSON'  GO with the commented BODY
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: `name=${value}`
+      // body: JSON.stringify({name:`${value}`})
+    })
+    .then((response) => response.json())
+    .then((jsonData) => createResultList(jsonData))
+    .catch(error => console.log(error));
+};
+
+const handleKeyUpSearch = e => {
+  const $input = e.currentTarget;
+  search($input.value);
+};
+
+const init = () => {
+  $search.addEventListener('keyup', handleKeyUpSearch);
+};
+
+init();
+

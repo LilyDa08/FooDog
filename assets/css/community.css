@@ -79,6 +79,7 @@ body {
     text-decoration: none;
     color: #303336;
 }
+
 #linkTitolo:hover {
     color: #303336;
     text-decoration: none;
@@ -319,9 +320,11 @@ figure {
     color: #B5B5B5;
     font-size: 1.1em;
 }
+
 #titleCategories {
- padding: 0;
+    padding: 0;
 }
+
 #allCategories {
     margin: 0;
     padding: 0.2vh 1vh;
@@ -334,9 +337,10 @@ figure {
     padding-bottom: 1vh;
     font-size: 1.2em;
 }
+
 #allCategories a:hover {
     color: #e56100;
-    }
+}
 
 #instaPictures {
     text-align: center;
@@ -552,14 +556,16 @@ footer a {
     .f-aside .aside-img {
         padding: 0;
         margin: 0;
-        height: 50px;
+        height: 70px;
     }
 
     .f-aside img {
         padding: 0;
         margin: 0;
-        height: 100%;
-        width: auto;
+        object-fit: cover;
+        object-position: 50% 50%;
+        height: 90%;
+        width: 90%;
     }
 
     .f-article {
@@ -589,7 +595,7 @@ footer a {
     .imgInsta {
         height: 80px;
         padding: 0;
-       
+
     }
 
     .imgInsta img {
