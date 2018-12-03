@@ -103,7 +103,7 @@ xhr.onreadystatechange = function () {
             for (let t = 0; t < parsedData.docs[i].tagForArticle.length; t++) {
 
                 if (parsedData.docs[i].tagForArticle[t].toLowerCase() == tag.toLowerCase()) {
-                    
+
                     for (let tg = 0; tg < parsedData.docs[i].tagForArticle.length; tg++) {
                         tags += `<a  href='community.html?tag=${parsedData.docs[i].tagForArticle[tg]}'><p class="categoryArticle">${parsedData.docs[i].tagForArticle[tg]}</p></a>`;
                     }
@@ -133,8 +133,8 @@ xhr.onreadystatechange = function () {
         }
         // POPULAR ARTICLE
         for (let i = 0; i < 3; i++) {
-            popular += /*html*/ 
-            `<a class="row f-aside col-md-12">
+            popular += /*html*/
+                `<a class="row f-aside col-md-12">
             <div class="aside-img col-12 col-md-4">
                 <img class="col-12" src="${parsedData.docs[i].imgUrl}" alt="pop">
             </div>
@@ -162,3 +162,68 @@ xhr.send();
 //     aElem.href = `community.html/?tag=&page=${i}`;
 //     aElem.innerHTML = i;
 // }
+
+
+
+// // ---------- SEARCH REQUEST ----------------------
+
+// const $search = document.querySelector('#search-bar');
+// const $results = document.querySelector('.modal-content');
+// const $clipUl = document.querySelector('#search-ul');
+// const $artistName = document.querySelector('.artist');
+
+
+// const movieClipList = (songs) => {  
+//   while ($clipUl.hasChildNodes()) {
+//     $clipUl.removeChild($clipUl.firstChild);
+//   }
+//   const showMovieClip = (song) => {
+//     const $songList = document.createElement('li');
+//     let iFrame = `<iframe width="537" height="302" src="https://www.youtube.com/embed/${song.youtube_id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+
+//     $songList.innerHTML = song.title + "</br>" + iFrame;
+//     $clipUl.appendChild($songList);
+//   }
+
+//   songs.map(song => showMovieClip(song))
+// }
+
+//   const getId = (artist) => {
+//     while ($results.hasChildNodes()) {
+//       $results.removeChild($results.firstChild);
+//     }
+//     $search.value = "";
+//     const $chosenArtist = artist.currentTarget;
+//     $artistName.innerHTML = $chosenArtist.textContent;
+//     const urlSong = `https://musicdemons.com/api/v1/artist/${$chosenArtist.id}/songs`;
+
+
+
+
+// const search = (value) => {
+//     const url = 'https://foodog.herokuapp.com/articles';
+//     fetch(url, {
+//             method: 'GET'
+//         })
+//         .then((response) => response.json())
+//         .then((jsonData) => jsonData.match(value))
+//         .then((affichage) => console.log(affichage))
+//         .catch((error) => console.log(error))
+// };
+
+// const handleKeyUpSearch = e => {
+//     const $input = e.currentTarget;
+//     search($input.value);
+// };
+
+// const init = () => {
+//     $search.addEventListener('keyup', handleKeyUpSearch);
+// };
+
+// init();
+
+// //httpRequest.open('POST', 'https://musicdemons.com/api/v1/artist/autocomplete', true);
+// //httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+// //httpRequest.send(`name=${global}`);
+
+// //let httpRequest = new XMLHttpRequest;
